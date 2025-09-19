@@ -1,0 +1,435 @@
+[
+  {
+    "id": "executive",
+    "name": "C-Level & Executive",
+    "description": "Strategic prompts for executives, CEOs, and senior leadership",
+    "icon": "👔",
+    "color": "#1a365d",
+    "subcategories": [
+      {
+        "id": "strategic-planning",
+        "name": "Strategic Planning",
+        "description": "Vision, mission, and strategic roadmap development"
+      },
+      {
+        "id": "board-communications",
+        "name": "Board Communications",
+        "description": "Board presentations and executive reporting"
+      },
+      {
+        "id": "crisis-management",
+        "name": "Crisis Management",
+        "description": "Emergency response and crisis communication"
+      },
+      {
+        "id": "merger-acquisition",
+        "name": "M&A Strategy",
+        "description": "Merger, acquisition, and partnership strategies"
+      },
+      {
+        "id": "investor-relations",
+        "name": "Investor Relations",
+        "description": "Investor communications and fundraising"
+      }
+    ]
+  },
+  {
+    "id": "sales",
+    "name": "Sales & Business Development",
+    "description": "Advanced sales strategies, lead generation, and revenue optimization",
+    "icon": "📈",
+    "color": "#4CAF50",
+    "subcategories": [
+      {
+        "id": "enterprise-sales",
+        "name": "Enterprise Sales",
+        "description": "B2B enterprise sales strategies and processes"
+      },
+      {
+        "id": "lead-generation",
+        "name": "Lead Generation",
+        "description": "Advanced lead generation and qualification"
+      },
+      {
+        "id": "sales-automation",
+        "name": "Sales Automation",
+        "description": "CRM optimization and sales process automation"
+      },
+      {
+        "id": "negotiation",
+        "name": "Negotiation",
+        "description": "Contract negotiation and deal closing"
+      },
+      {
+        "id": "account-management",
+        "name": "Account Management",
+        "description": "Client retention and expansion strategies"
+      },
+      {
+        "id": "sales-analytics",
+        "name": "Sales Analytics",
+        "description": "Performance analysis and forecasting"
+      }
+    ]
+  },
+  {
+    "id": "medical",
+    "name": "Medical & Healthcare",
+    "description": "Clinical decision support, patient care, and medical research prompts",
+    "icon": "🏥",
+    "color": "#e53e3e",
+    "subcategories": [
+      {
+        "id": "clinical-diagnosis",
+        "name": "Clinical Diagnosis",
+        "description": "Differential diagnosis and clinical reasoning"
+      },
+      {
+        "id": "patient-communication",
+        "name": "Patient Communication",
+        "description": "Patient consultations and medical explanations"
+      },
+      {
+        "id": "medical-research",
+        "name": "Medical Research",
+        "description": "Literature review and research methodology"
+      },
+      {
+        "id": "treatment-protocols",
+        "name": "Treatment Protocols",
+        "description": "Evidence-based treatment planning"
+      },
+      {
+        "id": "medical-documentation",
+        "name": "Medical Documentation",
+        "description": "Clinical notes and medical records"
+      },
+      {
+        "id": "healthcare-admin",
+        "name": "Healthcare Administration",
+        "description": "Hospital management and healthcare operations"
+      }
+    ]
+  },
+  {
+    "id": "legal",
+    "name": "Legal & Compliance",
+    "description": "Legal analysis, contract review, and regulatory compliance",
+    "icon": "⚖️",
+    "color": "#3F51B5",
+    "subcategories": [
+      {
+        "id": "contract-analysis",
+        "name": "Contract Analysis",
+        "description": "Contract review and legal risk assessment"
+      },
+      {
+        "id": "legal-research",
+        "name": "Legal Research",
+        "description": "Case law research and legal precedents"
+      },
+      {
+        "id": "corporate-law",
+        "name": "Corporate Law",
+        "description": "Corporate governance and business law"
+      },
+      {
+        "id": "compliance",
+        "name": "Regulatory Compliance",
+        "description": "Regulatory analysis and compliance frameworks"
+      },
+      {
+        "id": "litigation-support",
+        "name": "Litigation Support",
+        "description": "Legal briefs and court document preparation"
+      },
+      {
+        "id": "intellectual-property",
+        "name": "Intellectual Property",
+        "description": "Patent analysis and IP strategy"
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "name": "Finance & Investment",
+    "description": "Financial analysis, investment strategy, and risk management",
+    "icon": "💰",
+    "color": "#ff6b35",
+    "subcategories": [
+      {
+        "id": "financial-analysis",
+        "name": "Financial Analysis",
+        "description": "Financial modeling and valuation"
+      },
+      {
+        "id": "investment-strategy",
+        "name": "Investment Strategy",
+        "description": "Portfolio management and investment research"
+      },
+      {
+        "id": "risk-management",
+        "name": "Risk Management",
+        "description": "Risk assessment and mitigation strategies"
+      },
+      {
+        "id": "corporate-finance",
+        "name": "Corporate Finance",
+        "description": "Capital structure and financial planning"
+      },
+      {
+        "id": "banking",
+        "name": "Banking Operations",
+        "description": "Credit analysis and loan processing"
+      },
+      {
+        "id": "fintech",
+        "name": "FinTech Innovation",
+        "description": "Digital finance and blockchain applications"
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering & Technology",
+    "description": "Technical engineering across all disciplines and technology development",
+    "icon": "🔧",
+    "color": "#2196F3",
+    "subcategories": [
+      {
+        "id": "software-engineering",
+        "name": "Software Engineering",
+        "description": "Code architecture and software development"
+      },
+      {
+        "id": "civil-engineering",
+        "name": "Civil Engineering",
+        "description": "Infrastructure design and construction"
+      },
+      {
+        "id": "mechanical-engineering",
+        "name": "Mechanical Engineering",
+        "description": "Mechanical systems and product design"
+      },
+      {
+        "id": "electrical-engineering",
+        "name": "Electrical Engineering",
+        "description": "Electrical systems and power engineering"
+      },
+      {
+        "id": "data-engineering",
+        "name": "Data Engineering",
+        "description": "Data pipelines and analytics infrastructure"
+      },
+      {
+        "id": "ai-ml-engineering",
+        "name": "AI/ML Engineering",
+        "description": "Machine learning and artificial intelligence"
+      }
+    ]
+  },
+  {
+    "id": "software-dev",
+    "name": "Software Development",
+    "description": "Code reviews, documentation, debugging, and development workflows",
+    "icon": "💻",
+    "color": "#9C27B0",
+    "subcategories": [
+      {
+        "id": "code-review",
+        "name": "Code Review",
+        "description": "Reviewing and improving code quality"
+      },
+      {
+        "id": "debugging",
+        "name": "Debugging",
+        "description": "Finding and fixing bugs"
+      },
+      {
+        "id": "documentation",
+        "name": "Documentation",
+        "description": "Creating technical documentation"
+      },
+      {
+        "id": "testing",
+        "name": "Testing",
+        "description": "Unit testing and QA processes"
+      },
+      {
+        "id": "architecture",
+        "name": "Architecture",
+        "description": "System design and architecture planning"
+      }
+    ]
+  },
+  {
+    "id": "content-creation",
+    "name": "Content Creation",
+    "description": "Blog posts, copywriting, SEO, and creative content",
+    "icon": "✍️",
+    "color": "#FF9800",
+    "subcategories": [
+      {
+        "id": "blog-writing",
+        "name": "Blog Writing",
+        "description": "Creating engaging blog content"
+      },
+      {
+        "id": "copywriting",
+        "name": "Copywriting",
+        "description": "Sales and marketing copy"
+      },
+      {
+        "id": "seo-optimization",
+        "name": "SEO Optimization",
+        "description": "Search engine optimization content"
+      },
+      {
+        "id": "social-content",
+        "name": "Social Media Content",
+        "description": "Posts and content for social platforms"
+      },
+      {
+        "id": "video-scripts",
+        "name": "Video Scripts",
+        "description": "Scripts for video content"
+      }
+    ]
+  },
+  {
+    "id": "business-analysis",
+    "name": "Business Analysis",
+    "description": "Requirements gathering, reporting, and business processes",
+    "icon": "📊",
+    "color": "#607D8B",
+    "subcategories": [
+      {
+        "id": "requirements-gathering",
+        "name": "Requirements Gathering",
+        "description": "Collecting and documenting business requirements"
+      },
+      {
+        "id": "data-analysis",
+        "name": "Data Analysis",
+        "description": "Analyzing and interpreting business data"
+      },
+      {
+        "id": "reporting",
+        "name": "Reporting",
+        "description": "Creating business reports and dashboards"
+      },
+      {
+        "id": "process-improvement",
+        "name": "Process Improvement",
+        "description": "Optimizing business processes"
+      },
+      {
+        "id": "stakeholder-communication",
+        "name": "Stakeholder Communication",
+        "description": "Communicating with business stakeholders"
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "name": "Education",
+    "description": "Lesson planning, assessment creation, and educational content",
+    "icon": "🎓",
+    "color": "#795548",
+    "subcategories": [
+      {
+        "id": "lesson-planning",
+        "name": "Lesson Planning",
+        "description": "Creating structured lesson plans"
+      },
+      {
+        "id": "assessment-creation",
+        "name": "Assessment Creation",
+        "description": "Designing tests and assessments"
+      },
+      {
+        "id": "curriculum-development",
+        "name": "Curriculum Development",
+        "description": "Building educational curricula"
+      },
+      {
+        "id": "student-feedback",
+        "name": "Student Feedback",
+        "description": "Providing constructive feedback to students"
+      },
+      {
+        "id": "educational-content",
+        "name": "Educational Content",
+        "description": "Creating learning materials and resources"
+      }
+    ]
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare",
+    "description": "Medical documentation, patient communication, and healthcare processes",
+    "icon": "🏥",
+    "color": "#F44336",
+    "subcategories": [
+      {
+        "id": "patient-communication",
+        "name": "Patient Communication",
+        "description": "Communicating with patients and families"
+      },
+      {
+        "id": "medical-documentation",
+        "name": "Medical Documentation",
+        "description": "Creating medical reports and documentation"
+      },
+      {
+        "id": "treatment-planning",
+        "name": "Treatment Planning",
+        "description": "Planning patient treatment approaches"
+      },
+      {
+        "id": "health-education",
+        "name": "Health Education",
+        "description": "Educating patients about health topics"
+      },
+      {
+        "id": "research-assistance",
+        "name": "Research Assistance",
+        "description": "Supporting medical research activities"
+      }
+    ]
+  },
+  {
+    "id": "legal",
+    "name": "Legal",
+    "description": "Contract analysis, research assistance, and legal documentation",
+    "icon": "⚖️",
+    "color": "#3F51B5",
+    "subcategories": [
+      {
+        "id": "contract-analysis",
+        "name": "Contract Analysis",
+        "description": "Reviewing and analyzing legal contracts"
+      },
+      {
+        "id": "legal-research",
+        "name": "Legal Research",
+        "description": "Researching case law and legal precedents"
+      },
+      {
+        "id": "document-drafting",
+        "name": "Document Drafting",
+        "description": "Creating legal documents and agreements"
+      },
+      {
+        "id": "client-communication",
+        "name": "Client Communication",
+        "description": "Communicating legal matters to clients"
+      },
+      {
+        "id": "compliance-review",
+        "name": "Compliance Review",
+        "description": "Ensuring regulatory compliance"
+      }
+    ]
+  }
+]

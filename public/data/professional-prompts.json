@@ -1,0 +1,353 @@
+[
+  {
+    "id": "exec-001",
+    "title": "Strategic Business Plan Generator",
+    "description": "Create comprehensive 3-5 year strategic business plans with market analysis, competitive positioning, and financial projections",
+    "content": "Act as a senior strategy consultant. Create a comprehensive strategic business plan for [COMPANY_NAME] in the [INDUSTRY] sector. Include:\n\n1. Executive Summary\n2. Market Analysis:\n   - Market size: [MARKET_SIZE]\n   - Growth trends and drivers\n   - Target customer segments\n   - Competitive landscape analysis\n\n3. Strategic Objectives (3-5 year horizon):\n   - Revenue targets: [REVENUE_TARGET]\n   - Market share goals\n   - Expansion plans: [EXPANSION_AREAS]\n\n4. Competitive Positioning:\n   - Unique value proposition\n   - Competitive advantages\n   - SWOT analysis\n\n5. Operational Strategy:\n   - Key capabilities to build\n   - Resource requirements\n   - Technology investments\n\n6. Financial Projections:\n   - Revenue forecasts\n   - Investment requirements: [INVESTMENT_BUDGET]\n   - ROI expectations\n\n7. Risk Assessment:\n   - Market risks\n   - Operational risks\n   - Mitigation strategies\n\n8. Implementation Roadmap:\n   - Key milestones\n   - Resource allocation\n   - Success metrics\n\nEnsure the plan is data-driven, actionable, and aligned with current market conditions.",
+    "category": "executive",
+    "subcategory": "strategic-planning",
+    "industry": ["Executive", "Strategy", "Business Development"],
+    "tags": ["strategic planning", "business plan", "market analysis", "competitive strategy", "financial planning"],
+    "variables": [
+      {
+        "name": "company_name",
+        "placeholder": "[COMPANY_NAME]",
+        "description": "Name of the company",
+        "example": "TechCorp Solutions"
+      },
+      {
+        "name": "industry",
+        "placeholder": "[INDUSTRY]",
+        "description": "Industry sector",
+        "example": "Enterprise Software"
+      },
+      {
+        "name": "market_size",
+        "placeholder": "[MARKET_SIZE]",
+        "description": "Total addressable market size",
+        "example": "$50 billion globally"
+      },
+      {
+        "name": "revenue_target",
+        "placeholder": "[REVENUE_TARGET]",
+        "description": "3-5 year revenue goal",
+        "example": "$100M ARR"
+      },
+      {
+        "name": "expansion_areas",
+        "placeholder": "[EXPANSION_AREAS]",
+        "description": "Markets or regions for expansion",
+        "example": "European and Asian markets"
+      },
+      {
+        "name": "investment_budget",
+        "placeholder": "[INVESTMENT_BUDGET]",
+        "description": "Available investment capital",
+        "example": "$25 million"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude", "Gemini"],
+    "difficulty": "Advanced",
+    "useCase": "Creating comprehensive strategic business plans for executive decision-making",
+    "votes": {
+      "upvotes": 245,
+      "downvotes": 12,
+      "score": 233
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 87
+    },
+    "usage": {
+      "count": 1834,
+      "lastUsed": "2024-01-15T14:30:00Z"
+    },
+    "createdAt": "2024-01-01T10:00:00Z",
+    "updatedAt": "2024-01-10T15:20:00Z",
+    "isPublic": true,
+    "isFeatured": true,
+    "author": {
+      "name": "Executive Strategy Team",
+      "company": "AI Prompt Library Pro"
+    }
+  },
+  {
+    "id": "med-001",
+    "title": "Clinical Differential Diagnosis Assistant",
+    "description": "Systematic approach to differential diagnosis with evidence-based reasoning for complex medical cases",
+    "content": "Act as an experienced clinician. Provide a systematic differential diagnosis for the following patient presentation:\n\nPatient Information:\n- Age: [PATIENT_AGE]\n- Gender: [PATIENT_GENDER]\n- Chief Complaint: [CHIEF_COMPLAINT]\n- History of Present Illness: [HPI]\n- Past Medical History: [PMH]\n- Medications: [MEDICATIONS]\n- Allergies: [ALLERGIES]\n- Social History: [SOCIAL_HISTORY]\n- Physical Examination Findings: [PHYSICAL_EXAM]\n- Vital Signs: [VITAL_SIGNS]\n\nProvide:\n1. **Primary Differential Diagnosis** (Top 5 most likely conditions):\n   - List in order of likelihood\n   - Include brief rationale for each\n   - Note supporting and contradicting evidence\n\n2. **Secondary Considerations** (3-5 less likely but important conditions):\n   - Conditions that shouldn't be missed\n   - Rare but serious diagnoses\n\n3. **Recommended Diagnostic Workup**:\n   - Laboratory tests with rationale\n   - Imaging studies if indicated\n   - Specialist consultations\n   - Timeline for evaluation\n\n4. **Red Flags to Monitor**:\n   - Warning signs requiring immediate attention\n   - When to escalate care\n\n5. **Initial Management Considerations**:\n   - Symptomatic treatment options\n   - Safety precautions\n   - Patient education points\n\nNote: This is for educational/reference purposes only. Always verify with current medical literature and follow institutional protocols.",
+    "category": "medical",
+    "subcategory": "clinical-diagnosis",
+    "industry": ["Healthcare", "Medicine", "Clinical Practice"],
+    "tags": ["differential diagnosis", "clinical reasoning", "patient care", "medical diagnosis", "clinical decision making"],
+    "variables": [
+      {
+        "name": "patient_age",
+        "placeholder": "[PATIENT_AGE]",
+        "description": "Patient's age",
+        "example": "45 years old"
+      },
+      {
+        "name": "patient_gender",
+        "placeholder": "[PATIENT_GENDER]",
+        "description": "Patient's gender",
+        "example": "Female"
+      },
+      {
+        "name": "chief_complaint",
+        "placeholder": "[CHIEF_COMPLAINT]",
+        "description": "Primary reason for visit",
+        "example": "Chest pain for 2 hours"
+      },
+      {
+        "name": "hpi",
+        "placeholder": "[HPI]",
+        "description": "History of present illness",
+        "example": "Sharp, substernal chest pain that started suddenly while at rest"
+      },
+      {
+        "name": "pmh",
+        "placeholder": "[PMH]",
+        "description": "Past medical history",
+        "example": "Hypertension, diabetes mellitus type 2"
+      },
+      {
+        "name": "medications",
+        "placeholder": "[MEDICATIONS]",
+        "description": "Current medications",
+        "example": "Metformin 1000mg BID, Lisinopril 10mg daily"
+      },
+      {
+        "name": "allergies",
+        "placeholder": "[ALLERGIES]",
+        "description": "Known allergies",
+        "example": "Penicillin (rash)"
+      },
+      {
+        "name": "social_history",
+        "placeholder": "[SOCIAL_HISTORY]",
+        "description": "Social history",
+        "example": "Non-smoker, occasional alcohol use"
+      },
+      {
+        "name": "physical_exam",
+        "placeholder": "[PHYSICAL_EXAM]",
+        "description": "Physical examination findings",
+        "example": "Alert, appears uncomfortable, heart rate regular, no murmurs"
+      },
+      {
+        "name": "vital_signs",
+        "placeholder": "[VITAL_SIGNS]",
+        "description": "Current vital signs",
+        "example": "BP 160/95, HR 88, RR 18, Temp 98.6°F, O2 sat 98%"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude"],
+    "difficulty": "Advanced",
+    "useCase": "Systematic approach to complex medical diagnosis for healthcare professionals",
+    "votes": {
+      "upvotes": 189,
+      "downvotes": 8,
+      "score": 181
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 76
+    },
+    "usage": {
+      "count": 1245,
+      "lastUsed": "2024-01-15T16:45:00Z"
+    },
+    "createdAt": "2024-01-01T11:30:00Z",
+    "isPublic": true,
+    "isFeatured": true,
+    "author": {
+      "name": "Medical Education Team",
+      "company": "AI Prompt Library Pro"
+    }
+  },
+  {
+    "id": "legal-001",
+    "title": "Contract Risk Analysis Framework",
+    "description": "Comprehensive legal contract analysis identifying risks, obligations, and negotiation points",
+    "content": "Act as a senior corporate lawyer. Perform a comprehensive risk analysis of the following contract:\n\nContract Type: [CONTRACT_TYPE]\nParties: [PARTY_1] and [PARTY_2]\nContract Value: [CONTRACT_VALUE]\nDuration: [CONTRACT_DURATION]\nJurisdiction: [JURISDICTION]\n\nContract Excerpt/Key Terms: [CONTRACT_CONTENT]\n\nProvide a detailed analysis covering:\n\n1. **Executive Summary**:\n   - Overall risk level (Low/Medium/High)\n   - Key recommendations\n   - Critical action items\n\n2. **Risk Assessment**:\n   - **High Risk Issues**: Immediate attention required\n   - **Medium Risk Issues**: Important considerations\n   - **Low Risk Issues**: Monitor but manageable\n\n3. **Key Legal Obligations**:\n   - [PARTY_1] obligations and deadlines\n   - [PARTY_2] obligations and deadlines\n   - Performance standards and metrics\n   - Compliance requirements\n\n4. **Financial Risk Analysis**:\n   - Payment terms and conditions\n   - Penalty and liquidated damages clauses\n   - Limitation of liability provisions\n   - Indemnification requirements\n\n5. **Operational Risk Factors**:\n   - Force majeure provisions\n   - Termination rights and conditions\n   - Change management procedures\n   - Dispute resolution mechanisms\n\n6. **Negotiation Recommendations**:\n   - Must-have changes (deal breakers)\n   - Preferred modifications\n   - Alternative language suggestions\n   - Compromise positions\n\n7. **Compliance & Monitoring**:\n   - Key performance indicators to track\n   - Review and audit requirements\n   - Reporting obligations\n   - Renewal considerations\n\n8. **Next Steps**:\n   - Immediate actions required\n   - Timeline for contract execution\n   - Stakeholder approvals needed\n\nEnsure analysis complies with [JURISDICTION] law and industry standards.",
+    "category": "legal",
+    "subcategory": "contract-analysis",
+    "industry": ["Legal", "Corporate Law", "Business", "Compliance"],
+    "tags": ["contract analysis", "legal risk", "contract negotiation", "legal review", "risk assessment"],
+    "variables": [
+      {
+        "name": "contract_type",
+        "placeholder": "[CONTRACT_TYPE]",
+        "description": "Type of contract being analyzed",
+        "example": "Software License Agreement"
+      },
+      {
+        "name": "party_1",
+        "placeholder": "[PARTY_1]",
+        "description": "First contracting party",
+        "example": "TechCorp Inc."
+      },
+      {
+        "name": "party_2",
+        "placeholder": "[PARTY_2]",
+        "description": "Second contracting party",
+        "example": "Software Solutions LLC"
+      },
+      {
+        "name": "contract_value",
+        "placeholder": "[CONTRACT_VALUE]",
+        "description": "Total contract value",
+        "example": "$2.5 million over 3 years"
+      },
+      {
+        "name": "contract_duration",
+        "placeholder": "[CONTRACT_DURATION]",
+        "description": "Contract term/duration",
+        "example": "3 years with 2-year renewal option"
+      },
+      {
+        "name": "jurisdiction",
+        "placeholder": "[JURISDICTION]",
+        "description": "Governing law jurisdiction",
+        "example": "Delaware, USA"
+      },
+      {
+        "name": "contract_content",
+        "placeholder": "[CONTRACT_CONTENT]",
+        "description": "Key contract terms or full text",
+        "example": "Licensing provisions, support terms, data security requirements..."
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude"],
+    "difficulty": "Advanced",
+    "useCase": "Professional legal contract analysis and risk assessment for corporate lawyers",
+    "votes": {
+      "upvotes": 167,
+      "downvotes": 9,
+      "score": 158
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 54
+    },
+    "usage": {
+      "count": 987,
+      "lastUsed": "2024-01-15T13:20:00Z"
+    },
+    "createdAt": "2024-01-01T12:15:00Z",
+    "isPublic": true,
+    "isFeatured": true,
+    "author": {
+      "name": "Legal Practice Team",
+      "company": "AI Prompt Library Pro"
+    }
+  },
+  {
+    "id": "finance-001",
+    "title": "Investment Due Diligence Report",
+    "description": "Comprehensive financial due diligence analysis for investment decisions with risk assessment",
+    "content": "Act as a senior investment analyst. Conduct comprehensive due diligence on the following investment opportunity:\n\n**Investment Overview:**\n- Company: [COMPANY_NAME]\n- Industry: [INDUSTRY]\n- Investment Type: [INVESTMENT_TYPE]\n- Investment Amount: [INVESTMENT_AMOUNT]\n- Proposed Valuation: [VALUATION]\n- Investment Stage: [STAGE]\n\n**Financial Information:**\n- Current Revenue: [CURRENT_REVENUE]\n- Revenue Growth Rate: [GROWTH_RATE]\n- EBITDA: [EBITDA]\n- Current Funding: [CURRENT_FUNDING]\n- Burn Rate: [BURN_RATE]\n- Runway: [RUNWAY]\n\nProvide detailed analysis in the following areas:\n\n1. **Executive Summary**:\n   - Investment recommendation (Strong Buy/Buy/Hold/Avoid)\n   - Key value drivers\n   - Major risk factors\n   - Expected ROI timeline\n\n2. **Financial Analysis**:\n   - Revenue model assessment\n   - Profitability analysis\n   - Cash flow projections (3-5 years)\n   - Working capital requirements\n   - Capital expenditure needs\n   - Financial ratios and benchmarking\n\n3. **Market & Industry Analysis**:\n   - Total Addressable Market (TAM)\n   - Market growth trends\n   - Competitive positioning\n   - Market share potential\n   - Industry dynamics and disruption risks\n\n4. **Business Model Evaluation**:\n   - Revenue stream sustainability\n   - Customer acquisition cost (CAC)\n   - Customer lifetime value (CLV)\n   - Unit economics\n   - Scalability assessment\n\n5. **Management & Team**:\n   - Leadership team experience\n   - Track record and execution capability\n   - Organizational structure\n   - Key person risks\n\n6. **Risk Assessment**:\n   - **High Priority Risks**: Immediate concerns\n   - **Medium Priority Risks**: Areas to monitor\n   - **Low Priority Risks**: Manageable concerns\n   - Risk mitigation strategies\n\n7. **Valuation Analysis**:\n   - Multiple valuation methodologies\n   - Comparable company analysis\n   - Discounted cash flow (DCF) model\n   - Scenario analysis (bull/base/bear case)\n\n8. **Investment Terms Review**:\n   - Proposed terms assessment\n   - Governance and control provisions\n   - Exit strategy considerations\n   - Liquidity preferences\n\n9. **Recommendations**:\n   - Go/No-go decision with rationale\n   - Suggested terms modifications\n   - Due diligence items to investigate further\n   - Timeline for investment decision\n\nInclude relevant financial models and comparable analysis where applicable.",
+    "category": "finance",
+    "subcategory": "investment-strategy",
+    "industry": ["Finance", "Investment", "Private Equity", "Venture Capital"],
+    "tags": ["due diligence", "investment analysis", "financial modeling", "risk assessment", "valuation"],
+    "variables": [
+      {
+        "name": "company_name",
+        "placeholder": "[COMPANY_NAME]",
+        "description": "Target company name",
+        "example": "GreenTech Innovations"
+      },
+      {
+        "name": "industry",
+        "placeholder": "[INDUSTRY]",
+        "description": "Company industry sector",
+        "example": "Renewable Energy Technology"
+      },
+      {
+        "name": "investment_type",
+        "placeholder": "[INVESTMENT_TYPE]",
+        "description": "Type of investment",
+        "example": "Series B Preferred Stock"
+      },
+      {
+        "name": "investment_amount",
+        "placeholder": "[INVESTMENT_AMOUNT]",
+        "description": "Proposed investment amount",
+        "example": "$15 million"
+      },
+      {
+        "name": "valuation",
+        "placeholder": "[VALUATION]",
+        "description": "Company valuation",
+        "example": "$150 million pre-money"
+      },
+      {
+        "name": "stage",
+        "placeholder": "[STAGE]",
+        "description": "Company stage",
+        "example": "Growth stage, scaling revenue"
+      },
+      {
+        "name": "current_revenue",
+        "placeholder": "[CURRENT_REVENUE]",
+        "description": "Current annual revenue",
+        "example": "$25 million ARR"
+      },
+      {
+        "name": "growth_rate",
+        "placeholder": "[GROWTH_RATE]",
+        "description": "Revenue growth rate",
+        "example": "150% YoY growth"
+      },
+      {
+        "name": "ebitda",
+        "placeholder": "[EBITDA]",
+        "description": "Current EBITDA",
+        "example": "-$5 million (investing in growth)"
+      },
+      {
+        "name": "current_funding",
+        "placeholder": "[CURRENT_FUNDING]",
+        "description": "Current funding raised",
+        "example": "$35 million total raised"
+      },
+      {
+        "name": "burn_rate",
+        "placeholder": "[BURN_RATE]",
+        "description": "Monthly cash burn",
+        "example": "$2 million per month"
+      },
+      {
+        "name": "runway",
+        "placeholder": "[RUNWAY]",
+        "description": "Cash runway remaining",
+        "example": "18 months"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude"],
+    "difficulty": "Advanced",
+    "useCase": "Comprehensive investment due diligence for private equity and venture capital professionals",
+    "votes": {
+      "upvotes": 198,
+      "downvotes": 7,
+      "score": 191
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 69
+    },
+    "usage": {
+      "count": 1356,
+      "lastUsed": "2024-01-15T15:10:00Z"
+    },
+    "createdAt": "2024-01-01T13:45:00Z",
+    "isPublic": true,
+    "isFeatured": true,
+    "author": {
+      "name": "Investment Analysis Team",
+      "company": "AI Prompt Library Pro"
+    }
+  }
+]
