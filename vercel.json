@@ -1,27 +1,15 @@
 {
   "version": 2,
-  "name": "awesome-prompts",
   "builds": [
     {
       "src": "web-app/**",
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/web-app/src/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/web-app/src/index.html"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/web-app/src/index.html"
+      "source": "/(.*)",
+      "destination": "/web-app/src/$1"
     }
   ],
   "headers": [
@@ -43,7 +31,7 @@
       ]
     },
     {
-      "source": "/web-app/src/data/(.*).json",
+      "source": "/data/(.*).json",
       "headers": [
         {
           "key": "Cache-Control",
@@ -52,7 +40,7 @@
       ]
     },
     {
-      "source": "/web-app/src/utils/(.*).js",
+      "source": "/utils/(.*).js",
       "headers": [
         {
           "key": "Cache-Control",
