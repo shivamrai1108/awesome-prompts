@@ -1,0 +1,19 @@
+title: "Awesome Prompts - AI Prompt Library"
+description: "A comprehensive collection of professional AI prompts for various industries and use cases"
+baseurl: "/awesome-prompts"
+url: "https://shivamrai1108.github.io"
+
+# GitHub Pages settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - vercel.json
+  - web-app/
+  - node_modules/
+  - .git/
