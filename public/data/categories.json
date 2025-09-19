@@ -397,39 +397,5 @@
         "description": "Supporting medical research activities"
       }
     ]
-  },
-  {
-    "id": "legal",
-    "name": "Legal",
-    "description": "Contract analysis, research assistance, and legal documentation",
-    "icon": "⚖️",
-    "color": "#3F51B5",
-    "subcategories": [
-      {
-        "id": "contract-analysis",
-        "name": "Contract Analysis",
-        "description": "Reviewing and analyzing legal contracts"
-      },
-      {
-        "id": "legal-research",
-        "name": "Legal Research",
-        "description": "Researching case law and legal precedents"
-      },
-      {
-        "id": "document-drafting",
-        "name": "Document Drafting",
-        "description": "Creating legal documents and agreements"
-      },
-      {
-        "id": "client-communication",
-        "name": "Client Communication",
-        "description": "Communicating legal matters to clients"
-      },
-      {
-        "id": "compliance-review",
-        "name": "Compliance Review",
-        "description": "Ensuring regulatory compliance"
-      }
-    ]
   }
 ]

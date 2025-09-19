@@ -2,352 +2,2185 @@
   {
     "id": "exec-001",
     "title": "Strategic Business Plan Generator",
-    "description": "Create comprehensive 3-5 year strategic business plans with market analysis, competitive positioning, and financial projections",
-    "content": "Act as a senior strategy consultant. Create a comprehensive strategic business plan for [COMPANY_NAME] in the [INDUSTRY] sector. Include:\n\n1. Executive Summary\n2. Market Analysis:\n   - Market size: [MARKET_SIZE]\n   - Growth trends and drivers\n   - Target customer segments\n   - Competitive landscape analysis\n\n3. Strategic Objectives (3-5 year horizon):\n   - Revenue targets: [REVENUE_TARGET]\n   - Market share goals\n   - Expansion plans: [EXPANSION_AREAS]\n\n4. Competitive Positioning:\n   - Unique value proposition\n   - Competitive advantages\n   - SWOT analysis\n\n5. Operational Strategy:\n   - Key capabilities to build\n   - Resource requirements\n   - Technology investments\n\n6. Financial Projections:\n   - Revenue forecasts\n   - Investment requirements: [INVESTMENT_BUDGET]\n   - ROI expectations\n\n7. Risk Assessment:\n   - Market risks\n   - Operational risks\n   - Mitigation strategies\n\n8. Implementation Roadmap:\n   - Key milestones\n   - Resource allocation\n   - Success metrics\n\nEnsure the plan is data-driven, actionable, and aligned with current market conditions.",
+    "description": "Create comprehensive 3-5 year strategic business plans with market analysis and financial projections",
+    "content": "Act as a senior strategy consultant. Create a strategic business plan for [COMPANY_NAME] in [INDUSTRY]. Include executive summary, market analysis (size: [MARKET_SIZE], growth trends, competitive landscape), strategic objectives for 3-5 years (revenue target: [REVENUE_TARGET]), competitive positioning with SWOT analysis, operational strategy, financial projections with ROI expectations, risk assessment with mitigation strategies, and implementation roadmap with key milestones. Make it data-driven and actionable.",
     "category": "executive",
-    "subcategory": "strategic-planning",
-    "industry": ["Executive", "Strategy", "Business Development"],
-    "tags": ["strategic planning", "business plan", "market analysis", "competitive strategy", "financial planning"],
-    "variables": [
-      {
-        "name": "company_name",
-        "placeholder": "[COMPANY_NAME]",
-        "description": "Name of the company",
-        "example": "TechCorp Solutions"
-      },
-      {
-        "name": "industry",
-        "placeholder": "[INDUSTRY]",
-        "description": "Industry sector",
-        "example": "Enterprise Software"
-      },
-      {
-        "name": "market_size",
-        "placeholder": "[MARKET_SIZE]",
-        "description": "Total addressable market size",
-        "example": "$50 billion globally"
-      },
-      {
-        "name": "revenue_target",
-        "placeholder": "[REVENUE_TARGET]",
-        "description": "3-5 year revenue goal",
-        "example": "$100M ARR"
-      },
-      {
-        "name": "expansion_areas",
-        "placeholder": "[EXPANSION_AREAS]",
-        "description": "Markets or regions for expansion",
-        "example": "European and Asian markets"
-      },
-      {
-        "name": "investment_budget",
-        "placeholder": "[INVESTMENT_BUDGET]",
-        "description": "Available investment capital",
-        "example": "$25 million"
-      }
+    "industry": [
+      "Executive",
+      "Strategy",
+      "Business"
     ],
-    "aiTools": ["ChatGPT", "Claude", "Gemini"],
+    "tags": [
+      "strategic planning",
+      "business plan",
+      "market analysis"
+    ],
     "difficulty": "Advanced",
-    "useCase": "Creating comprehensive strategic business plans for executive decision-making",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
     "votes": {
       "upvotes": 245,
       "downvotes": 12,
       "score": 233
     },
-    "rating": {
-      "average": 4.8,
-      "count": 87
-    },
-    "usage": {
-      "count": 1834,
-      "lastUsed": "2024-01-15T14:30:00Z"
-    },
-    "createdAt": "2024-01-01T10:00:00Z",
-    "updatedAt": "2024-01-10T15:20:00Z",
-    "isPublic": true,
-    "isFeatured": true,
-    "author": {
-      "name": "Executive Strategy Team",
-      "company": "AI Prompt Library Pro"
-    }
+    "createdAt": "2024-01-01T10:00:00Z"
   },
   {
-    "id": "med-001",
-    "title": "Clinical Differential Diagnosis Assistant",
-    "description": "Systematic approach to differential diagnosis with evidence-based reasoning for complex medical cases",
-    "content": "Act as an experienced clinician. Provide a systematic differential diagnosis for the following patient presentation:\n\nPatient Information:\n- Age: [PATIENT_AGE]\n- Gender: [PATIENT_GENDER]\n- Chief Complaint: [CHIEF_COMPLAINT]\n- History of Present Illness: [HPI]\n- Past Medical History: [PMH]\n- Medications: [MEDICATIONS]\n- Allergies: [ALLERGIES]\n- Social History: [SOCIAL_HISTORY]\n- Physical Examination Findings: [PHYSICAL_EXAM]\n- Vital Signs: [VITAL_SIGNS]\n\nProvide:\n1. **Primary Differential Diagnosis** (Top 5 most likely conditions):\n   - List in order of likelihood\n   - Include brief rationale for each\n   - Note supporting and contradicting evidence\n\n2. **Secondary Considerations** (3-5 less likely but important conditions):\n   - Conditions that shouldn't be missed\n   - Rare but serious diagnoses\n\n3. **Recommended Diagnostic Workup**:\n   - Laboratory tests with rationale\n   - Imaging studies if indicated\n   - Specialist consultations\n   - Timeline for evaluation\n\n4. **Red Flags to Monitor**:\n   - Warning signs requiring immediate attention\n   - When to escalate care\n\n5. **Initial Management Considerations**:\n   - Symptomatic treatment options\n   - Safety precautions\n   - Patient education points\n\nNote: This is for educational/reference purposes only. Always verify with current medical literature and follow institutional protocols.",
-    "category": "medical",
-    "subcategory": "clinical-diagnosis",
-    "industry": ["Healthcare", "Medicine", "Clinical Practice"],
-    "tags": ["differential diagnosis", "clinical reasoning", "patient care", "medical diagnosis", "clinical decision making"],
-    "variables": [
-      {
-        "name": "patient_age",
-        "placeholder": "[PATIENT_AGE]",
-        "description": "Patient's age",
-        "example": "45 years old"
-      },
-      {
-        "name": "patient_gender",
-        "placeholder": "[PATIENT_GENDER]",
-        "description": "Patient's gender",
-        "example": "Female"
-      },
-      {
-        "name": "chief_complaint",
-        "placeholder": "[CHIEF_COMPLAINT]",
-        "description": "Primary reason for visit",
-        "example": "Chest pain for 2 hours"
-      },
-      {
-        "name": "hpi",
-        "placeholder": "[HPI]",
-        "description": "History of present illness",
-        "example": "Sharp, substernal chest pain that started suddenly while at rest"
-      },
-      {
-        "name": "pmh",
-        "placeholder": "[PMH]",
-        "description": "Past medical history",
-        "example": "Hypertension, diabetes mellitus type 2"
-      },
-      {
-        "name": "medications",
-        "placeholder": "[MEDICATIONS]",
-        "description": "Current medications",
-        "example": "Metformin 1000mg BID, Lisinopril 10mg daily"
-      },
-      {
-        "name": "allergies",
-        "placeholder": "[ALLERGIES]",
-        "description": "Known allergies",
-        "example": "Penicillin (rash)"
-      },
-      {
-        "name": "social_history",
-        "placeholder": "[SOCIAL_HISTORY]",
-        "description": "Social history",
-        "example": "Non-smoker, occasional alcohol use"
-      },
-      {
-        "name": "physical_exam",
-        "placeholder": "[PHYSICAL_EXAM]",
-        "description": "Physical examination findings",
-        "example": "Alert, appears uncomfortable, heart rate regular, no murmurs"
-      },
-      {
-        "name": "vital_signs",
-        "placeholder": "[VITAL_SIGNS]",
-        "description": "Current vital signs",
-        "example": "BP 160/95, HR 88, RR 18, Temp 98.6°F, O2 sat 98%"
-      }
+    "id": "exec-002",
+    "title": "Crisis Communication Plan",
+    "description": "Develop crisis communication strategy for executive teams during emergencies",
+    "content": "You are a crisis communication expert. Develop a comprehensive crisis communication plan for [COMPANY_NAME] facing [CRISIS_TYPE]. Create: 1) Immediate response strategy (first 24 hours), 2) Stakeholder communication matrix (employees, customers, media, investors), 3) Key messaging framework addressing concerns, 4) Media response protocols, 5) Internal communication channels, 6) Social media management approach, 7) Recovery and reputation rebuilding strategy, 8) Lessons learned documentation process. Include specific templates for press releases, employee communications, and social media posts.",
+    "category": "executive",
+    "industry": [
+      "Executive",
+      "Public Relations",
+      "Communications"
     ],
-    "aiTools": ["ChatGPT", "Claude"],
+    "tags": [
+      "crisis management",
+      "communication",
+      "public relations"
+    ],
     "difficulty": "Advanced",
-    "useCase": "Systematic approach to complex medical diagnosis for healthcare professionals",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
     "votes": {
       "upvotes": 189,
       "downvotes": 8,
       "score": 181
     },
-    "rating": {
-      "average": 4.9,
-      "count": 76
+    "createdAt": "2024-01-01T11:00:00Z"
+  },
+  {
+    "id": "exec-003",
+    "title": "Board Meeting Presentation Builder",
+    "description": "Create executive-level board presentations with key metrics and strategic insights",
+    "content": "Act as a senior executive preparing for a board meeting. Create a comprehensive board presentation for [QUARTER/PERIOD] covering: 1) Executive Summary with key achievements and challenges, 2) Financial Performance (revenue: [REVENUE], profit margins, cash flow), 3) Strategic Initiative Updates on [KEY_PROJECTS], 4) Market Position and Competitive Analysis, 5) Risk Management and Mitigation Strategies, 6) Future Outlook and Opportunities, 7) Resource Requirements and Investment Needs, 8) Stakeholder Impact Assessment. Format for maximum impact with clear visuals, concise messaging, and actionable recommendations for board decision-making.",
+    "category": "executive",
+    "industry": [
+      "Executive",
+      "Finance",
+      "Strategy"
+    ],
+    "tags": [
+      "board presentation",
+      "executive reporting",
+      "strategic communication"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 167,
+      "downvotes": 5,
+      "score": 162
     },
-    "usage": {
-      "count": 1245,
-      "lastUsed": "2024-01-15T16:45:00Z"
+    "createdAt": "2024-01-01T12:00:00Z"
+  },
+  {
+    "id": "med-001",
+    "title": "Clinical Differential Diagnosis Assistant",
+    "description": "Systematic approach to differential diagnosis with evidence-based reasoning",
+    "content": "Act as an experienced clinician. Provide systematic differential diagnosis for patient: Age [AGE], Gender [GENDER], Chief Complaint: [CHIEF_COMPLAINT], HPI: [HPI], PMH: [PMH], Medications: [MEDICATIONS], Physical Exam: [PHYSICAL_EXAM], Vitals: [VITALS]. Provide: 1) Primary differential (top 5 likely conditions with rationale), 2) Secondary considerations (less likely but important), 3) Recommended diagnostic workup (labs, imaging, consultations), 4) Red flags requiring immediate attention, 5) Initial management considerations. Include evidence-based reasoning and follow current medical guidelines. Note: For educational purposes only.",
+    "category": "medical",
+    "industry": [
+      "Healthcare",
+      "Medicine"
+    ],
+    "tags": [
+      "differential diagnosis",
+      "clinical reasoning",
+      "patient care"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 298,
+      "downvotes": 7,
+      "score": 291
     },
-    "createdAt": "2024-01-01T11:30:00Z",
-    "isPublic": true,
-    "isFeatured": true,
-    "author": {
-      "name": "Medical Education Team",
-      "company": "AI Prompt Library Pro"
-    }
+    "createdAt": "2024-01-01T13:00:00Z"
+  },
+  {
+    "id": "med-002",
+    "title": "Medical Case Presentation Generator",
+    "description": "Structure professional medical case presentations for rounds and conferences",
+    "content": "Create a comprehensive medical case presentation for [PATIENT_TYPE] with [CONDITION]. Structure as: 1) **Chief Complaint & HPI**: Clear chronological history, 2) **Review of Systems**: Pertinent positives and negatives, 3) **Past Medical/Surgical History**: Relevant background, 4) **Physical Examination**: Organized by systems with key findings, 5) **Assessment & Plan**: Problem-based approach with differential diagnosis, diagnostic reasoning, and treatment plan, 6) **Discussion Points**: Teaching points, literature review, and clinical pearls, 7) **Follow-up Plan**: Monitoring and reassessment strategy. Format for medical education and professional rounds presentation.",
+    "category": "medical",
+    "industry": [
+      "Healthcare",
+      "Medical Education"
+    ],
+    "tags": [
+      "case presentation",
+      "medical education",
+      "clinical rounds"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 12,
+      "score": 222
+    },
+    "createdAt": "2024-01-01T14:00:00Z"
+  },
+  {
+    "id": "med-003",
+    "title": "Treatment Protocol Developer",
+    "description": "Create evidence-based treatment protocols for medical conditions",
+    "content": "Develop an evidence-based treatment protocol for [CONDITION] in [PATIENT_POPULATION]. Include: 1) **Clinical Guidelines**: Latest evidence-based recommendations, 2) **Diagnostic Criteria**: Clear inclusion/exclusion criteria, 3) **Treatment Algorithm**: Step-by-step decision tree, 4) **Medication Protocols**: Dosing, monitoring, side effects, 5) **Non-pharmacological Interventions**: Therapy, lifestyle modifications, 6) **Monitoring Parameters**: Laboratory values, clinical assessments, 7) **Complications Management**: Recognition and treatment, 8) **Patient Education**: Key counseling points, 9) **Follow-up Schedule**: Timing and assessments, 10) **Quality Metrics**: Outcome measures and benchmarks. Base on current medical literature and professional guidelines.",
+    "category": "medical",
+    "industry": [
+      "Healthcare",
+      "Clinical Practice"
+    ],
+    "tags": [
+      "treatment protocol",
+      "evidence-based medicine",
+      "clinical guidelines"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 187,
+      "downvotes": 9,
+      "score": 178
+    },
+    "createdAt": "2024-01-01T15:00:00Z"
   },
   {
     "id": "legal-001",
     "title": "Contract Risk Analysis Framework",
-    "description": "Comprehensive legal contract analysis identifying risks, obligations, and negotiation points",
-    "content": "Act as a senior corporate lawyer. Perform a comprehensive risk analysis of the following contract:\n\nContract Type: [CONTRACT_TYPE]\nParties: [PARTY_1] and [PARTY_2]\nContract Value: [CONTRACT_VALUE]\nDuration: [CONTRACT_DURATION]\nJurisdiction: [JURISDICTION]\n\nContract Excerpt/Key Terms: [CONTRACT_CONTENT]\n\nProvide a detailed analysis covering:\n\n1. **Executive Summary**:\n   - Overall risk level (Low/Medium/High)\n   - Key recommendations\n   - Critical action items\n\n2. **Risk Assessment**:\n   - **High Risk Issues**: Immediate attention required\n   - **Medium Risk Issues**: Important considerations\n   - **Low Risk Issues**: Monitor but manageable\n\n3. **Key Legal Obligations**:\n   - [PARTY_1] obligations and deadlines\n   - [PARTY_2] obligations and deadlines\n   - Performance standards and metrics\n   - Compliance requirements\n\n4. **Financial Risk Analysis**:\n   - Payment terms and conditions\n   - Penalty and liquidated damages clauses\n   - Limitation of liability provisions\n   - Indemnification requirements\n\n5. **Operational Risk Factors**:\n   - Force majeure provisions\n   - Termination rights and conditions\n   - Change management procedures\n   - Dispute resolution mechanisms\n\n6. **Negotiation Recommendations**:\n   - Must-have changes (deal breakers)\n   - Preferred modifications\n   - Alternative language suggestions\n   - Compromise positions\n\n7. **Compliance & Monitoring**:\n   - Key performance indicators to track\n   - Review and audit requirements\n   - Reporting obligations\n   - Renewal considerations\n\n8. **Next Steps**:\n   - Immediate actions required\n   - Timeline for contract execution\n   - Stakeholder approvals needed\n\nEnsure analysis complies with [JURISDICTION] law and industry standards.",
+    "description": "Comprehensive legal contract analysis identifying risks and negotiation points",
+    "content": "Perform comprehensive contract risk analysis for [CONTRACT_TYPE] between [PARTY_1] and [PARTY_2], value [CONTRACT_VALUE], jurisdiction [JURISDICTION]. Analyze: 1) **Executive Summary**: Overall risk level and key recommendations, 2) **Risk Assessment**: High/medium/low risk issues with specific concerns, 3) **Legal Obligations**: Each party's duties, deadlines, and performance standards, 4) **Financial Risk**: Payment terms, penalties, liability limitations, indemnification, 5) **Operational Risk**: Force majeure, termination rights, change management, dispute resolution, 6) **Negotiation Points**: Must-have changes, preferred modifications, alternative language, 7) **Compliance Monitoring**: KPIs, audit requirements, reporting obligations, 8) **Next Steps**: Immediate actions and approval timeline.",
     "category": "legal",
-    "subcategory": "contract-analysis",
-    "industry": ["Legal", "Corporate Law", "Business", "Compliance"],
-    "tags": ["contract analysis", "legal risk", "contract negotiation", "legal review", "risk assessment"],
-    "variables": [
-      {
-        "name": "contract_type",
-        "placeholder": "[CONTRACT_TYPE]",
-        "description": "Type of contract being analyzed",
-        "example": "Software License Agreement"
-      },
-      {
-        "name": "party_1",
-        "placeholder": "[PARTY_1]",
-        "description": "First contracting party",
-        "example": "TechCorp Inc."
-      },
-      {
-        "name": "party_2",
-        "placeholder": "[PARTY_2]",
-        "description": "Second contracting party",
-        "example": "Software Solutions LLC"
-      },
-      {
-        "name": "contract_value",
-        "placeholder": "[CONTRACT_VALUE]",
-        "description": "Total contract value",
-        "example": "$2.5 million over 3 years"
-      },
-      {
-        "name": "contract_duration",
-        "placeholder": "[CONTRACT_DURATION]",
-        "description": "Contract term/duration",
-        "example": "3 years with 2-year renewal option"
-      },
-      {
-        "name": "jurisdiction",
-        "placeholder": "[JURISDICTION]",
-        "description": "Governing law jurisdiction",
-        "example": "Delaware, USA"
-      },
-      {
-        "name": "contract_content",
-        "placeholder": "[CONTRACT_CONTENT]",
-        "description": "Key contract terms or full text",
-        "example": "Licensing provisions, support terms, data security requirements..."
-      }
+    "industry": [
+      "Legal",
+      "Corporate Law",
+      "Business"
     ],
-    "aiTools": ["ChatGPT", "Claude"],
+    "tags": [
+      "contract analysis",
+      "legal risk",
+      "contract negotiation"
+    ],
     "difficulty": "Advanced",
-    "useCase": "Professional legal contract analysis and risk assessment for corporate lawyers",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
     "votes": {
-      "upvotes": 167,
-      "downvotes": 9,
-      "score": 158
+      "upvotes": 276,
+      "downvotes": 14,
+      "score": 262
     },
-    "rating": {
-      "average": 4.7,
-      "count": 54
+    "createdAt": "2024-01-01T16:00:00Z"
+  },
+  {
+    "id": "legal-002",
+    "title": "Legal Research Assistant",
+    "description": "Comprehensive legal research and case law analysis",
+    "content": "Conduct comprehensive legal research on [LEGAL_ISSUE] in [JURISDICTION]. Research should include: 1) **Statutory Analysis**: Relevant statutes, regulations, and ordinances with current amendments, 2) **Case Law Review**: Key precedential cases, holdings, and legal reasoning, 3) **Legal Standards**: Applicable tests, standards of review, and burden of proof, 4) **Recent Developments**: Current trends, pending legislation, regulatory changes, 5) **Jurisdictional Comparison**: How other jurisdictions handle similar issues, 6) **Practice Considerations**: Practical implications, common pitfalls, strategic considerations, 7) **Citation Format**: Proper legal citation for all sources, 8) **Risk Assessment**: Likelihood of success, potential obstacles, alternative approaches. Organize findings in memorandum format with clear legal analysis and practical recommendations.",
+    "category": "legal",
+    "industry": [
+      "Legal",
+      "Law Firms",
+      "Corporate Legal"
+    ],
+    "tags": [
+      "legal research",
+      "case law",
+      "statutory analysis"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 245,
+      "downvotes": 11,
+      "score": 234
     },
-    "usage": {
-      "count": 987,
-      "lastUsed": "2024-01-15T13:20:00Z"
+    "createdAt": "2024-01-01T17:00:00Z"
+  },
+  {
+    "id": "legal-003",
+    "title": "Compliance Framework Builder",
+    "description": "Develop comprehensive regulatory compliance programs",
+    "content": "Create a comprehensive compliance framework for [INDUSTRY] organization dealing with [REGULATORY_AREA]. Framework should include: 1) **Regulatory Mapping**: All applicable laws, regulations, and standards, 2) **Risk Assessment Matrix**: High/medium/low risk areas with impact analysis, 3) **Policy Development**: Written policies and procedures for each compliance area, 4) **Training Program**: Employee education, certification requirements, ongoing training, 5) **Monitoring & Auditing**: Internal controls, audit procedures, reporting mechanisms, 6) **Incident Response**: Violation handling, reporting requirements, corrective actions, 7) **Documentation Requirements**: Record keeping, retention policies, audit trails, 8) **Performance Metrics**: KPIs, compliance dashboards, regular reporting, 9) **Vendor Management**: Third-party compliance requirements, 10) **Continuous Improvement**: Regular updates, regulatory change management.",
+    "category": "legal",
+    "industry": [
+      "Legal",
+      "Compliance",
+      "Risk Management"
+    ],
+    "tags": [
+      "regulatory compliance",
+      "risk management",
+      "corporate governance"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 198,
+      "downvotes": 8,
+      "score": 190
     },
-    "createdAt": "2024-01-01T12:15:00Z",
-    "isPublic": true,
-    "isFeatured": true,
-    "author": {
-      "name": "Legal Practice Team",
-      "company": "AI Prompt Library Pro"
-    }
+    "createdAt": "2024-01-01T18:00:00Z"
   },
   {
     "id": "finance-001",
-    "title": "Investment Due Diligence Report",
-    "description": "Comprehensive financial due diligence analysis for investment decisions with risk assessment",
-    "content": "Act as a senior investment analyst. Conduct comprehensive due diligence on the following investment opportunity:\n\n**Investment Overview:**\n- Company: [COMPANY_NAME]\n- Industry: [INDUSTRY]\n- Investment Type: [INVESTMENT_TYPE]\n- Investment Amount: [INVESTMENT_AMOUNT]\n- Proposed Valuation: [VALUATION]\n- Investment Stage: [STAGE]\n\n**Financial Information:**\n- Current Revenue: [CURRENT_REVENUE]\n- Revenue Growth Rate: [GROWTH_RATE]\n- EBITDA: [EBITDA]\n- Current Funding: [CURRENT_FUNDING]\n- Burn Rate: [BURN_RATE]\n- Runway: [RUNWAY]\n\nProvide detailed analysis in the following areas:\n\n1. **Executive Summary**:\n   - Investment recommendation (Strong Buy/Buy/Hold/Avoid)\n   - Key value drivers\n   - Major risk factors\n   - Expected ROI timeline\n\n2. **Financial Analysis**:\n   - Revenue model assessment\n   - Profitability analysis\n   - Cash flow projections (3-5 years)\n   - Working capital requirements\n   - Capital expenditure needs\n   - Financial ratios and benchmarking\n\n3. **Market & Industry Analysis**:\n   - Total Addressable Market (TAM)\n   - Market growth trends\n   - Competitive positioning\n   - Market share potential\n   - Industry dynamics and disruption risks\n\n4. **Business Model Evaluation**:\n   - Revenue stream sustainability\n   - Customer acquisition cost (CAC)\n   - Customer lifetime value (CLV)\n   - Unit economics\n   - Scalability assessment\n\n5. **Management & Team**:\n   - Leadership team experience\n   - Track record and execution capability\n   - Organizational structure\n   - Key person risks\n\n6. **Risk Assessment**:\n   - **High Priority Risks**: Immediate concerns\n   - **Medium Priority Risks**: Areas to monitor\n   - **Low Priority Risks**: Manageable concerns\n   - Risk mitigation strategies\n\n7. **Valuation Analysis**:\n   - Multiple valuation methodologies\n   - Comparable company analysis\n   - Discounted cash flow (DCF) model\n   - Scenario analysis (bull/base/bear case)\n\n8. **Investment Terms Review**:\n   - Proposed terms assessment\n   - Governance and control provisions\n   - Exit strategy considerations\n   - Liquidity preferences\n\n9. **Recommendations**:\n   - Go/No-go decision with rationale\n   - Suggested terms modifications\n   - Due diligence items to investigate further\n   - Timeline for investment decision\n\nInclude relevant financial models and comparable analysis where applicable.",
+    "title": "Investment Due Diligence Analyzer",
+    "description": "Comprehensive financial due diligence for investment opportunities",
+    "content": "Conduct comprehensive due diligence analysis for investment in [COMPANY_NAME] in [INDUSTRY], investment amount [INVESTMENT_AMOUNT]. Analysis should cover: 1) **Financial Analysis**: Revenue trends, profitability, cash flow analysis, debt structure, working capital management, 2) **Market Analysis**: Market size, growth potential, competitive position, market share trends, 3) **Business Model Evaluation**: Revenue streams, cost structure, scalability, competitive advantages, 4) **Management Assessment**: Team experience, track record, organizational structure, key person risk, 5) **Risk Analysis**: Market risks, operational risks, financial risks, regulatory risks, technology risks, 6) **Valuation Analysis**: Multiple valuation methods, comparable transactions, sensitivity analysis, 7) **Strategic Considerations**: Synergies, integration challenges, exit strategy, 8) **Legal & Compliance**: Corporate structure, litigation, regulatory compliance, IP portfolio, 9) **Recommendation**: Investment thesis, deal terms, monitoring requirements.",
     "category": "finance",
-    "subcategory": "investment-strategy",
-    "industry": ["Finance", "Investment", "Private Equity", "Venture Capital"],
-    "tags": ["due diligence", "investment analysis", "financial modeling", "risk assessment", "valuation"],
-    "variables": [
-      {
-        "name": "company_name",
-        "placeholder": "[COMPANY_NAME]",
-        "description": "Target company name",
-        "example": "GreenTech Innovations"
-      },
-      {
-        "name": "industry",
-        "placeholder": "[INDUSTRY]",
-        "description": "Company industry sector",
-        "example": "Renewable Energy Technology"
-      },
-      {
-        "name": "investment_type",
-        "placeholder": "[INVESTMENT_TYPE]",
-        "description": "Type of investment",
-        "example": "Series B Preferred Stock"
-      },
-      {
-        "name": "investment_amount",
-        "placeholder": "[INVESTMENT_AMOUNT]",
-        "description": "Proposed investment amount",
-        "example": "$15 million"
-      },
-      {
-        "name": "valuation",
-        "placeholder": "[VALUATION]",
-        "description": "Company valuation",
-        "example": "$150 million pre-money"
-      },
-      {
-        "name": "stage",
-        "placeholder": "[STAGE]",
-        "description": "Company stage",
-        "example": "Growth stage, scaling revenue"
-      },
-      {
-        "name": "current_revenue",
-        "placeholder": "[CURRENT_REVENUE]",
-        "description": "Current annual revenue",
-        "example": "$25 million ARR"
-      },
-      {
-        "name": "growth_rate",
-        "placeholder": "[GROWTH_RATE]",
-        "description": "Revenue growth rate",
-        "example": "150% YoY growth"
-      },
-      {
-        "name": "ebitda",
-        "placeholder": "[EBITDA]",
-        "description": "Current EBITDA",
-        "example": "-$5 million (investing in growth)"
-      },
-      {
-        "name": "current_funding",
-        "placeholder": "[CURRENT_FUNDING]",
-        "description": "Current funding raised",
-        "example": "$35 million total raised"
-      },
-      {
-        "name": "burn_rate",
-        "placeholder": "[BURN_RATE]",
-        "description": "Monthly cash burn",
-        "example": "$2 million per month"
-      },
-      {
-        "name": "runway",
-        "placeholder": "[RUNWAY]",
-        "description": "Cash runway remaining",
-        "example": "18 months"
-      }
+    "industry": [
+      "Finance",
+      "Investment",
+      "Private Equity"
     ],
-    "aiTools": ["ChatGPT", "Claude"],
+    "tags": [
+      "due diligence",
+      "investment analysis",
+      "financial modeling"
+    ],
     "difficulty": "Advanced",
-    "useCase": "Comprehensive investment due diligence for private equity and venture capital professionals",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 312,
+      "downvotes": 9,
+      "score": 303
+    },
+    "createdAt": "2024-01-02T09:00:00Z"
+  },
+  {
+    "id": "finance-002",
+    "title": "Financial Model Builder",
+    "description": "Create comprehensive financial models for business planning and analysis",
+    "content": "Build a comprehensive 5-year financial model for [COMPANY_NAME] in [INDUSTRY]. Model should include: 1) **Revenue Model**: Revenue streams, pricing strategy, volume assumptions, seasonal adjustments, growth rates, 2) **Cost Structure**: Fixed costs, variable costs, cost of goods sold, operating expenses with inflation adjustments, 3) **Staffing Model**: Headcount planning, salary assumptions, benefits, equity compensation, 4) **Capital Requirements**: Working capital needs, capital expenditures, financing requirements, 5) **Financial Statements**: P&L, balance sheet, cash flow statement with monthly/quarterly/annual views, 6) **Key Metrics**: Unit economics, LTV/CAC, gross margins, EBITDA, cash burn, runway, 7) **Scenario Analysis**: Base case, optimistic case, pessimistic case with sensitivity analysis, 8) **Funding Requirements**: Cash flow timing, funding rounds, use of funds, dilution analysis, 9) **Valuation Framework**: Multiple valuation approaches, exit scenarios, return calculations.",
+    "category": "finance",
+    "industry": [
+      "Finance",
+      "Corporate Planning",
+      "Startups"
+    ],
+    "tags": [
+      "financial modeling",
+      "financial planning",
+      "valuation"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 289,
+      "downvotes": 13,
+      "score": 276
+    },
+    "createdAt": "2024-01-02T10:00:00Z"
+  },
+  {
+    "id": "finance-003",
+    "title": "Risk Assessment Framework",
+    "description": "Comprehensive financial risk analysis and mitigation strategies",
+    "content": "Develop comprehensive risk assessment for [ORGANIZATION] in [SECTOR]. Framework should address: 1) **Market Risk**: Interest rate risk, currency risk, commodity price risk, market volatility impact, 2) **Credit Risk**: Counterparty risk, concentration risk, default probability analysis, credit loss provisions, 3) **Operational Risk**: Process failures, system risks, human error, fraud risk, business continuity, 4) **Liquidity Risk**: Cash flow analysis, funding sources, stress testing, contingency planning, 5) **Regulatory Risk**: Compliance requirements, regulatory changes, penalty exposure, reporting obligations, 6) **Strategic Risk**: Business model risks, competitive threats, technology disruption, reputation risk, 7) **Risk Quantification**: Value at Risk (VaR), stress testing, scenario analysis, Monte Carlo simulations, 8) **Risk Mitigation**: Control measures, insurance, hedging strategies, diversification, 9) **Risk Monitoring**: KRIs, dashboards, regular reporting, escalation procedures, 10) **Risk Governance**: Risk committee structure, roles and responsibilities, risk culture.",
+    "category": "finance",
+    "industry": [
+      "Finance",
+      "Risk Management",
+      "Banking"
+    ],
+    "tags": [
+      "risk management",
+      "financial risk",
+      "risk assessment"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 12,
+      "score": 222
+    },
+    "createdAt": "2024-01-02T11:00:00Z"
+  },
+  {
+    "id": "eng-001",
+    "title": "Software Architecture Design Assistant",
+    "description": "Design scalable software architecture for complex applications",
+    "content": "Design comprehensive software architecture for [APPLICATION_TYPE] handling [USER_SCALE] users. Architecture should include: 1) **System Overview**: High-level architecture diagram, key components, data flow, 2) **Frontend Architecture**: UI framework choice, state management, component structure, responsive design considerations, 3) **Backend Services**: Microservices design, API architecture, service communication patterns, 4) **Database Design**: Data modeling, database choice (SQL/NoSQL), sharding strategy, caching layers, 5) **Infrastructure**: Cloud platform, containerization, orchestration, CI/CD pipeline, 6) **Security Architecture**: Authentication/authorization, data encryption, network security, vulnerability management, 7) **Performance & Scalability**: Load balancing, auto-scaling, performance monitoring, optimization strategies, 8) **Reliability**: Fault tolerance, disaster recovery, backup strategies, monitoring and alerting, 9) **Technology Stack**: Justified technology choices, integration patterns, third-party services, 10) **Implementation Roadmap**: Development phases, milestones, resource requirements, timeline.",
+    "category": "engineering",
+    "industry": [
+      "Software Engineering",
+      "Technology",
+      "IT"
+    ],
+    "tags": [
+      "software architecture",
+      "system design",
+      "scalability"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 345,
+      "downvotes": 16,
+      "score": 329
+    },
+    "createdAt": "2024-01-02T12:00:00Z"
+  },
+  {
+    "id": "eng-002",
+    "title": "Code Review Assistant",
+    "description": "Comprehensive code review focusing on best practices and optimization",
+    "content": "Perform detailed code review for [PROGRAMMING_LANGUAGE] code implementing [FUNCTIONALITY]. Review should cover: 1) **Code Quality**: Readability, maintainability, documentation, naming conventions, code structure, 2) **Performance Analysis**: Algorithm efficiency, memory usage, database queries, network calls, caching opportunities, 3) **Security Review**: Input validation, SQL injection prevention, XSS protection, authentication/authorization, data sanitization, 4) **Best Practices**: Design patterns, SOLID principles, DRY principle, error handling, logging, 5) **Testing**: Unit test coverage, integration tests, test quality, edge cases, 6) **Architecture Compliance**: Adherence to architectural patterns, separation of concerns, dependency injection, 7) **Scalability Considerations**: Performance under load, resource usage, bottleneck identification, 8) **Bug Detection**: Logic errors, edge cases, race conditions, memory leaks, 9) **Refactoring Suggestions**: Code improvements, optimization opportunities, technical debt reduction, 10) **Action Items**: Prioritized list of improvements, critical issues, nice-to-have enhancements.",
+    "category": "engineering",
+    "industry": [
+      "Software Engineering",
+      "Development"
+    ],
+    "tags": [
+      "code review",
+      "software quality",
+      "performance optimization"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 278,
+      "downvotes": 14,
+      "score": 264
+    },
+    "createdAt": "2024-01-02T13:00:00Z"
+  },
+  {
+    "id": "eng-003",
+    "title": "Technical Documentation Generator",
+    "description": "Create comprehensive technical documentation for software projects",
+    "content": "Create comprehensive technical documentation for [PROJECT_NAME] - [PROJECT_DESCRIPTION]. Documentation should include: 1) **Project Overview**: Purpose, scope, key features, target audience, high-level architecture, 2) **Getting Started**: Prerequisites, installation instructions, initial setup, quick start guide, 3) **API Documentation**: Endpoint descriptions, request/response formats, authentication, error codes, rate limits, 4) **Architecture Guide**: System components, data flow, integration points, security model, 5) **Database Schema**: Entity relationships, table structures, indexing strategy, migration scripts, 6) **Configuration**: Environment variables, configuration files, deployment settings, feature flags, 7) **Development Guide**: Local development setup, coding standards, testing procedures, contribution guidelines, 8) **Operations**: Deployment procedures, monitoring, logging, troubleshooting, performance tuning, 9) **Security**: Authentication, authorization, data protection, security best practices, 10) **Troubleshooting**: Common issues, error messages, debugging techniques, FAQ section.",
+    "category": "engineering",
+    "industry": [
+      "Software Engineering",
+      "Technical Writing"
+    ],
+    "tags": [
+      "technical documentation",
+      "API documentation",
+      "software documentation"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 189,
+      "downvotes": 8,
+      "score": 181
+    },
+    "createdAt": "2024-01-02T14:00:00Z"
+  },
+  {
+    "id": "sales-001",
+    "title": "Enterprise Sales Proposal Generator",
+    "description": "Create compelling enterprise sales proposals with ROI analysis",
+    "content": "Create comprehensive enterprise sales proposal for [PROSPECT_COMPANY] in [INDUSTRY] for [SOLUTION_TYPE] valued at [DEAL_SIZE]. Proposal should include: 1) **Executive Summary**: Business case, key benefits, investment overview, expected ROI, 2) **Situation Analysis**: Current state challenges, pain points, business impact, competitive landscape, 3) **Proposed Solution**: Detailed solution overview, technical specifications, implementation approach, timeline, 4) **Business Value**: ROI calculation, cost savings, revenue impact, productivity gains, risk mitigation, 5) **Implementation Plan**: Project phases, milestones, resource requirements, timeline, change management, 6) **Pricing Structure**: Detailed pricing, payment terms, financing options, contract structure, 7) **Risk Mitigation**: Identified risks, mitigation strategies, contingency plans, success guarantees, 8) **Success Metrics**: KPIs, measurement framework, reporting structure, success criteria, 9) **Next Steps**: Decision timeline, implementation kickoff, stakeholder approvals, contract execution, 10) **Appendices**: Technical specifications, case studies, references, team bios.",
+    "category": "sales",
+    "industry": [
+      "Sales",
+      "Business Development"
+    ],
+    "tags": [
+      "sales proposal",
+      "enterprise sales",
+      "ROI analysis"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 267,
+      "downvotes": 12,
+      "score": 255
+    },
+    "createdAt": "2024-01-02T15:00:00Z"
+  },
+  {
+    "id": "sales-002",
+    "title": "Sales Discovery Call Framework",
+    "description": "Structured approach to sales discovery calls with qualifying questions",
+    "content": "Create comprehensive discovery call framework for [PROSPECT_TYPE] in [INDUSTRY] for [SOLUTION_CATEGORY]. Framework should include: 1) **Pre-Call Research**: Company background, recent news, key stakeholders, competitive landscape, potential pain points, 2) **Opening & Rapport**: Introductions, agenda setting, expectations alignment, relationship building, 3) **Current State Assessment**: Existing solutions, processes, challenges, resource allocation, decision-making criteria, 4) **Pain Point Discovery**: Business challenges, impact quantification, root cause analysis, urgency factors, 5) **Future State Vision**: Desired outcomes, success criteria, timeline expectations, budget considerations, 6) **Decision Process**: Decision makers, evaluation criteria, budget approval process, implementation timeline, 7) **Competition Analysis**: Alternatives being considered, previous vendor experiences, selection criteria, 8) **Qualifying Questions**: Budget range, authority level, need intensity, timeline urgency, 9) **Next Steps**: Follow-up actions, proposal timeline, stakeholder introductions, evaluation process, 10) **Call Summary**: Key insights, action items, opportunity assessment, proposal recommendations.",
+    "category": "sales",
+    "industry": [
+      "Sales",
+      "Business Development"
+    ],
+    "tags": [
+      "sales discovery",
+      "qualifying questions",
+      "sales process"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 9,
+      "score": 225
+    },
+    "createdAt": "2024-01-02T16:00:00Z"
+  },
+  {
+    "id": "sales-003",
+    "title": "Objection Handling Playbook",
+    "description": "Comprehensive responses to common sales objections with persuasive techniques",
+    "content": "Develop objection handling playbook for [PRODUCT_SERVICE] targeting [CUSTOMER_SEGMENT]. Address common objections: 1) **Price Objections**: \"Too expensive\", \"Over budget\", \"Need to compare prices\" - Include value reinforcement, cost-benefit analysis, ROI demonstration, payment flexibility, 2) **Authority Objections**: \"Need to check with boss\", \"Not the decision maker\" - Include stakeholder mapping, champion development, decision process navigation, 3) **Need Objections**: \"Don't need it now\", \"Happy with current solution\" - Include pain amplification, opportunity cost, competitive disadvantage, 4) **Trust Objections**: \"Never heard of your company\", \"Unsure about vendor\" - Include credibility building, social proof, reference customers, guarantees, 5) **Timing Objections**: \"Not the right time\", \"Too busy\" - Include urgency creation, cost of delay, seasonal factors, 6) **Feature Objections**: \"Missing key feature\", \"Doesn't do what we need\" - Include feature education, workaround solutions, roadmap commitments, 7) **Competition Objections**: \"Looking at competitor X\" - Include competitive differentiation, unique value props, switching costs, 8) **Response Framework**: Listen, acknowledge, clarify, respond, confirm understanding, 9) **Follow-up Strategy**: Objection documentation, response refinement, stakeholder education.",
+    "category": "sales",
+    "industry": [
+      "Sales",
+      "Customer Success"
+    ],
+    "tags": [
+      "objection handling",
+      "sales techniques",
+      "persuasion"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
     "votes": {
       "upvotes": 198,
+      "downvotes": 11,
+      "score": 187
+    },
+    "createdAt": "2024-01-02T17:00:00Z"
+  },
+  {
+    "id": "marketing-001",
+    "title": "Content Marketing Strategy",
+    "description": "Comprehensive content marketing strategy for lead generation and brand building",
+    "content": "Develop comprehensive content marketing strategy for [COMPANY_NAME] targeting [TARGET_AUDIENCE] in [INDUSTRY]. Strategy should include: 1) **Audience Research**: Persona development, pain points, content preferences, buying journey mapping, channel preferences, 2) **Content Audit**: Existing content assessment, performance analysis, gap identification, competitive content analysis, 3) **Content Strategy**: Content pillars, topic clusters, content types, editorial calendar, SEO strategy, 4) **Content Production**: Content formats (blogs, videos, podcasts, infographics), production workflow, quality standards, brand guidelines, 5) **Distribution Strategy**: Owned channels (website, email), earned channels (PR, influencers), paid channels (social ads, PPC), 6) **SEO Integration**: Keyword research, on-page optimization, link building, technical SEO, content optimization, 7) **Social Media Strategy**: Platform selection, posting schedule, engagement strategy, community building, 8) **Performance Metrics**: Content KPIs, lead generation metrics, engagement metrics, brand awareness metrics, 9) **Content Governance**: Approval processes, brand compliance, legal review, content archiving, 10) **Budget & Resources**: Content creation costs, tool requirements, team structure, outsourcing strategy.",
+    "category": "marketing",
+    "industry": [
+      "Marketing",
+      "Digital Marketing"
+    ],
+    "tags": [
+      "content marketing",
+      "SEO",
+      "lead generation"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 245,
+      "downvotes": 13,
+      "score": 232
+    },
+    "createdAt": "2024-01-03T09:00:00Z"
+  },
+  {
+    "id": "marketing-002",
+    "title": "Digital Marketing Campaign Planner",
+    "description": "Plan and execute comprehensive digital marketing campaigns across channels",
+    "content": "Create comprehensive digital marketing campaign for [CAMPAIGN_OBJECTIVE] targeting [TARGET_AUDIENCE] with budget [BUDGET_AMOUNT]. Campaign plan should include: 1) **Campaign Objectives**: Primary goals, success metrics, KPIs, target outcomes, timeline, 2) **Audience Strategy**: Demographic targeting, psychographic profiles, behavioral targeting, lookalike audiences, 3) **Channel Strategy**: Platform selection (Google Ads, Facebook, LinkedIn, Instagram, TikTok), budget allocation, creative requirements, 4) **Creative Strategy**: Ad formats, messaging themes, visual concepts, A/B testing plan, brand guidelines, 5) **Landing Page Strategy**: Landing page design, conversion optimization, user experience, mobile optimization, 6) **Email Marketing**: Email sequences, segmentation strategy, automation workflows, personalization, 7) **Content Calendar**: Campaign timeline, content production schedule, approval processes, publication dates, 8) **Budget Management**: Channel budget allocation, bid strategies, cost management, performance optimization, 9) **Analytics Setup**: Conversion tracking, attribution modeling, analytics configuration, reporting dashboard, 10) **Performance Monitoring**: Daily optimization, A/B testing, budget reallocation, campaign refinement.",
+    "category": "marketing",
+    "industry": [
+      "Marketing",
+      "Digital Advertising"
+    ],
+    "tags": [
+      "digital marketing",
+      "campaign planning",
+      "advertising"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 219,
+      "downvotes": 10,
+      "score": 209
+    },
+    "createdAt": "2024-01-03T10:00:00Z"
+  },
+  {
+    "id": "hr-001",
+    "title": "Job Description Creator",
+    "description": "Create compelling job descriptions that attract top talent",
+    "content": "Create comprehensive job description for [JOB_TITLE] position at [COMPANY_NAME] in [DEPARTMENT]. Include: 1) **Role Overview**: Position summary, reporting structure, team size, key relationships, 2) **Responsibilities**: Primary duties, day-to-day activities, project ownership, collaboration requirements, 3) **Qualifications**: Required education, experience, skills, certifications, preferred qualifications, 4) **Skills & Competencies**: Technical skills, soft skills, leadership requirements, communication skills, 5) **Success Metrics**: Performance indicators, goals, expectations, career progression, 6) **Company Culture**: Values, work environment, team dynamics, growth opportunities, 7) **Compensation**: Salary range, benefits package, equity, performance bonuses, 8) **Location**: Office requirements, remote options, travel expectations, 9) **Application Process**: How to apply, required documents, interview process, timeline, 10) **Legal Compliance**: Equal opportunity statement, accommodation notice, background check requirements. Write in engaging tone to attract top talent while being specific about requirements.",
+    "category": "hr",
+    "industry": [
+      "Human Resources",
+      "Recruiting"
+    ],
+    "tags": [
+      "job description",
+      "recruiting",
+      "talent acquisition"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 187,
+      "downvotes": 8,
+      "score": 179
+    },
+    "createdAt": "2024-01-03T11:00:00Z"
+  },
+  {
+    "id": "hr-002",
+    "title": "Performance Review Framework",
+    "description": "Structured approach to employee performance evaluations and development planning",
+    "content": "Create comprehensive performance review framework for [EMPLOYEE_NAME] in [POSITION] for [REVIEW_PERIOD]. Framework should include: 1) **Performance Summary**: Overall performance rating, key achievements, areas of excellence, improvement areas, 2) **Goal Assessment**: Review of previous period goals, achievement level, challenges faced, outcomes delivered, 3) **Core Competencies**: Evaluation of job-specific skills, leadership abilities, communication, teamwork, problem-solving, 4) **Professional Development**: Skills assessment, learning opportunities, career interests, development needs, 5) **Feedback Collection**: 360-degree feedback, peer input, customer feedback, self-assessment, 6) **Goal Setting**: SMART goals for next period, career development objectives, skill building targets, 7) **Development Plan**: Training needs, mentorship opportunities, stretch assignments, skill development, 8) **Career Discussion**: Career aspirations, promotion readiness, succession planning, mobility interests, 9) **Recognition**: Achievements to celebrate, contributions to acknowledge, success stories, 10) **Action Items**: Development activities, follow-up meetings, resource allocation, progress checkpoints.",
+    "category": "hr",
+    "industry": [
+      "Human Resources",
+      "Management"
+    ],
+    "tags": [
+      "performance review",
+      "employee development",
+      "goal setting"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 156,
       "downvotes": 7,
-      "score": 191
+      "score": 149
     },
-    "rating": {
-      "average": 4.8,
-      "count": 69
+    "createdAt": "2024-01-03T12:00:00Z"
+  },
+  {
+    "id": "consulting-001",
+    "title": "Management Consulting Framework",
+    "description": "Structured approach to business problem solving using consulting methodologies",
+    "content": "Apply management consulting framework to analyze [BUSINESS_PROBLEM] for [CLIENT_NAME] in [INDUSTRY]. Analysis should follow: 1) **Problem Definition**: Issue statement, scope boundaries, success criteria, stakeholder impact, root cause hypothesis, 2) **Situation Assessment**: Current state analysis, market dynamics, competitive position, internal capabilities, external factors, 3) **Framework Selection**: Choose appropriate framework (Porter's 5 Forces, McKinsey 7S, BCG Matrix, etc.), rationale for selection, 4) **Data Collection**: Information requirements, data sources, interview plan, survey design, benchmarking approach, 5) **Analysis & Insights**: Quantitative analysis, qualitative insights, pattern identification, hypothesis testing, implications, 6) **Solution Development**: Alternative solutions, pros/cons analysis, implementation feasibility, resource requirements, 7) **Recommendation**: Preferred solution, implementation roadmap, risk mitigation, success metrics, business case, 8) **Implementation Planning**: Project plan, resource allocation, timeline, governance structure, change management, 9) **Stakeholder Communication**: Executive summary, detailed findings, presentation materials, discussion guides, 10) **Follow-up Strategy**: Progress monitoring, course correction, value realization, continuous improvement.",
+    "category": "consulting",
+    "industry": [
+      "Management Consulting",
+      "Strategy"
+    ],
+    "tags": [
+      "business analysis",
+      "problem solving",
+      "strategic consulting"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 298,
+      "downvotes": 15,
+      "score": 283
     },
-    "usage": {
-      "count": 1356,
-      "lastUsed": "2024-01-15T15:10:00Z"
+    "createdAt": "2024-01-03T13:00:00Z"
+  },
+  {
+    "id": "consulting-002",
+    "title": "Process Improvement Analysis",
+    "description": "Systematic approach to identifying and implementing process improvements",
+    "content": "Conduct process improvement analysis for [PROCESS_NAME] at [ORGANIZATION] in [DEPARTMENT]. Analysis should include: 1) **Current State Mapping**: Process documentation, workflow visualization, stakeholder roles, system touchpoints, performance metrics, 2) **Pain Point Identification**: Bottlenecks, inefficiencies, quality issues, customer complaints, cost drivers, 3) **Root Cause Analysis**: 5-whys technique, fishbone diagram, statistical analysis, stakeholder interviews, 4) **Benchmarking**: Industry best practices, competitor analysis, internal comparisons, performance standards, 5) **Future State Design**: Ideal process flow, automation opportunities, role optimization, system integration, 6) **Gap Analysis**: Current vs. future state, capability gaps, resource requirements, technology needs, 7) **Implementation Roadmap**: Project phases, quick wins, long-term improvements, resource allocation, timeline, 8) **Change Management**: Communication plan, training requirements, resistance management, adoption strategy, 9) **Performance Metrics**: KPIs, measurement framework, reporting structure, continuous monitoring, 10) **Business Case**: Investment requirements, expected benefits, ROI calculation, risk assessment, payback period.",
+    "category": "consulting",
+    "industry": [
+      "Process Improvement",
+      "Operations"
+    ],
+    "tags": [
+      "process improvement",
+      "operational efficiency",
+      "lean six sigma"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 12,
+      "score": 222
     },
-    "createdAt": "2024-01-01T13:45:00Z",
-    "isPublic": true,
-    "isFeatured": true,
-    "author": {
-      "name": "Investment Analysis Team",
-      "company": "AI Prompt Library Pro"
-    }
+    "createdAt": "2024-01-03T14:00:00Z"
+  },
+  {
+    "id": "product-001",
+    "title": "Product Requirements Document (PRD)",
+    "description": "Comprehensive product requirements for new feature or product development",
+    "content": "Create comprehensive PRD for [PRODUCT_FEATURE] targeting [USER_SEGMENT]. Document should include: 1) **Executive Summary**: Feature overview, business rationale, success metrics, resource requirements, 2) **Problem Statement**: User problems, market opportunity, competitive gap, business impact, 3) **User Research**: User personas, use cases, user journey mapping, pain points, behavioral insights, 4) **Requirements**: Functional requirements, non-functional requirements, user stories, acceptance criteria, edge cases, 5) **Design Specifications**: UI/UX requirements, wireframes, user flows, accessibility, responsive design, 6) **Technical Specifications**: Architecture requirements, API specifications, performance requirements, security considerations, 7) **Success Metrics**: KPIs, analytics tracking, A/B testing plan, success criteria, measurement framework, 8) **Timeline & Milestones**: Development phases, key milestones, dependencies, resource allocation, 9) **Risk Assessment**: Technical risks, market risks, resource risks, mitigation strategies, 10) **Launch Plan**: Go-to-market strategy, rollout plan, communication strategy, support preparation, post-launch monitoring.",
+    "category": "product",
+    "industry": [
+      "Product Management",
+      "Technology"
+    ],
+    "tags": [
+      "product requirements",
+      "product development",
+      "user stories"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 267,
+      "downvotes": 14,
+      "score": 253
+    },
+    "createdAt": "2024-01-03T15:00:00Z"
+  },
+  {
+    "id": "product-002",
+    "title": "User Story Generator",
+    "description": "Create detailed user stories with acceptance criteria for agile development",
+    "content": "Generate comprehensive user stories for [FEATURE_NAME] serving [USER_TYPE]. Each story should include: 1) **User Story Format**: \"As a [user type], I want [functionality] so that [benefit]\" - clear, concise, user-focused, 2) **Acceptance Criteria**: Given-When-Then format, specific conditions, expected behaviors, edge cases, 3) **Definition of Done**: Quality standards, testing requirements, documentation needs, review criteria, 4) **Story Points**: Complexity estimation, effort assessment, dependency consideration, 5) **Priority Ranking**: Business value, user impact, technical dependency, urgency, 6) **Mockups/Wireframes**: Visual representation, user interface elements, interaction flows, 7) **Technical Notes**: Implementation considerations, API requirements, database changes, performance implications, 8) **Testing Strategy**: Unit tests, integration tests, user acceptance tests, automated testing, 9) **Dependencies**: Related stories, external dependencies, prerequisite work, blocking issues, 10) **Success Metrics**: User engagement, feature adoption, performance metrics, business impact. Organize stories into epics and maintain traceability to business objectives.",
+    "category": "product",
+    "industry": [
+      "Product Management",
+      "Agile Development"
+    ],
+    "tags": [
+      "user stories",
+      "agile development",
+      "product backlog"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 189,
+      "downvotes": 9,
+      "score": 180
+    },
+    "createdAt": "2024-01-03T16:00:00Z"
+  },
+  {
+    "id": "data-001",
+    "title": "Data Analysis Report Generator",
+    "description": "Comprehensive data analysis with insights and actionable recommendations",
+    "content": "Create comprehensive data analysis report for [DATASET_DESCRIPTION] focusing on [ANALYSIS_OBJECTIVE]. Report should include: 1) **Executive Summary**: Key findings, primary insights, actionable recommendations, business impact, 2) **Data Overview**: Data sources, collection methods, time period, sample size, data quality assessment, 3) **Methodology**: Analysis approach, statistical methods, tools used, assumptions made, limitations, 4) **Descriptive Statistics**: Summary statistics, distributions, central tendencies, variability measures, 5) **Trend Analysis**: Time series patterns, seasonal variations, growth rates, anomaly detection, 6) **Correlation Analysis**: Relationship identification, correlation coefficients, causation vs correlation, 7) **Segmentation Analysis**: Customer segments, behavioral patterns, demographic analysis, performance by segment, 8) **Predictive Insights**: Forecasting, trend projections, scenario modeling, confidence intervals, 9) **Visualizations**: Charts, graphs, dashboards, heat maps, geographic analysis, 10) **Recommendations**: Data-driven insights, business implications, next steps, further analysis needs, implementation priorities. Include statistical significance testing and confidence levels.",
+    "category": "analytics",
+    "industry": [
+      "Data Analytics",
+      "Business Intelligence"
+    ],
+    "tags": [
+      "data analysis",
+      "business intelligence",
+      "statistical analysis"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 278,
+      "downvotes": 13,
+      "score": 265
+    },
+    "createdAt": "2024-01-03T17:00:00Z"
+  },
+  {
+    "id": "data-002",
+    "title": "Dashboard Design Specifications",
+    "description": "Design specifications for business intelligence dashboards and KPI tracking",
+    "content": "Create comprehensive dashboard specifications for [DASHBOARD_PURPOSE] serving [STAKEHOLDER_GROUP]. Specifications should include: 1) **Dashboard Objectives**: Primary goals, key questions to answer, decision support requirements, user needs, 2) **User Personas**: Dashboard users, their roles, technical proficiency, usage patterns, access requirements, 3) **KPI Framework**: Key metrics, calculation methods, benchmarks, targets, alert thresholds, 4) **Data Requirements**: Data sources, update frequency, data quality requirements, historical data needs, 5) **Layout Design**: Dashboard structure, widget arrangement, visual hierarchy, responsive design, 6) **Visualization Types**: Chart selection rationale, color schemes, interactive elements, drill-down capabilities, 7) **Filtering & Controls**: Filter options, date ranges, comparison periods, export functions, 8) **Performance Requirements**: Load times, refresh rates, data volume capacity, concurrent users, 9) **Access Control**: User permissions, role-based access, data security, compliance requirements, 10) **Technical Specifications**: Platform requirements, integration needs, mobile compatibility, browser support, 11) **Testing Plan**: User acceptance testing, performance testing, data validation, 12) **Training & Documentation**: User guides, training materials, support documentation.",
+    "category": "analytics",
+    "industry": [
+      "Data Analytics",
+      "Business Intelligence"
+    ],
+    "tags": [
+      "dashboard design",
+      "KPI tracking",
+      "data visualization"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 203,
+      "downvotes": 11,
+      "score": 192
+    },
+    "createdAt": "2024-01-03T18:00:00Z"
+  },
+  {
+    "id": "customer-success-001",
+    "title": "Customer Onboarding Playbook",
+    "description": "Structured customer onboarding process to ensure successful product adoption",
+    "content": "Create comprehensive customer onboarding playbook for [PRODUCT_SERVICE] targeting [CUSTOMER_SEGMENT]. Playbook should include: 1) **Onboarding Objectives**: Success criteria, time to value, adoption milestones, retention goals, 2) **Customer Journey Mapping**: Onboarding phases, touchpoints, customer emotions, support needs, 3) **Pre-Onboarding**: Welcome sequence, expectation setting, resource preparation, team introductions, 4) **Initial Setup**: Account configuration, user provisioning, integration setup, customization, 5) **Training Program**: User training modules, admin training, best practices, certification program, 6) **Implementation Support**: Technical setup, data migration, workflow configuration, testing procedures, 7) **Milestone Tracking**: Progress checkpoints, success metrics, risk identification, intervention triggers, 8) **Communication Strategy**: Regular check-ins, progress updates, escalation procedures, feedback collection, 9) **Resource Library**: Documentation, video tutorials, FAQs, community forums, support contacts, 10) **Success Measurement**: Adoption metrics, user engagement, satisfaction scores, time to value, 11) **Risk Management**: Early warning signs, churn prevention, recovery strategies, 12) **Post-Onboarding**: Advanced features, expansion opportunities, advocacy development.",
+    "category": "customer-success",
+    "industry": [
+      "Customer Success",
+      "SaaS"
+    ],
+    "tags": [
+      "customer onboarding",
+      "user adoption",
+      "customer success"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 10,
+      "score": 224
+    },
+    "createdAt": "2024-01-04T09:00:00Z"
+  },
+  {
+    "id": "operations-001",
+    "title": "Standard Operating Procedure (SOP) Creator",
+    "description": "Create detailed standard operating procedures for business processes",
+    "content": "Create comprehensive SOP for [PROCESS_NAME] in [DEPARTMENT] at [ORGANIZATION]. SOP should include: 1) **Process Overview**: Purpose, scope, objectives, process owner, stakeholders, 2) **Prerequisites**: Required skills, tools, systems access, permissions, preparation steps, 3) **Step-by-Step Instructions**: Detailed procedures, decision points, conditional logic, quality checks, 4) **Roles & Responsibilities**: Task assignments, approval authorities, escalation paths, accountability, 5) **Tools & Resources**: Required software, equipment, templates, reference materials, 6) **Quality Standards**: Acceptance criteria, quality metrics, inspection points, error prevention, 7) **Documentation Requirements**: Records to maintain, reporting obligations, audit trails, retention policies, 8) **Exception Handling**: Error scenarios, troubleshooting guide, escalation procedures, recovery steps, 9) **Performance Metrics**: Process KPIs, efficiency measures, quality indicators, success criteria, 10) **Training Requirements**: Skill prerequisites, certification needs, competency assessment, ongoing training, 11) **Compliance Considerations**: Regulatory requirements, policy adherence, audit requirements, 12) **Review & Updates**: Review schedule, update procedures, version control, change management.",
+    "category": "operations",
+    "industry": [
+      "Operations",
+      "Process Management"
+    ],
+    "tags": [
+      "standard operating procedures",
+      "process documentation",
+      "operational efficiency"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 167,
+      "downvotes": 8,
+      "score": 159
+    },
+    "createdAt": "2024-01-04T10:00:00Z"
+  },
+  {
+    "id": "writing-001",
+    "title": "Email Generator for Professionals",
+    "description": "Create professional emails for various business scenarios",
+    "content": "Write a professional email for [EMAIL_TYPE] to [RECIPIENT] about [SUBJECT]. Email details: Purpose: [PURPOSE], Tone: [TONE], Key points to include: [KEY_POINTS]. Make it [LENGTH] and ensure it's appropriate for [INDUSTRY] context. Include proper greeting, clear subject line, well-structured body, and professional closing.",
+    "category": "business",
+    "industry": [
+      "Business",
+      "Communication",
+      "Professional Services"
+    ],
+    "tags": [
+      "email writing",
+      "business communication",
+      "professional correspondence"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 456,
+      "downvotes": 23,
+      "score": 433
+    },
+    "createdAt": "2024-01-05T09:00:00Z"
+  },
+  {
+    "id": "writing-002",
+    "title": "Resume and Cover Letter Writer",
+    "description": "Craft compelling resumes and cover letters that get interviews",
+    "content": "Create a professional [DOCUMENT_TYPE] for [JOB_TITLE] position. Background: [YOUR_BACKGROUND], Target company: [COMPANY_NAME], Key skills: [SKILLS], Experience: [EXPERIENCE_LEVEL], Industry: [INDUSTRY]. For resume: highlight achievements with quantifiable results, use action verbs, tailor to job requirements. For cover letter: show enthusiasm, connect experience to role, demonstrate company knowledge. Format should be ATS-friendly and visually appealing.",
+    "category": "career",
+    "industry": [
+      "Human Resources",
+      "Career Development"
+    ],
+    "tags": [
+      "resume writing",
+      "cover letter",
+      "job application",
+      "career"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 523,
+      "downvotes": 31,
+      "score": 492
+    },
+    "createdAt": "2024-01-05T10:00:00Z"
+  },
+  {
+    "id": "writing-003",
+    "title": "Social Media Content Creator",
+    "description": "Generate engaging social media posts across platforms",
+    "content": "Create [PLATFORM] content for [BRAND/PERSONAL] about [TOPIC]. Objective: [GOAL], Target audience: [AUDIENCE], Brand voice: [TONE], Content type: [POST_TYPE]. Include relevant hashtags, call-to-action, and optimize for [PLATFORM] algorithm. For LinkedIn: professional insights; Instagram: visual storytelling; Twitter: concise engagement; Facebook: community building; TikTok: trending formats. Ensure content is authentic, valuable, and shareable.",
+    "category": "marketing",
+    "industry": [
+      "Marketing",
+      "Social Media",
+      "Content Creation"
+    ],
+    "tags": [
+      "social media",
+      "content creation",
+      "digital marketing"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 398,
+      "downvotes": 19,
+      "score": 379
+    },
+    "createdAt": "2024-01-05T11:00:00Z"
+  },
+  {
+    "id": "education-001",
+    "title": "Lesson Plan Generator",
+    "description": "Create comprehensive lesson plans for educators",
+    "content": "Design a lesson plan for [SUBJECT] on [TOPIC] for [GRADE_LEVEL]. Duration: [TIME], Learning objectives: [OBJECTIVES], Class size: [SIZE], Available resources: [RESOURCES]. Include: 1) Learning outcomes and standards alignment, 2) Pre-lesson preparation and materials, 3) Opening activity and hook, 4) Main instruction with varied teaching methods, 5) Guided practice and checking for understanding, 6) Independent practice or application, 7) Closure and summary, 8) Assessment methods and rubrics, 9) Differentiation strategies for diverse learners, 10) Extension activities and homework assignments.",
+    "category": "education",
+    "industry": [
+      "Education",
+      "Teaching"
+    ],
+    "tags": [
+      "lesson planning",
+      "education",
+      "curriculum development"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 367,
+      "downvotes": 15,
+      "score": 352
+    },
+    "createdAt": "2024-01-05T12:00:00Z"
+  },
+  {
+    "id": "education-002",
+    "title": "Study Guide and Exam Prep",
+    "description": "Create comprehensive study guides and practice materials",
+    "content": "Create a comprehensive study guide for [SUBJECT] covering [TOPICS] for [EXAM_TYPE]. Include: 1) **Topic Overview**: Key concepts, definitions, and principles, 2) **Study Schedule**: Recommended timeline and daily tasks, 3) **Practice Questions**: Multiple choice, short answer, and essay questions with explanations, 4) **Memory Techniques**: Mnemonics, visual aids, and association methods, 5) **Summary Sheets**: One-page summaries for quick review, 6) **Common Mistakes**: Frequently missed concepts and how to avoid them, 7) **Test-Taking Strategies**: Time management, question analysis, elimination methods, 8) **Resources**: Recommended readings, videos, and additional practice materials, 9) **Self-Assessment**: Progress tracking and knowledge gaps identification.",
+    "category": "education",
+    "industry": [
+      "Education",
+      "Test Preparation"
+    ],
+    "tags": [
+      "study guide",
+      "exam prep",
+      "education"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 289,
+      "downvotes": 12,
+      "score": 277
+    },
+    "createdAt": "2024-01-05T13:00:00Z"
+  },
+  {
+    "id": "creative-001",
+    "title": "Story and Creative Writing Assistant",
+    "description": "Generate creative stories, scripts, and narrative content",
+    "content": "Write a [GENRE] [FORMAT] about [PREMISE]. Setting: [SETTING], Main character: [CHARACTER], Conflict: [CONFLICT], Target audience: [AUDIENCE], Length: [LENGTH], Tone: [TONE]. For stories: develop compelling characters, engaging plot, vivid descriptions, and satisfying resolution. For scripts: include proper formatting, natural dialogue, stage directions, and scene transitions. Focus on [THEME] and ensure the narrative has clear beginning, middle, and end with appropriate pacing and emotional arc.",
+    "category": "creative",
+    "industry": [
+      "Entertainment",
+      "Publishing",
+      "Media"
+    ],
+    "tags": [
+      "creative writing",
+      "storytelling",
+      "scriptwriting"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 445,
+      "downvotes": 28,
+      "score": 417
+    },
+    "createdAt": "2024-01-05T14:00:00Z"
+  },
+  {
+    "id": "tech-001",
+    "title": "Code Explainer and Debugger",
+    "description": "Explain code functionality and help debug programming issues",
+    "content": "Analyze this [PROGRAMMING_LANGUAGE] code and provide: 1) **Code Explanation**: Line-by-line breakdown of what the code does, 2) **Function Purpose**: Overall objective and use cases, 3) **Key Concepts**: Programming principles and patterns used, 4) **Potential Issues**: Bugs, security vulnerabilities, performance problems, 5) **Optimization Suggestions**: Ways to improve efficiency and readability, 6) **Best Practices**: Industry standards and coding conventions, 7) **Alternative Approaches**: Different ways to achieve the same result, 8) **Testing Recommendations**: Unit tests and edge cases to consider. Code: [CODE_SNIPPET]. Make explanations beginner-friendly with examples.",
+    "category": "technology",
+    "industry": [
+      "Software Development",
+      "Technology",
+      "IT"
+    ],
+    "tags": [
+      "code review",
+      "debugging",
+      "programming education"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 512,
+      "downvotes": 34,
+      "score": 478
+    },
+    "createdAt": "2024-01-05T15:00:00Z"
+  },
+  {
+    "id": "tech-002",
+    "title": "API Documentation Writer",
+    "description": "Create clear and comprehensive API documentation",
+    "content": "Create comprehensive API documentation for [API_NAME] with [FUNCTIONALITY]. Include: 1) **Overview**: Purpose, capabilities, and use cases, 2) **Authentication**: Setup, API keys, OAuth, rate limits, 3) **Endpoints**: Base URL, HTTP methods, parameters, headers, 4) **Request Examples**: Sample requests with curl, JavaScript, Python, 5) **Response Format**: JSON structure, status codes, error messages, 6) **Error Handling**: Common errors, troubleshooting, status code meanings, 7) **SDKs and Libraries**: Available client libraries and wrappers, 8) **Tutorials**: Quick start guide and common use cases, 9) **Changelog**: Version history and breaking changes, 10) **Support**: Contact information and community resources. Use clear examples and consistent formatting.",
+    "category": "technology",
+    "industry": [
+      "Software Development",
+      "API Development"
+    ],
+    "tags": [
+      "API documentation",
+      "technical writing",
+      "developer tools"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 298,
+      "downvotes": 18,
+      "score": 280
+    },
+    "createdAt": "2024-01-05T16:00:00Z"
+  },
+  {
+    "id": "business-001",
+    "title": "Meeting Minutes Taker",
+    "description": "Structure and document professional meeting minutes",
+    "content": "Create professional meeting minutes for [MEETING_TYPE] held on [DATE] with [ATTENDEES]. Meeting topic: [TOPIC], Duration: [DURATION], Facilitator: [FACILITATOR]. Include: 1) **Meeting Header**: Date, time, location, attendees, absent members, 2) **Agenda Items**: Topics discussed in order with time allocations, 3) **Key Discussions**: Main points, different viewpoints, important quotes, 4) **Decisions Made**: Concrete decisions with rationale and voting results, 5) **Action Items**: Tasks assigned, responsible parties, deadlines, priority levels, 6) **Follow-up Items**: Pending issues, future meeting topics, ongoing projects, 7) **Next Steps**: Immediate actions, timeline for deliverables, 8) **Next Meeting**: Date, time, agenda preview. Format professionally and distribute promptly.",
+    "category": "business",
+    "industry": [
+      "Business",
+      "Administration",
+      "Project Management"
+    ],
+    "tags": [
+      "meeting minutes",
+      "documentation",
+      "business administration"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 14,
+      "score": 220
+    },
+    "createdAt": "2024-01-05T17:00:00Z"
+  },
+  {
+    "id": "business-002",
+    "title": "Business Proposal Generator",
+    "description": "Create compelling business proposals for various opportunities",
+    "content": "Create a comprehensive business proposal for [PROJECT_TYPE] targeting [CLIENT_NAME]. Project scope: [SCOPE], Budget: [BUDGET], Timeline: [TIMELINE], Your company: [YOUR_COMPANY]. Include: 1) **Executive Summary**: Project overview, key benefits, investment summary, 2) **Problem Statement**: Client challenges, market opportunity, urgency factors, 3) **Proposed Solution**: Detailed approach, methodology, deliverables, unique advantages, 4) **Project Plan**: Phases, milestones, timeline, resource allocation, 5) **Team & Expertise**: Key personnel, qualifications, relevant experience, 6) **Budget Breakdown**: Detailed costs, payment terms, value justification, 7) **Success Metrics**: KPIs, measurement methods, expected outcomes, 8) **Risk Management**: Potential risks, mitigation strategies, contingency plans, 9) **Case Studies**: Relevant past successes, testimonials, references, 10) **Next Steps**: Decision timeline, contract process, project kickoff.",
+    "category": "business",
+    "industry": [
+      "Business Development",
+      "Consulting",
+      "Professional Services"
+    ],
+    "tags": [
+      "business proposal",
+      "client communication",
+      "project planning"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 356,
+      "downvotes": 21,
+      "score": 335
+    },
+    "createdAt": "2024-01-05T18:00:00Z"
+  },
+  {
+    "id": "analysis-001",
+    "title": "SWOT Analysis Generator",
+    "description": "Create comprehensive SWOT analysis for strategic planning",
+    "content": "Conduct a comprehensive SWOT analysis for [ORGANIZATION/PROJECT] in [INDUSTRY]. Context: [SITUATION], Timeframe: [TIMEFRAME], Objectives: [GOALS]. Analyze: 1) **Strengths**: Internal positive factors, competitive advantages, unique resources, core competencies, successful areas, 2) **Weaknesses**: Internal challenges, resource limitations, skill gaps, operational inefficiencies, areas for improvement, 3) **Opportunities**: External positive factors, market trends, technological advances, regulatory changes, partnership possibilities, 4) **Threats**: External challenges, competitive pressures, economic factors, regulatory risks, market disruptions. For each quadrant, provide 5-7 specific, actionable items with brief explanations. Include strategic recommendations that leverage strengths and opportunities while addressing weaknesses and threats.",
+    "category": "strategy",
+    "industry": [
+      "Strategy",
+      "Business Analysis",
+      "Consulting"
+    ],
+    "tags": [
+      "SWOT analysis",
+      "strategic planning",
+      "business analysis"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 278,
+      "downvotes": 16,
+      "score": 262
+    },
+    "createdAt": "2024-01-06T09:00:00Z"
+  },
+  {
+    "id": "analysis-002",
+    "title": "Market Research Analyst",
+    "description": "Conduct comprehensive market research and competitive analysis",
+    "content": "Conduct comprehensive market research for [PRODUCT/SERVICE] in [INDUSTRY] targeting [MARKET]. Research scope: [SCOPE], Geographic focus: [REGION], Budget considerations: [BUDGET]. Deliver: 1) **Market Overview**: Size, growth rate, key trends, market maturity, regulatory environment, 2) **Target Customer Analysis**: Demographics, psychographics, buying behavior, needs assessment, pain points, 3) **Competitive Landscape**: Key competitors, market share, positioning, pricing, strengths/weaknesses, 4) **Market Segmentation**: Customer segments, segment size, growth potential, accessibility, 5) **Opportunity Assessment**: Market gaps, unmet needs, emerging trends, disruption potential, 6) **Entry Strategy**: Go-to-market approach, positioning, pricing recommendations, channel strategy, 7) **Risk Analysis**: Market risks, competitive threats, regulatory challenges, economic factors, 8) **Financial Projections**: Market potential, revenue forecasts, investment requirements, ROI estimates.",
+    "category": "research",
+    "industry": [
+      "Market Research",
+      "Business Development",
+      "Strategy"
+    ],
+    "tags": [
+      "market research",
+      "competitive analysis",
+      "business intelligence"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 312,
+      "downvotes": 19,
+      "score": 293
+    },
+    "createdAt": "2024-01-06T10:00:00Z"
+  },
+  {
+    "id": "coaching-001",
+    "title": "Interview Preparation Coach",
+    "description": "Comprehensive interview preparation and practice sessions",
+    "content": "Prepare for [JOB_TITLE] interview at [COMPANY] in [INDUSTRY]. Interview type: [TYPE], Experience level: [LEVEL], Key requirements: [REQUIREMENTS]. Provide: 1) **Company Research**: Company background, culture, recent news, key executives, competitive position, 2) **Role Analysis**: Job requirements, success factors, typical responsibilities, career progression, 3) **Common Questions**: Behavioral questions, technical questions, situational scenarios with sample answers, 4) **STAR Method**: Situation, Task, Action, Result framework for behavioral responses, 5) **Technical Preparation**: Industry knowledge, technical skills assessment, relevant tools/technologies, 6) **Questions to Ask**: Thoughtful questions about role, team, company, growth opportunities, 7) **Presentation Tips**: Body language, communication style, confidence building, professional appearance, 8) **Follow-up Strategy**: Thank you notes, timeline expectations, next steps planning.",
+    "category": "career",
+    "industry": [
+      "Career Development",
+      "Human Resources"
+    ],
+    "tags": [
+      "interview preparation",
+      "career coaching",
+      "job search"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 445,
+      "downvotes": 22,
+      "score": 423
+    },
+    "createdAt": "2024-01-06T11:00:00Z"
+  },
+  {
+    "id": "coaching-002",
+    "title": "Negotiation Strategy Advisor",
+    "description": "Develop winning negotiation strategies for various scenarios",
+    "content": "Develop negotiation strategy for [NEGOTIATION_TYPE] with [COUNTERPART]. Context: [SITUATION], Your objectives: [GOALS], Their likely objectives: [THEIR_GOALS], Relationship importance: [RELATIONSHIP], Timeline: [TIMEFRAME]. Strategy should include: 1) **Preparation Phase**: Research counterpart, understand their constraints, identify decision makers, prepare alternatives, 2) **BATNA Development**: Best alternative to negotiated agreement, walk-away points, leverage assessment, 3) **Opening Strategy**: Initial positioning, concession planning, anchoring techniques, 4) **Negotiation Tactics**: Collaborative approaches, competitive moves, timing strategies, communication techniques, 5) **Value Creation**: Win-win opportunities, trade-offs, creative solutions, expanding the pie, 6) **Handling Obstacles**: Difficult tactics, emotional situations, deadlocks, last-minute changes, 7) **Closing Strategy**: Agreement framework, implementation planning, relationship preservation, 8) **Post-Negotiation**: Follow-up actions, relationship maintenance, lessons learned.",
+    "category": "business",
+    "industry": [
+      "Business",
+      "Sales",
+      "Legal"
+    ],
+    "tags": [
+      "negotiation",
+      "business strategy",
+      "conflict resolution"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 289,
+      "downvotes": 17,
+      "score": 272
+    },
+    "createdAt": "2024-01-06T12:00:00Z"
+  },
+  {
+    "id": "health-001",
+    "title": "Fitness Plan Creator",
+    "description": "Design personalized fitness and workout plans",
+    "content": "Create a personalized fitness plan for [FITNESS_GOAL] over [DURATION]. Current fitness level: [LEVEL], Available time: [TIME_COMMITMENT], Equipment access: [EQUIPMENT], Physical limitations: [LIMITATIONS], Preferred activities: [PREFERENCES]. Include: 1) **Goal Setting**: Specific, measurable objectives with timeline milestones, 2) **Workout Schedule**: Weekly routine with rest days, progression timeline, seasonal adjustments, 3) **Exercise Selection**: Cardio, strength training, flexibility, balance exercises with proper form instructions, 4) **Progressive Overload**: How to increase intensity, duration, and complexity over time, 5) **Nutrition Guidelines**: General dietary recommendations to support fitness goals, 6) **Recovery Protocol**: Rest days, sleep importance, injury prevention, active recovery, 7) **Progress Tracking**: Metrics to monitor, assessment methods, adjustment triggers, 8) **Motivation Strategies**: Goal visualization, reward systems, accountability measures. Note: Consult healthcare provider before starting.",
+    "category": "health",
+    "industry": [
+      "Health & Fitness",
+      "Wellness"
+    ],
+    "tags": [
+      "fitness planning",
+      "health",
+      "exercise",
+      "wellness"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 378,
+      "downvotes": 24,
+      "score": 354
+    },
+    "createdAt": "2024-01-06T13:00:00Z"
+  },
+  {
+    "id": "travel-001",
+    "title": "Travel Itinerary Planner",
+    "description": "Create detailed travel itineraries for any destination",
+    "content": "Create comprehensive travel itinerary for [DESTINATION] from [START_DATE] to [END_DATE]. Travelers: [TRAVELERS], Budget: [BUDGET], Interests: [INTERESTS], Travel style: [STYLE]. Include: 1) **Pre-Travel Checklist**: Documentation, vaccinations, insurance, packing list, currency exchange, 2) **Day-by-Day Schedule**: Activities, attractions, dining, transportation with timing and alternatives, 3) **Accommodation**: Hotel recommendations with booking links, location benefits, amenities, 4) **Transportation**: Flight details, local transport options, car rentals, public transport passes, 5) **Dining Guide**: Must-try restaurants, local cuisine, dietary restrictions, reservation needs, 6) **Cultural Insights**: Local customs, etiquette, language basics, cultural events, 7) **Budget Breakdown**: Cost estimates for activities, meals, transport, shopping, emergency funds, 8) **Emergency Information**: Embassy contacts, healthcare facilities, emergency numbers, insurance details, 9) **Weather Considerations**: Seasonal factors, clothing recommendations, activity adjustments.",
+    "category": "travel",
+    "industry": [
+      "Travel",
+      "Tourism",
+      "Hospitality"
+    ],
+    "tags": [
+      "travel planning",
+      "itinerary",
+      "tourism",
+      "vacation planning"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 456,
+      "downvotes": 29,
+      "score": 427
+    },
+    "createdAt": "2024-01-06T14:00:00Z"
+  },
+  {
+    "id": "finance-personal-001",
+    "title": "Personal Budget Planner",
+    "description": "Create comprehensive personal budgeting and financial plans",
+    "content": "Create personalized budget plan for [TIME_PERIOD] with income: [INCOME], major expenses: [EXPENSES], financial goals: [GOALS], current debt: [DEBT], emergency fund: [EMERGENCY_FUND]. Include: 1) **Income Analysis**: All income sources, frequency, stability, tax implications, net income calculation, 2) **Expense Categorization**: Fixed expenses (rent, insurance), variable expenses (groceries, entertainment), debt payments, 3) **Budget Allocation**: 50/30/20 rule or customized percentages based on goals and circumstances, 4) **Debt Payoff Strategy**: Debt snowball vs avalanche methods, minimum payments, extra payment allocation, 5) **Savings Plan**: Emergency fund building, retirement contributions, specific goal savings, 6) **Expense Tracking**: Methods to monitor spending, apps recommendations, regular review schedule, 7) **Goal Achievement**: Timeline for financial goals, milestone tracking, adjustment strategies, 8) **Money-Saving Tips**: Expense reduction opportunities, lifestyle adjustments, deal hunting strategies, 9) **Financial Check-ups**: Monthly reviews, quarterly assessments, annual planning sessions.",
+    "category": "personal-finance",
+    "industry": [
+      "Personal Finance",
+      "Financial Planning"
+    ],
+    "tags": [
+      "budgeting",
+      "personal finance",
+      "money management"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 389,
+      "downvotes": 21,
+      "score": 368
+    },
+    "createdAt": "2024-01-06T15:00:00Z"
+  },
+  {
+    "id": "productivity-001",
+    "title": "Productivity System Designer",
+    "description": "Design personalized productivity systems and workflows",
+    "content": "Design personalized productivity system for [ROLE/PROFESSION] handling [RESPONSIBILITIES]. Work style: [STYLE], Tools available: [TOOLS], Key challenges: [CHALLENGES], Goals: [GOALS]. System should include: 1) **Task Management**: Capture system, prioritization method (Eisenhower Matrix, Getting Things Done), project organization, 2) **Time Management**: Calendar blocking, time boxing, pomodoro technique, energy management, 3) **Workflow Organization**: Daily routines, weekly reviews, monthly planning, project workflows, 4) **Digital Tools Integration**: Apps and software recommendations, automation opportunities, sync strategies, 5) **Focus Strategies**: Distraction management, deep work blocks, communication boundaries, environment optimization, 6) **Review Systems**: Daily planning, weekly reviews, monthly assessments, quarterly goal reviews, 7) **Energy Management**: Peak performance times, break scheduling, work-life balance, stress management, 8) **Habit Formation**: Productivity habits, implementation strategies, tracking methods, adjustment protocols.",
+    "category": "productivity",
+    "industry": [
+      "Professional Development",
+      "Life Coaching"
+    ],
+    "tags": [
+      "productivity",
+      "time management",
+      "workflow optimization"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 412,
+      "downvotes": 26,
+      "score": 386
+    },
+    "createdAt": "2024-01-06T16:00:00Z"
+  },
+  {
+    "id": "legal-personal-001",
+    "title": "Contract Review Simplified",
+    "description": "Plain-language contract review for non-lawyers",
+    "content": "Review this [CONTRACT_TYPE] and provide plain-language explanation. Contract purpose: [PURPOSE], Parties: [PARTIES], Key terms to focus on: [KEY_TERMS]. Provide: 1) **Contract Summary**: What this agreement is about, main obligations of each party, duration and termination, 2) **Key Terms Explanation**: Important clauses in simple language, payment terms, delivery obligations, warranties, 3) **Red Flags**: Potentially problematic terms, unusual clauses, one-sided provisions, missing protections, 4) **Your Obligations**: What you must do, when you must do it, consequences of not complying, 5) **Their Obligations**: What the other party must provide, quality standards, timeline commitments, 6) **Financial Terms**: All costs, payment schedule, penalty clauses, expense responsibilities, 7) **Termination Rights**: How either party can end the agreement, notice requirements, post-termination obligations, 8) **Risk Assessment**: Main risks you're taking, protection mechanisms, insurance requirements, 9) **Questions to Ask**: Important clarifications needed before signing. Note: This is educational only, not legal advice.",
+    "category": "legal",
+    "industry": [
+      "Legal",
+      "Consumer Protection"
+    ],
+    "tags": [
+      "contract review",
+      "legal education",
+      "consumer rights"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 334,
+      "downvotes": 18,
+      "score": 316
+    },
+    "createdAt": "2024-01-06T17:00:00Z"
+  },
+  {
+    "id": "parenting-001",
+    "title": "Parenting Guidance Assistant",
+    "description": "Evidence-based parenting advice and child development guidance",
+    "content": "Provide parenting guidance for [CHILD_AGE] experiencing [SITUATION/BEHAVIOR]. Family context: [FAMILY_CONTEXT], Specific concerns: [CONCERNS], Parenting style: [STYLE]. Include: 1) **Developmental Understanding**: Age-appropriate expectations, normal development milestones, individual variation factors, 2) **Situation Analysis**: Possible causes, underlying needs, environmental factors, emotional development considerations, 3) **Evidence-Based Strategies**: Positive parenting techniques, behavior modification approaches, communication strategies, 4) **Implementation Plan**: Step-by-step approach, consistency requirements, timeline expectations, family involvement, 5) **Communication Techniques**: Age-appropriate language, active listening, emotional validation, boundary setting, 6) **Environmental Modifications**: Home environment adjustments, routine changes, support system utilization, 7) **When to Seek Help**: Warning signs, professional resources, support groups, specialist referrals, 8) **Self-Care for Parents**: Stress management, support network, realistic expectations, patience building. Note: Supplement with professional guidance when needed.",
+    "category": "family",
+    "industry": [
+      "Parenting",
+      "Child Development"
+    ],
+    "tags": [
+      "parenting",
+      "child development",
+      "family guidance"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 267,
+      "downvotes": 14,
+      "score": 253
+    },
+    "createdAt": "2024-01-06T18:00:00Z"
+  },
+  {
+    "id": "language-001",
+    "title": "Language Learning Tutor",
+    "description": "Personalized language learning plans and practice sessions",
+    "content": "Create language learning plan for [TARGET_LANGUAGE] from [CURRENT_LEVEL] to [GOAL_LEVEL]. Learning style: [STYLE], Available time: [TIME], Learning objectives: [OBJECTIVES], Timeline: [DURATION]. Include: 1) **Learning Assessment**: Current skill evaluation, strengths and weaknesses, specific needs identification, 2) **Structured Curriculum**: Grammar progression, vocabulary building, pronunciation focus, cultural elements, 3) **Practice Activities**: Speaking exercises, listening comprehension, reading materials, writing practice, 4) **Resource Recommendations**: Textbooks, apps, podcasts, movies, conversation partners, online courses, 5) **Daily/Weekly Schedule**: Study routine, practice sessions, review periods, progress checkpoints, 6) **Immersion Opportunities**: Language exchange, cultural events, media consumption, travel planning, 7) **Progress Tracking**: Skill assessments, milestone celebrations, adjustment strategies, motivation maintenance, 8) **Common Challenges**: Typical learning obstacles, overcoming plateaus, pronunciation difficulties, grammar confusion. Include practice phrases and cultural tips.",
+    "category": "education",
+    "industry": [
+      "Education",
+      "Language Learning"
+    ],
+    "tags": [
+      "language learning",
+      "education",
+      "skill development"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 345,
+      "downvotes": 22,
+      "score": 323
+    },
+    "createdAt": "2024-01-07T09:00:00Z"
+  },
+  {
+    "id": "cooking-001",
+    "title": "Recipe Creator and Meal Planner",
+    "description": "Create custom recipes and meal plans for any dietary needs",
+    "content": "Create [MEAL_TYPE] recipe and weekly meal plan for [DIETARY_RESTRICTIONS] serving [SERVINGS]. Cooking skill: [SKILL_LEVEL], Available time: [PREP_TIME], Budget: [BUDGET], Preferred cuisines: [CUISINES], Kitchen equipment: [EQUIPMENT]. Provide: 1) **Custom Recipe**: Ingredients with measurements, step-by-step instructions, cooking techniques, timing guidelines, 2) **Nutritional Information**: Calorie count, macronutrients, key vitamins/minerals, dietary benefits, 3) **Meal Planning**: 7-day meal plan, variety and balance, prep-ahead strategies, leftover utilization, 4) **Shopping List**: Organized by store sections, quantity calculations, budget estimates, seasonal alternatives, 5) **Prep Instructions**: Make-ahead components, storage guidelines, reheating instructions, 6) **Cooking Tips**: Technique explanations, troubleshooting, flavor enhancement, equipment substitutions, 7) **Variations**: Dietary modifications, ingredient substitutions, difficulty adjustments, family-friendly options, 8) **Food Safety**: Storage requirements, expiration guidelines, safe handling practices.",
+    "category": "lifestyle",
+    "industry": [
+      "Food & Nutrition",
+      "Health"
+    ],
+    "tags": [
+      "cooking",
+      "meal planning",
+      "nutrition",
+      "recipes"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 423,
+      "downvotes": 27,
+      "score": 396
+    },
+    "createdAt": "2024-01-07T10:00:00Z"
+  },
+  {
+    "id": "investment-001",
+    "title": "Investment Research Analyst",
+    "description": "Research and analyze investment opportunities for individual investors",
+    "content": "Analyze [INVESTMENT_TYPE] opportunity in [SECTOR/COMPANY] for [INVESTOR_PROFILE]. Investment amount: [AMOUNT], Time horizon: [TIMEFRAME], Risk tolerance: [RISK_LEVEL], Investment objectives: [OBJECTIVES]. Provide: 1) **Investment Overview**: Asset description, market position, growth potential, competitive advantages, 2) **Financial Analysis**: Revenue trends, profitability, debt levels, cash flow, valuation metrics, 3) **Market Analysis**: Industry outlook, market trends, competitive landscape, regulatory environment, 4) **Risk Assessment**: Market risks, company-specific risks, liquidity concerns, downside scenarios, 5) **Growth Prospects**: Expansion plans, new markets, product development, partnership opportunities, 6) **Valuation Analysis**: Current valuation, fair value estimate, comparison to peers, entry/exit points, 7) **Portfolio Fit**: Diversification benefits, correlation with existing holdings, allocation recommendations, 8) **Investment Thesis**: Key reasons to invest, catalyst events, timeline expectations, 9) **Monitoring Plan**: Key metrics to track, red flags to watch, review schedule. Note: Not personalized financial advice.",
+    "category": "investment",
+    "industry": [
+      "Investment",
+      "Finance"
+    ],
+    "tags": [
+      "investment analysis",
+      "financial research",
+      "portfolio management"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 289,
+      "downvotes": 19,
+      "score": 270
+    },
+    "createdAt": "2024-01-07T11:00:00Z"
+  },
+  {
+    "id": "healthcare-personal-001",
+    "title": "Health Symptom Checker",
+    "description": "Preliminary health information and when to seek medical care",
+    "content": "Provide health information about [SYMPTOMS] in [AGE_GROUP] [GENDER]. Symptoms: [SYMPTOM_DETAILS], Duration: [TIMEFRAME], Severity: [SEVERITY], Associated factors: [FACTORS]. Include: 1) **Symptom Analysis**: Common causes, possible conditions, symptom patterns, severity indicators, 2) **Self-Care Measures**: Home remedies, lifestyle modifications, symptom management, comfort measures, 3) **When to See a Doctor**: Warning signs, urgency levels, specialist referrals, emergency situations, 4) **Questions for Doctor**: Important information to provide, symptoms to track, medication interactions, 5) **Prevention Strategies**: Risk reduction, lifestyle changes, screening recommendations, health maintenance, 6) **Monitoring Guidelines**: Symptom tracking, improvement expectations, follow-up timeline, 7) **Emergency Warning Signs**: When to seek immediate care, 911 situations, urgent care vs emergency room, 8) **Health Resources**: Reliable information sources, support groups, healthcare navigation. IMPORTANT: This is educational information only, not medical diagnosis or treatment. Always consult healthcare providers for medical concerns.",
+    "category": "health",
+    "industry": [
+      "Healthcare",
+      "Health Information"
+    ],
+    "tags": [
+      "health information",
+      "symptom guidance",
+      "medical education"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 298,
+      "downvotes": 16,
+      "score": 282
+    },
+    "createdAt": "2024-01-07T12:00:00Z"
+  },
+  {
+    "id": "event-001",
+    "title": "Event Planning Assistant",
+    "description": "Plan and organize events of all types and sizes",
+    "content": "Plan [EVENT_TYPE] for [ATTENDEES] people on [DATE] with budget [BUDGET]. Event purpose: [PURPOSE], Venue requirements: [VENUE_NEEDS], Special considerations: [CONSIDERATIONS]. Include: 1) **Event Concept**: Theme development, atmosphere goals, guest experience vision, unique elements, 2) **Venue Selection**: Location options, capacity requirements, amenities needed, booking considerations, 3) **Budget Planning**: Cost breakdown, vendor estimates, contingency funds, payment schedules, 4) **Timeline Development**: Planning milestones, vendor deadlines, setup schedule, event day timeline, 5) **Vendor Management**: Catering, entertainment, photography, decorations, transportation coordination, 6) **Guest Management**: Invitation design, RSVP tracking, dietary requirements, accessibility needs, 7) **Logistics Planning**: Setup/breakdown, parking, security, weather contingencies, equipment needs, 8) **Marketing & Communication**: Promotional strategy, social media, press coverage, attendee communication, 9) **Risk Management**: Insurance needs, safety protocols, emergency procedures, backup plans, 10) **Post-Event**: Cleanup, vendor payments, thank you notes, feedback collection, photo sharing.",
+    "category": "events",
+    "industry": [
+      "Event Planning",
+      "Hospitality"
+    ],
+    "tags": [
+      "event planning",
+      "project management",
+      "hospitality"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 345,
+      "downvotes": 23,
+      "score": 322
+    },
+    "createdAt": "2024-01-07T13:00:00Z"
+  },
+  {
+    "id": "real-estate-001",
+    "title": "Home Buying Guide",
+    "description": "Comprehensive guidance for home buyers and real estate decisions",
+    "content": "Provide home buying guidance for [BUYER_TYPE] in [LOCATION] with budget [BUDGET]. Housing needs: [REQUIREMENTS], Timeline: [TIMEFRAME], Current situation: [STATUS]. Include: 1) **Financial Preparation**: Credit score improvement, down payment strategies, mortgage pre-approval, closing costs estimation, 2) **Market Research**: Local market conditions, pricing trends, neighborhood analysis, future development plans, 3) **Home Search Strategy**: Must-have vs nice-to-have features, online tools, real estate agent selection, showing scheduling, 4) **Property Evaluation**: Inspection checklist, red flags, value assessment, improvement potential, 5) **Offer Strategy**: Competitive offers, negotiation tactics, contingencies, backup plans, 6) **Mortgage Process**: Loan types, interest rates, application process, underwriting requirements, 7) **Legal Considerations**: Purchase agreements, title search, homeowners insurance, property taxes, 8) **Closing Process**: Final walkthrough, document review, fund transfers, key exchange, 9) **Post-Purchase**: Moving logistics, utility setup, maintenance planning, warranty registrations. Note: Supplement with professional real estate and financial advice.",
+    "category": "real-estate",
+    "industry": [
+      "Real Estate",
+      "Finance"
+    ],
+    "tags": [
+      "home buying",
+      "real estate",
+      "property investment"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 267,
+      "downvotes": 15,
+      "score": 252
+    },
+    "createdAt": "2024-01-07T14:00:00Z"
+  },
+  {
+    "id": "startup-001",
+    "title": "Startup Business Plan Generator",
+    "description": "Create comprehensive business plans for startup ventures",
+    "content": "Create business plan for [STARTUP_IDEA] targeting [TARGET_MARKET]. Founder background: [BACKGROUND], Funding needed: [FUNDING], Timeline: [LAUNCH_TIMELINE]. Include: 1) **Executive Summary**: Business concept, market opportunity, competitive advantage, financial projections, funding requirements, 2) **Market Analysis**: Market size, target customers, customer needs, market trends, growth potential, 3) **Competitive Analysis**: Direct/indirect competitors, competitive landscape, differentiation strategy, market positioning, 4) **Business Model**: Revenue streams, pricing strategy, cost structure, unit economics, scalability factors, 5) **Product/Service Description**: Features and benefits, development roadmap, intellectual property, technology requirements, 6) **Marketing Strategy**: Customer acquisition, brand positioning, marketing channels, launch strategy, growth hacking, 7) **Operations Plan**: Business processes, supply chain, technology infrastructure, quality control, 8) **Management Team**: Key personnel, organizational structure, advisory board, hiring plan, 9) **Financial Projections**: 5-year P&L, cash flow, funding requirements, break-even analysis, exit strategy, 10) **Risk Analysis**: Market risks, operational risks, financial risks, mitigation strategies.",
+    "category": "entrepreneurship",
+    "industry": [
+      "Startups",
+      "Entrepreneurship",
+      "Business Development"
+    ],
+    "tags": [
+      "business plan",
+      "startup",
+      "entrepreneurship"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 412,
+      "downvotes": 28,
+      "score": 384
+    },
+    "createdAt": "2024-01-07T15:00:00Z"
+  },
+  {
+    "id": "prompt-eng-001",
+    "title": "Prompt Engineering Master",
+    "description": "Create optimized AI prompts for any task or use case",
+    "content": "Create an optimized AI prompt for [TASK_DESCRIPTION]. Target AI: [AI_MODEL], Expected output: [OUTPUT_TYPE], Audience: [AUDIENCE], Context: [CONTEXT]. The prompt should: 1) **Clear Instructions**: Specific, actionable directions with role assignment, 2) **Context Setting**: Relevant background information and constraints, 3) **Output Format**: Detailed structure and formatting requirements, 4) **Examples**: Sample inputs and desired outputs when helpful, 5) **Quality Criteria**: Success metrics and evaluation standards, 6) **Error Prevention**: Common pitfalls to avoid and edge case handling, 7) **Iteration Guidelines**: How to refine and improve the prompt based on results. Make the prompt clear, comprehensive, and optimized for consistent high-quality results.",
+    "category": "ai-tools",
+    "industry": [
+      "AI",
+      "Prompt Engineering",
+      "Technology"
+    ],
+    "tags": [
+      "prompt engineering",
+      "AI optimization",
+      "prompt design"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "votes": {
+      "upvotes": 892,
+      "downvotes": 34,
+      "score": 858
+    },
+    "createdAt": "2024-01-08T09:00:00Z"
+  },
+  {
+    "id": "copywriting-001",
+    "title": "Sales Copy That Converts",
+    "description": "Write high-converting sales copy for any product or service",
+    "content": "Write high-converting sales copy for [PRODUCT/SERVICE] targeting [TARGET_AUDIENCE]. Price: [PRICE], Main benefit: [PRIMARY_BENEFIT], Competition: [COMPETITORS]. Include: 1) **Attention-Grabbing Headline**: Hook that stops scrolling and captures interest, 2) **Problem Identification**: Pain points your audience faces, emotional triggers, 3) **Solution Presentation**: How your product solves their problems uniquely, 4) **Benefits Over Features**: Transformation and outcomes, not just what it does, 5) **Social Proof**: Testimonials, reviews, case studies, credibility indicators, 6) **Urgency and Scarcity**: Time-sensitive offers, limited availability, 7) **Clear Call-to-Action**: Specific next steps, risk reversal, guarantee, 8) **Objection Handling**: Address common concerns and hesitations. Use persuasive psychology, emotional triggers, and proven copywriting formulas (AIDA, PAS, etc.).",
+    "category": "marketing",
+    "industry": [
+      "Marketing",
+      "Sales",
+      "Copywriting"
+    ],
+    "tags": [
+      "copywriting",
+      "sales copy",
+      "conversion optimization"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 743,
+      "downvotes": 41,
+      "score": 702
+    },
+    "createdAt": "2024-01-08T10:00:00Z"
+  },
+  {
+    "id": "research-001",
+    "title": "Research Paper Assistant",
+    "description": "Help with academic research, citations, and paper structure",
+    "content": "Assist with academic research on [RESEARCH_TOPIC] for [ACADEMIC_LEVEL]. Research focus: [FOCUS_AREA], Paper type: [PAPER_TYPE], Length: [LENGTH], Citation style: [CITATION_STYLE]. Provide: 1) **Research Strategy**: Database searches, keyword optimization, source evaluation criteria, 2) **Literature Review**: Key papers, research gaps, theoretical frameworks, current debates, 3) **Thesis Development**: Clear argument, research questions, hypothesis formation, 4) **Paper Structure**: Outline with sections, logical flow, academic formatting, 5) **Source Analysis**: Critical evaluation, methodology assessment, reliability checking, 6) **Citation Help**: Proper formatting, avoiding plagiarism, reference management, 7) **Writing Support**: Academic tone, argument development, evidence presentation, 8) **Review Process**: Peer review preparation, revision strategies, publication guidelines. Maintain academic integrity and follow ethical research practices.",
+    "category": "academic",
+    "industry": [
+      "Academia",
+      "Research",
+      "Education"
+    ],
+    "tags": [
+      "academic research",
+      "research paper",
+      "academic writing"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 567,
+      "downvotes": 28,
+      "score": 539
+    },
+    "createdAt": "2024-01-08T11:00:00Z"
+  },
+  {
+    "id": "excel-001",
+    "title": "Excel Formula and Analysis Expert",
+    "description": "Create complex Excel formulas and data analysis solutions",
+    "content": "Create Excel solution for [DATA_ANALYSIS_TASK] with [DATA_DESCRIPTION]. Analysis goals: [OBJECTIVES], Data size: [DATA_SIZE], Excel version: [VERSION]. Provide: 1) **Formula Solutions**: Complex formulas using VLOOKUP, INDEX-MATCH, SUMIFS, array formulas, 2) **Data Structure**: Optimal table organization, data validation, formatting best practices, 3) **Pivot Tables**: Dynamic analysis, calculated fields, advanced filtering and grouping, 4) **Charts and Visualization**: Appropriate chart types, dashboard design, conditional formatting, 5) **Automation**: Macros, VBA scripts for repetitive tasks, error handling, 6) **Performance Optimization**: Efficient calculations, file size management, speed improvements, 7) **Template Creation**: Reusable models, user-friendly interfaces, documentation, 8) **Troubleshooting**: Common errors, formula debugging, data cleaning techniques. Include step-by-step instructions and alternative approaches.",
+    "category": "data-analysis",
+    "industry": [
+      "Data Analysis",
+      "Business",
+      "Finance"
+    ],
+    "tags": [
+      "excel",
+      "data analysis",
+      "spreadsheets"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 623,
+      "downvotes": 31,
+      "score": 592
+    },
+    "createdAt": "2024-01-08T12:00:00Z"
+  },
+  {
+    "id": "seo-001",
+    "title": "SEO Content Optimizer",
+    "description": "Optimize content for search engines while maintaining readability",
+    "content": "Optimize content for SEO targeting [PRIMARY_KEYWORD] in [INDUSTRY]. Content type: [CONTENT_TYPE], Target audience: [AUDIENCE], Competitor analysis: [COMPETITORS]. Include: 1) **Keyword Research**: Long-tail keywords, search intent analysis, keyword density optimization, 2) **On-Page SEO**: Title tags, meta descriptions, header structure (H1-H6), internal linking, 3) **Content Structure**: Scannable formatting, bullet points, subheadings, logical flow, 4) **User Intent**: Matching search queries, answering user questions, providing value, 5) **Technical SEO**: URL structure, image alt tags, schema markup, page speed considerations, 6) **Content Quality**: Comprehensive coverage, expertise demonstration, readability optimization, 7) **Competitive Analysis**: Gap analysis, differentiation opportunities, better content creation, 8) **Performance Tracking**: KPIs to monitor, ranking factors, continuous improvement strategies. Balance SEO optimization with natural, engaging writing.",
+    "category": "seo",
+    "industry": [
+      "SEO",
+      "Digital Marketing",
+      "Content Marketing"
+    ],
+    "tags": [
+      "SEO",
+      "content optimization",
+      "search marketing"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 534,
+      "downvotes": 26,
+      "score": 508
+    },
+    "createdAt": "2024-01-08T13:00:00Z"
+  },
+  {
+    "id": "debugging-001",
+    "title": "Code Debugging Detective",
+    "description": "Systematic approach to finding and fixing code bugs",
+    "content": "Debug [PROGRAMMING_LANGUAGE] code with issue: [PROBLEM_DESCRIPTION]. Code context: [CODE_SNIPPET], Error messages: [ERRORS], Expected behavior: [EXPECTED], Environment: [ENVIRONMENT]. Follow systematic debugging: 1) **Problem Analysis**: Understanding the issue, reproducing the bug, isolating the problem area, 2) **Error Investigation**: Reading error messages, stack traces, log analysis, 3) **Code Review**: Line-by-line examination, logic flow verification, variable tracking, 4) **Testing Approach**: Unit tests, integration tests, edge case testing, 5) **Root Cause Identification**: Finding the actual cause vs symptoms, dependency issues, 6) **Solution Implementation**: Code fixes, refactoring opportunities, improvement suggestions, 7) **Verification**: Testing the fix, regression testing, performance impact, 8) **Prevention**: Code quality improvements, error handling, monitoring additions. Provide clear explanations and multiple solution approaches.",
+    "category": "programming",
+    "industry": [
+      "Software Development",
+      "Technology"
+    ],
+    "tags": [
+      "debugging",
+      "programming",
+      "problem solving"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 445,
+      "downvotes": 22,
+      "score": 423
+    },
+    "createdAt": "2024-01-08T14:00:00Z"
+  },
+  {
+    "id": "linkedin-001",
+    "title": "LinkedIn Content Creator",
+    "description": "Create engaging LinkedIn posts that build professional brand",
+    "content": "Create engaging LinkedIn content about [TOPIC] for [PROFESSIONAL_ROLE] targeting [AUDIENCE]. Content goal: [OBJECTIVE], Industry: [INDUSTRY], Personal brand: [BRAND_VOICE]. Include: 1) **Hook Creation**: Attention-grabbing opening lines, thought-provoking questions, surprising statistics, 2) **Value Proposition**: Educational insights, industry trends, personal experiences, lessons learned, 3) **Story Structure**: Beginning-middle-end, relatable scenarios, professional challenges and solutions, 4) **Engagement Tactics**: Questions for comments, polls, conversation starters, call-to-action, 5) **Professional Tone**: Authority building, authenticity, thought leadership, vulnerability when appropriate, 6) **Hashtag Strategy**: Relevant industry tags, trending topics, community hashtags, 7) **Visual Elements**: Carousel ideas, infographic concepts, document sharing, 8) **Posting Strategy**: Optimal timing, series content, cross-posting opportunities. Focus on building relationships and demonstrating expertise.",
+    "category": "social-media",
+    "industry": [
+      "Professional Networking",
+      "Personal Branding"
+    ],
+    "tags": [
+      "LinkedIn",
+      "professional networking",
+      "personal branding"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 678,
+      "downvotes": 35,
+      "score": 643
+    },
+    "createdAt": "2024-01-08T15:00:00Z"
+  },
+  {
+    "id": "presentation-001",
+    "title": "PowerPoint Presentation Builder",
+    "description": "Create compelling presentations for any business scenario",
+    "content": "Create presentation for [PRESENTATION_PURPOSE] to [AUDIENCE] in [TIME_LIMIT] minutes. Topic: [TOPIC], Key message: [MESSAGE], Expected outcome: [OUTCOME]. Include: 1) **Structure Planning**: Opening hook, agenda, main points, conclusion, call-to-action, 2) **Slide Design**: Clean layouts, consistent branding, visual hierarchy, minimal text, 3) **Content Development**: Key insights, supporting data, storytelling elements, smooth transitions, 4) **Visual Strategy**: Charts and graphs, images and icons, infographics, video integration, 5) **Audience Engagement**: Interactive elements, Q&A preparation, discussion prompts, 6) **Presentation Flow**: Logical progression, timing considerations, backup slides, 7) **Delivery Tips**: Speaking notes, gesture suggestions, eye contact, voice modulation, 8) **Technical Preparation**: Equipment check, backup plans, handouts, follow-up materials. Focus on clear communication and audience value.",
+    "category": "business-communication",
+    "industry": [
+      "Business",
+      "Presentation",
+      "Communication"
+    ],
+    "tags": [
+      "presentation",
+      "PowerPoint",
+      "public speaking"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 456,
+      "downvotes": 24,
+      "score": 432
+    },
+    "createdAt": "2024-01-08T16:00:00Z"
+  },
+  {
+    "id": "customer-service-001",
+    "title": "Customer Service Response Generator",
+    "description": "Craft professional customer service responses for any situation",
+    "content": "Create customer service response for [SITUATION_TYPE] with customer complaint: [COMPLAINT_DETAILS]. Customer tone: [TONE], Urgency: [URGENCY], Company policy: [POLICIES], Desired outcome: [RESOLUTION]. Respond with: 1) **Acknowledgment**: Show understanding, validate feelings, take responsibility where appropriate, 2) **Empathy Statement**: Connect with customer emotions, demonstrate care and concern, 3) **Investigation**: Ask clarifying questions, gather necessary information, review account details, 4) **Solution Offering**: Present clear options, explain benefits, accommodate when possible, 5) **Clear Communication**: Simple language, avoid jargon, step-by-step instructions, 6) **Follow-up Plan**: Next steps, timeline expectations, contact information, escalation options, 7) **Professional Tone**: Courteous, helpful, patient, positive attitude throughout, 8) **Documentation**: Record keeping, knowledge base updates, pattern recognition. Turn service challenges into loyalty opportunities.",
+    "category": "customer-service",
+    "industry": [
+      "Customer Service",
+      "Support",
+      "Business"
+    ],
+    "tags": [
+      "customer service",
+      "support",
+      "communication"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 389,
+      "downvotes": 18,
+      "score": 371
+    },
+    "createdAt": "2024-01-08T17:00:00Z"
+  },
+  {
+    "id": "grant-writing-001",
+    "title": "Grant Proposal Writer",
+    "description": "Write compelling grant proposals for funding opportunities",
+    "content": "Write grant proposal for [PROJECT_TYPE] seeking [FUNDING_AMOUNT] from [FUNDER_TYPE]. Organization: [ORGANIZATION], Project duration: [TIMEFRAME], Target beneficiaries: [BENEFICIARIES]. Include: 1) **Executive Summary**: Project overview, funding request, expected impact, organizational credibility, 2) **Needs Assessment**: Problem statement, supporting data, community impact, urgency justification, 3) **Project Description**: Goals and objectives, methodology, timeline, deliverables, evaluation metrics, 4) **Organizational Capacity**: Track record, expertise, infrastructure, management capabilities, 5) **Budget Narrative**: Detailed costs, cost-effectiveness, matching funds, sustainability planning, 6) **Evaluation Plan**: Success metrics, data collection methods, reporting timeline, impact measurement, 7) **Sustainability**: Long-term viability, ongoing funding, partnership development, 8) **Supporting Materials**: Letters of support, organizational documents, appendices. Align with funder priorities and guidelines.",
+    "category": "nonprofit",
+    "industry": [
+      "Nonprofit",
+      "Fundraising",
+      "Grant Writing"
+    ],
+    "tags": [
+      "grant writing",
+      "fundraising",
+      "nonprofit"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 234,
+      "downvotes": 12,
+      "score": 222
+    },
+    "createdAt": "2024-01-08T18:00:00Z"
+  },
+  {
+    "id": "brainstorm-001",
+    "title": "Creative Brainstorming Facilitator",
+    "description": "Generate innovative ideas and solutions through structured brainstorming",
+    "content": "Facilitate brainstorming session for [CHALLENGE/OPPORTUNITY] with [PARTICIPANTS]. Session goal: [OBJECTIVE], Time limit: [DURATION], Constraints: [LIMITATIONS], Success criteria: [SUCCESS_METRICS]. Structure session with: 1) **Warm-up Exercises**: Ice breakers, creative thinking primers, mind expansion activities, 2) **Problem Reframing**: Multiple perspectives, root cause analysis, assumption challenging, 3) **Idea Generation**: Rapid ideation, no judgment zone, quantity over quality, wild ideas encouraged, 4) **Building Techniques**: Yes-and approach, idea combination, improvement suggestions, 5) **Categorization**: Theme identification, idea clustering, pattern recognition, 6) **Evaluation Criteria**: Feasibility assessment, impact potential, resource requirements, risk analysis, 7) **Prioritization**: Voting methods, ranking systems, consensus building, 8) **Action Planning**: Next steps, ownership assignment, timeline development. Foster creative, non-judgmental environment.",
+    "category": "innovation",
+    "industry": [
+      "Innovation",
+      "Creative Problem Solving",
+      "Business"
+    ],
+    "tags": [
+      "brainstorming",
+      "innovation",
+      "creative thinking"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 345,
+      "downvotes": 19,
+      "score": 326
+    },
+    "createdAt": "2024-01-09T09:00:00Z"
+  },
+  {
+    "id": "therapy-001",
+    "title": "Mental Health Support Assistant",
+    "description": "Provide supportive guidance for mental health and wellness",
+    "content": "Provide mental health support for [CONCERN_TYPE] situation. Current feelings: [EMOTIONS], Support system: [SUPPORT], Previous coping strategies: [COPING], Professional help: [THERAPY_STATUS]. Offer: 1) **Validation**: Acknowledge feelings, normalize experiences, reduce self-judgment, 2) **Coping Strategies**: Breathing techniques, grounding exercises, mindfulness practices, journaling prompts, 3) **Cognitive Tools**: Thought challenging, perspective shifting, positive self-talk, reality testing, 4) **Behavioral Activation**: Small achievable goals, routine building, activity scheduling, social connection, 5) **Crisis Resources**: Hotlines, emergency contacts, safety planning, immediate support options, 6) **Self-Care Planning**: Physical care, emotional care, spiritual care, creative outlets, 7) **Professional Resources**: Therapy types, finding providers, insurance considerations, support groups, 8) **Progress Tracking**: Mood monitoring, goal setting, milestone celebration. IMPORTANT: This is supportive guidance only, not professional therapy. Always encourage professional help for serious mental health concerns.",
+    "category": "mental-health",
+    "industry": [
+      "Mental Health",
+      "Wellness",
+      "Support"
+    ],
+    "tags": [
+      "mental health",
+      "wellness",
+      "emotional support"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 567,
+      "downvotes": 23,
+      "score": 544
+    },
+    "createdAt": "2024-01-09T10:00:00Z"
+  },
+  {
+    "id": "networking-001",
+    "title": "Professional Networking Strategy",
+    "description": "Build meaningful professional relationships and expand your network",
+    "content": "Develop networking strategy for [CAREER_GOAL] in [INDUSTRY]. Current network: [NETWORK_SIZE], Target connections: [TARGET_PROFILES], Time commitment: [TIME_AVAILABLE], Networking style: [APPROACH_PREFERENCE]. Strategy includes: 1) **Network Mapping**: Current connections analysis, influence mapping, gap identification, strategic targets, 2) **Value Proposition**: What you offer others, unique skills, resources, connections, expertise to share, 3) **Networking Channels**: Professional events, online communities, alumni networks, industry associations, 4) **Conversation Starters**: Industry insights, shared experiences, mutual connections, genuine interests, 5) **Follow-up System**: Contact management, relationship nurturing, value-added touchpoints, 6) **Giving First**: How to help others, introductions, resource sharing, mentorship opportunities, 7) **Online Presence**: LinkedIn optimization, thought leadership, professional branding, content sharing, 8) **Relationship Maintenance**: Regular check-ins, celebration of others' success, long-term relationship building. Focus on authentic relationship building over transactional exchanges.",
+    "category": "career",
+    "industry": [
+      "Career Development",
+      "Professional Networking"
+    ],
+    "tags": [
+      "networking",
+      "relationship building",
+      "career development"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 423,
+      "downvotes": 21,
+      "score": 402
+    },
+    "createdAt": "2024-01-09T11:00:00Z"
+  },
+  {
+    "id": "innovation-001",
+    "title": "Innovation Workshop Designer",
+    "description": "Design innovation workshops and ideation sessions",
+    "content": "Design innovation workshop for [INNOVATION_CHALLENGE] with [PARTICIPANTS] participants over [DURATION]. Workshop objective: [GOAL], Innovation focus: [FOCUS_AREA], Constraints: [LIMITATIONS], Output requirements: [DELIVERABLES]. Workshop structure: 1) **Pre-Work**: Research assignments, preparation materials, stakeholder interviews, trend analysis, 2) **Opening**: Icebreakers, mindset setting, rules establishment, energy building, 3) **Problem Immersion**: Challenge deep-dive, user journey mapping, pain point identification, 4) **Inspiration**: Best practices, case studies, external perspectives, trend exploration, 5) **Ideation**: Multiple techniques (SCAMPER, 6-3-5, brainwriting), wild ideas, quantity focus, 6) **Convergence**: Idea evaluation, clustering, ranking, consensus building, 7) **Prototyping**: Rapid concept development, visual thinking, experimentation, 8) **Testing**: Feedback gathering, iteration, refinement, validation. Include facilitation tips and material requirements.",
+    "category": "innovation",
+    "industry": [
+      "Innovation",
+      "Design Thinking",
+      "Business"
+    ],
+    "tags": [
+      "innovation workshop",
+      "design thinking",
+      "facilitation"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 289,
+      "downvotes": 15,
+      "score": 274
+    },
+    "createdAt": "2024-01-09T12:00:00Z"
+  },
+  {
+    "id": "crisis-001",
+    "title": "Crisis Management Advisor",
+    "description": "Navigate organizational crises with strategic communication and planning",
+    "content": "Develop crisis management plan for [CRISIS_TYPE] affecting [ORGANIZATION]. Crisis scope: [IMPACT_LEVEL], Stakeholders: [AFFECTED_PARTIES], Timeline: [URGENCY], Resources: [AVAILABLE_RESOURCES]. Plan includes: 1) **Crisis Assessment**: Severity evaluation, impact analysis, risk assessment, escalation triggers, 2) **Response Team**: Crisis team roles, decision authority, communication chain, external advisors, 3) **Immediate Actions**: Safety priorities, damage control, stakeholder notification, media response, 4) **Communication Strategy**: Key messages, audience segmentation, channel selection, spokesperson training, 5) **Stakeholder Management**: Employees, customers, investors, media, regulators, community, 6) **Operational Continuity**: Business continuity, service maintenance, alternative processes, 7) **Legal Considerations**: Liability assessment, regulatory compliance, documentation requirements, 8) **Recovery Planning**: Reputation rebuilding, lessons learned, process improvements, prevention strategies. Include templates for press releases and stakeholder communications.",
+    "category": "crisis-management",
+    "industry": [
+      "Crisis Management",
+      "Public Relations",
+      "Business"
+    ],
+    "tags": [
+      "crisis management",
+      "emergency response",
+      "business continuity"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 356,
+      "downvotes": 18,
+      "score": 338
+    },
+    "createdAt": "2024-01-09T13:00:00Z"
+  },
+  {
+    "id": "automation-001",
+    "title": "Process Automation Specialist",
+    "description": "Identify and design automation solutions for business processes",
+    "content": "Design automation solution for [PROCESS_NAME] in [DEPARTMENT]. Current process: [PROCESS_DESCRIPTION], Pain points: [ISSUES], Volume: [TRANSACTION_VOLUME], Tools available: [TOOLS], Budget: [BUDGET]. Automation plan: 1) **Process Analysis**: Current state mapping, bottleneck identification, time/cost analysis, quality issues, 2) **Automation Opportunities**: Rule-based tasks, repetitive actions, data transfers, approvals, notifications, 3) **Tool Selection**: RPA tools, workflow software, integration platforms, custom development, 4) **Solution Design**: Process flow design, decision logic, exception handling, user interfaces, 5) **Implementation Plan**: Pilot approach, rollout phases, training requirements, change management, 6) **ROI Analysis**: Cost savings, time reduction, quality improvements, scalability benefits, 7) **Risk Management**: Failure modes, backup processes, security considerations, compliance requirements, 8) **Monitoring**: Performance metrics, error tracking, continuous improvement, maintenance plans. Include technical specifications and business case.",
+    "category": "automation",
+    "industry": [
+      "Process Automation",
+      "Technology",
+      "Operations"
+    ],
+    "tags": [
+      "process automation",
+      "workflow",
+      "efficiency"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 445,
+      "downvotes": 24,
+      "score": 421
+    },
+    "createdAt": "2024-01-09T14:00:00Z"
+  },
+  {
+    "id": "mindfulness-001",
+    "title": "Mindfulness and Meditation Guide",
+    "description": "Create personalized mindfulness and meditation practices",
+    "content": "Create mindfulness practice for [GOAL] with [TIME_AVAILABLE] daily. Experience level: [LEVEL], Specific challenges: [CHALLENGES], Preferred style: [MEDITATION_TYPE], Environment: [SETTING]. Practice includes: 1) **Foundation Building**: Breath awareness, body scanning, present moment focus, non-judgmental observation, 2) **Technique Selection**: Concentration meditation, insight meditation, loving-kindness, body-based practices, 3) **Practice Structure**: Session length, timing, posture, environment setup, preparation rituals, 4) **Guided Instructions**: Step-by-step directions, voice tone, pacing, cue words, 5) **Common Obstacles**: Mind wandering, restlessness, drowsiness, doubt, physical discomfort, 6) **Progress Tracking**: Awareness development, emotional regulation, stress reduction, sleep improvement, 7) **Integration**: Daily life application, informal practice, mindful activities, workplace mindfulness, 8) **Resources**: Apps, books, communities, retreats, teachers. Adapt practices to individual needs and lifestyle constraints.",
+    "category": "wellness",
+    "industry": [
+      "Wellness",
+      "Mental Health",
+      "Personal Development"
+    ],
+    "tags": [
+      "mindfulness",
+      "meditation",
+      "wellness"
+    ],
+    "difficulty": "Beginner",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 512,
+      "downvotes": 28,
+      "score": 484
+    },
+    "createdAt": "2024-01-09T15:00:00Z"
+  },
+  {
+    "id": "ecommerce-001",
+    "title": "E-commerce Optimization Expert",
+    "description": "Optimize online stores for better conversion and sales",
+    "content": "Optimize e-commerce store for [PRODUCT_CATEGORY] targeting [CUSTOMER_SEGMENT]. Current performance: [METRICS], Platform: [PLATFORM], Budget: [BUDGET], Goals: [OBJECTIVES]. Optimization areas: 1) **Conversion Rate**: Checkout optimization, form simplification, trust signals, urgency creation, 2) **Product Pages**: Image quality, descriptions, reviews, cross-selling, specifications, 3) **User Experience**: Site speed, mobile optimization, navigation, search functionality, 4) **Pricing Strategy**: Competitive analysis, psychological pricing, discounts, bundling, 5) **Customer Journey**: Awareness to purchase, touchpoint optimization, abandonment recovery, 6) **SEO Optimization**: Product SEO, category optimization, technical SEO, content marketing, 7) **Social Proof**: Reviews, testimonials, user-generated content, influencer partnerships, 8) **Analytics Setup**: Conversion tracking, user behavior analysis, A/B testing, performance monitoring. Include specific recommendations and implementation priorities.",
+    "category": "ecommerce",
+    "industry": [
+      "E-commerce",
+      "Retail",
+      "Digital Marketing"
+    ],
+    "tags": [
+      "e-commerce",
+      "conversion optimization",
+      "online retail"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 634,
+      "downvotes": 32,
+      "score": 602
+    },
+    "createdAt": "2024-01-09T16:00:00Z"
+  },
+  {
+    "id": "sustainability-001",
+    "title": "Sustainability Strategy Consultant",
+    "description": "Develop comprehensive sustainability strategies for organizations",
+    "content": "Create sustainability strategy for [ORGANIZATION_TYPE] in [INDUSTRY]. Current practices: [CURRENT_STATE], Goals: [SUSTAINABILITY_GOALS], Timeline: [TIMEFRAME], Budget: [RESOURCES]. Strategy components: 1) **Sustainability Assessment**: Current impact analysis, carbon footprint, waste audit, resource usage, 2) **Goal Setting**: Science-based targets, materiality assessment, stakeholder priorities, regulatory requirements, 3) **Environmental Initiatives**: Energy efficiency, renewable energy, waste reduction, water conservation, 4) **Social Responsibility**: Community engagement, employee wellness, diversity initiatives, ethical sourcing, 5) **Economic Sustainability**: Cost-benefit analysis, green investments, sustainable financing, risk management, 6) **Supply Chain**: Supplier assessment, sustainable procurement, transportation optimization, 7) **Reporting Framework**: KPI development, monitoring systems, transparency, stakeholder communication, 8) **Implementation Roadmap**: Phased approach, resource allocation, change management, continuous improvement. Align with UN SDGs and industry best practices.",
+    "category": "sustainability",
+    "industry": [
+      "Sustainability",
+      "Corporate Responsibility",
+      "Environment"
+    ],
+    "tags": [
+      "sustainability",
+      "environmental responsibility",
+      "corporate strategy"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 298,
+      "downvotes": 16,
+      "score": 282
+    },
+    "createdAt": "2024-01-09T17:00:00Z"
+  },
+  {
+    "id": "conflict-001",
+    "title": "Conflict Resolution Mediator",
+    "description": "Mediate conflicts and facilitate resolution in various settings",
+    "content": "Mediate conflict between [PARTIES] regarding [CONFLICT_ISSUE]. Conflict type: [TYPE], Relationship: [RELATIONSHIP], Severity: [LEVEL], Setting: [ENVIRONMENT]. Mediation process: 1) **Pre-Mediation**: Individual meetings, issue identification, ground rule setting, expectation management, 2) **Opening Statements**: Safe space creation, neutrality establishment, process explanation, confidence building, 3) **Issue Exploration**: Active listening, perspective understanding, emotion acknowledgment, fact gathering, 4) **Common Ground**: Shared interests identification, mutual goals, relationship preservation, 5) **Problem-Solving**: Option generation, creative solutions, win-win opportunities, compromise possibilities, 6) **Agreement Building**: Solution evaluation, commitment development, implementation planning, 7) **Documentation**: Agreement recording, responsibility assignment, timeline establishment, 8) **Follow-up**: Progress monitoring, relationship maintenance, prevention strategies. Focus on understanding rather than blame.",
+    "category": "conflict-resolution",
+    "industry": [
+      "Mediation",
+      "Human Resources",
+      "Leadership"
+    ],
+    "tags": [
+      "conflict resolution",
+      "mediation",
+      "communication"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 378,
+      "downvotes": 19,
+      "score": 359
+    },
+    "createdAt": "2024-01-09T18:00:00Z"
+  },
+  {
+    "id": "storytelling-001",
+    "title": "Brand Storytelling Expert",
+    "description": "Craft compelling brand stories that connect with audiences",
+    "content": "Create brand story for [COMPANY/PRODUCT] targeting [AUDIENCE]. Brand values: [VALUES], Unique proposition: [USP], Origin: [HISTORY], Mission: [PURPOSE]. Story elements: 1) **Origin Story**: Founding moment, inspiration, challenges overcome, vision genesis, 2) **Character Development**: Founder personality, customer heroes, brand personality, relatable figures, 3) **Conflict and Challenge**: Problems solved, obstacles overcome, market gaps addressed, 4) **Transformation**: Before and after, customer journey, impact created, lives changed, 5) **Values Integration**: Core beliefs, principles, purpose-driven actions, social impact, 6) **Emotional Connection**: Shared experiences, aspirations, fears addressed, dreams fulfilled, 7) **Proof Points**: Success stories, testimonials, results, credibility markers, 8) **Call to Adventure**: Invitation to join, participate, experience, transform. Use storytelling techniques: hero's journey, emotional arcs, sensory details, authentic voice.",
+    "category": "branding",
+    "industry": [
+      "Branding",
+      "Marketing",
+      "Communications"
+    ],
+    "tags": [
+      "brand storytelling",
+      "narrative",
+      "brand strategy"
+    ],
+    "difficulty": "Advanced",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 567,
+      "downvotes": 29,
+      "score": 538
+    },
+    "createdAt": "2024-01-10T09:00:00Z"
+  },
+  {
+    "id": "habit-001",
+    "title": "Habit Formation Coach",
+    "description": "Design personalized habit formation and behavior change programs",
+    "content": "Design habit formation program for [DESIRED_HABIT] over [TIMEFRAME]. Current situation: [CURRENT_STATE], Obstacles: [BARRIERS], Motivation: [REASONS], Support system: [SUPPORT]. Program design: 1) **Habit Analysis**: Current patterns, trigger identification, reward systems, environmental factors, 2) **Goal Specificity**: Clear behavior definition, frequency, timing, context, measurement criteria, 3) **Implementation Strategy**: Start small, consistency focus, stack habits, environmental design, 4) **Trigger Design**: Cue identification, context linking, reminder systems, automatic activation, 5) **Reward Systems**: Intrinsic motivation, external rewards, celebration rituals, progress recognition, 6) **Obstacle Management**: Barrier anticipation, contingency planning, flexibility building, failure recovery, 7) **Progress Tracking**: Measurement methods, milestone recognition, adjustment triggers, motivation maintenance, 8) **Long-term Sustainability**: Identity integration, lifestyle alignment, community support, continuous evolution. Use behavioral psychology principles and proven habit formation frameworks.",
+    "category": "personal-development",
+    "industry": [
+      "Personal Development",
+      "Life Coaching",
+      "Wellness"
+    ],
+    "tags": [
+      "habit formation",
+      "behavior change",
+      "personal development"
+    ],
+    "difficulty": "Intermediate",
+    "aiTools": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "votes": {
+      "upvotes": 489,
+      "downvotes": 25,
+      "score": 464
+    },
+    "createdAt": "2024-01-10T10:00:00Z"
   }
 ]
