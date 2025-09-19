@@ -1,0 +1,257 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Prompt": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the prompt"
+        },
+        "title": {
+          "type": "string",
+          "description": "Short, descriptive title for the prompt"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of what the prompt does"
+        },
+        "content": {
+          "type": "string",
+          "description": "The actual prompt text with placeholders"
+        },
+        "category": {
+          "type": "string",
+          "description": "Primary category (e.g., 'Sales', 'Engineering', 'Marketing')"
+        },
+        "subcategory": {
+          "type": "string",
+          "description": "Specific subcategory within the main category"
+        },
+        "industry": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Industries this prompt is relevant for"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Searchable tags for better discoverability"
+        },
+        "variables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Variable name (e.g., 'company_name')"
+              },
+              "placeholder": {
+                "type": "string",
+                "description": "Placeholder text in the prompt (e.g., '[COMPANY_NAME]')"
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of what this variable should contain"
+              },
+              "example": {
+                "type": "string",
+                "description": "Example value for this variable"
+              }
+            },
+            "required": ["name", "placeholder", "description"]
+          },
+          "description": "Dynamic variables that users can customize"
+        },
+        "aiTools": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["ChatGPT", "Claude", "Gemini", "Copilot", "Universal"]
+          },
+          "description": "AI tools this prompt is optimized for"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["Beginner", "Intermediate", "Advanced"],
+          "description": "Complexity level of the prompt"
+        },
+        "useCase": {
+          "type": "string",
+          "description": "Specific use case or scenario for this prompt"
+        },
+        "author": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "company": {
+              "type": "string"
+            }
+          },
+          "description": "Information about who created this prompt"
+        },
+        "rating": {
+          "type": "object",
+          "properties": {
+            "average": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "description": "User ratings for this prompt"
+        },
+        "votes": {
+          "type": "object",
+          "properties": {
+            "upvotes": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of upvotes"
+            },
+            "downvotes": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of downvotes"
+            },
+            "score": {
+              "type": "integer",
+              "description": "Net vote score (upvotes - downvotes)"
+            }
+          },
+          "description": "Community voting data"
+        },
+        "submittedBy": {
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "string",
+              "description": "Anonymous user ID"
+            },
+            "name": {
+              "type": "string",
+              "description": "Display name"
+            },
+            "submittedAt": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "description": "Information about community contributor"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["approved", "pending", "rejected"],
+          "description": "Moderation status for community submissions"
+        },
+        "usage": {
+          "type": "object",
+          "properties": {
+            "count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of times this prompt has been used"
+            },
+            "lastUsed": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Last time this prompt was used"
+            }
+          }
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this prompt was created"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this prompt was last updated"
+        },
+        "isPublic": {
+          "type": "boolean",
+          "description": "Whether this prompt is publicly available"
+        },
+        "isFeatured": {
+          "type": "boolean",
+          "description": "Whether this prompt is featured/highlighted"
+        }
+      },
+      "required": ["id", "title", "description", "content", "category", "industry", "tags", "aiTools", "difficulty", "useCase", "createdAt", "isPublic"]
+    },
+    "Category": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string",
+          "description": "Icon identifier for UI display"
+        },
+        "color": {
+          "type": "string",
+          "description": "Color code for category theming"
+        },
+        "subcategories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": ["id", "name"]
+          }
+        }
+      },
+      "required": ["id", "name", "description"]
+    },
+    "Industry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "name"]
+    }
+  }
+}

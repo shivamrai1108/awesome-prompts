@@ -1,0 +1,41 @@
+{
+  "name": "awesome-prompts",
+  "version": "1.0.0",
+  "description": "AI Prompt Library Pro - 1000+ Expert-Level AI Prompts for Every Industry",
+  "main": "web-app/src/index.html",
+  "scripts": {
+    "dev": "cd web-app && python3 -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "start": "cd web-app && python3 -m http.server 8000",
+    "validate": "node scripts/validate-json.js",
+    "generate-prompts": "node generate_prompts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivamrai1108/awesome-prompts.git"
+  },
+  "keywords": [
+    "ai",
+    "prompts",
+    "chatgpt",
+    "claude",
+    "artificial-intelligence",
+    "prompt-engineering",
+    "professional",
+    "medical",
+    "legal",
+    "finance",
+    "executive",
+    "engineering",
+    "business"
+  ],
+  "author": "Shivam Rai",
+  "license": "MIT",
+  "homepage": "https://awesome-prompts.vercel.app",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "jsonlint": "^1.6.3"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "prompt-library",
+  "version": "1.0.0",
+  "description": "A comprehensive library of ready-made prompts for AI tools",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000 --directory .",
+    "build": "mkdir -p dist && cp -r src/* dist/ && cp -r public/* dist/",
+    "start": "npm run dev",
+    "validate": "node src/utils/validate-prompts.js"
+  },
+  "keywords": [
+    "prompts",
+    "ai",
+    "chatgpt",
+    "claude",
+    "templates",
+    "library"
+  ],
+  "author": "Shivam Rai",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.12.0"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0"
+  }
+}

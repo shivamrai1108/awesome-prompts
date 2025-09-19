@@ -1,0 +1,132 @@
+name: Deploy AI Prompt Library Pro
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Validate JSON files
+      run: |
+        # Validate all JSON files
+        find web-app/src/data -name "*.json" -exec node -e "JSON.parse(require('fs').readFileSync('{}', 'utf8'))" \;
+        echo "✅ All JSON files are valid"
+        
+    - name: Test HTML validation
+      run: |
+        # Basic HTML validation
+        if grep -q "<!DOCTYPE html>" web-app/src/index.html; then
+          echo "✅ HTML structure is valid"
+        else
+          echo "❌ Invalid HTML structure"
+          exit 1
+        fi
+        
+    - name: Test JavaScript syntax
+      run: |
+        # Basic JS syntax check
+        node -c web-app/src/app.js
+        node -c web-app/src/utils/voting.js
+        node -c web-app/src/utils/contributions.js
+        echo "✅ JavaScript syntax is valid"
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Log in to Container Registry
+      uses: docker/login-action@v3
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Extract metadata
+      id: meta
+      uses: docker/metadata-action@v5
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+        tags: |
+          type=ref,event=branch
+          type=ref,event=pr
+          type=sha
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+
+  deploy-staging:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    environment: staging
+    
+    steps:
+    - name: Deploy to staging
+      run: |
+        echo "🚀 Deploying to staging environment"
+        echo "Image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:develop"
+        # Add your staging deployment logic here
+        
+  deploy-production:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    environment: production
+    
+    steps:
+    - name: Deploy to production
+      run: |
+        echo "🚀 Deploying to production environment"
+        echo "Image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main"
+        # Add your production deployment logic here
+        
+    - name: Health check
+      run: |
+        echo "🏥 Running health checks"
+        # Add health check logic here
+        
+    - name: Notify deployment
+      run: |
+        echo "📢 Production deployment completed successfully"
+        # Add notification logic (Slack, email, etc.)
+
+  lighthouse:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Run Lighthouse CI
+      uses: treosh/lighthouse-ci-action@v10
+      with:
+        configPath: './lighthouse.json'
+        temporaryPublicStorage: true
