@@ -1,5 +1,18 @@
 {
+  "version": 2,
   "public": true,
+  "cleanUrls": true,
   "trailingSlash": false,
-  "cleanUrls": true
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
 }
