@@ -1,0 +1,554 @@
+[
+  {
+    "id": "sales-email-cold-1",
+    "title": "Cold Email Outreach Template",
+    "description": "Professional cold email template for reaching out to potential clients with personalized value proposition",
+    "content": "Subject: Quick question about [COMPANY]'s [PAIN_POINT]\n\nHi [FIRST_NAME],\n\nI noticed [COMPANY] recently [RECENT_EVENT/NEWS]. Congratulations on the growth!\n\nI'm reaching out because I help companies like yours [VALUE_PROPOSITION]. We've helped similar companies in [INDUSTRY] achieve [SPECIFIC_RESULT].\n\nI have a few ideas on how [COMPANY] could [BENEFIT]. Would you be open to a brief 15-minute call this week to discuss?\n\nBest regards,\n[YOUR_NAME]\n\nP.S. I noticed you're [PERSONAL_TOUCH] - I'd love to hear more about that too.",
+    "category": "sales",
+    "subcategory": "email-templates",
+    "industry": ["Sales", "Marketing", "Business Development", "B2B"],
+    "tags": ["cold email", "outreach", "sales", "prospecting", "personalization"],
+    "variables": [
+      {
+        "name": "company",
+        "placeholder": "[COMPANY]",
+        "description": "Target company name",
+        "example": "TechCorp Inc."
+      },
+      {
+        "name": "first_name",
+        "placeholder": "[FIRST_NAME]",
+        "description": "Recipient's first name",
+        "example": "Sarah"
+      },
+      {
+        "name": "pain_point",
+        "placeholder": "[PAIN_POINT]",
+        "description": "Specific challenge the company faces",
+        "example": "customer retention"
+      },
+      {
+        "name": "recent_event",
+        "placeholder": "[RECENT_EVENT/NEWS]",
+        "description": "Recent company news or achievement",
+        "example": "expanded to the European market"
+      },
+      {
+        "name": "value_proposition",
+        "placeholder": "[VALUE_PROPOSITION]",
+        "description": "What value you provide",
+        "example": "reduce customer acquisition costs by 40%"
+      },
+      {
+        "name": "industry",
+        "placeholder": "[INDUSTRY]",
+        "description": "Target industry",
+        "example": "SaaS"
+      },
+      {
+        "name": "specific_result",
+        "placeholder": "[SPECIFIC_RESULT]",
+        "description": "Concrete result you've achieved",
+        "example": "25% increase in qualified leads"
+      },
+      {
+        "name": "benefit",
+        "placeholder": "[BENEFIT]",
+        "description": "Specific benefit for this company",
+        "example": "improve your lead conversion rates"
+      },
+      {
+        "name": "your_name",
+        "placeholder": "[YOUR_NAME]",
+        "description": "Your name",
+        "example": "Alex Johnson"
+      },
+      {
+        "name": "personal_touch",
+        "placeholder": "[PERSONAL_TOUCH]",
+        "description": "Personal detail from their LinkedIn/website",
+        "example": "involved in the local startup community"
+      }
+    ],
+    "aiTools": ["Universal", "ChatGPT", "Claude"],
+    "difficulty": "Intermediate",
+    "useCase": "Cold outreach to potential B2B clients",
+    "author": {
+      "name": "Sales Pro Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 89
+    },
+    "votes": {
+      "upvotes": 142,
+      "downvotes": 8,
+      "score": 134
+    },
+    "usage": {
+      "count": 1247,
+      "lastUsed": "2024-01-15T10:30:00Z"
+    },
+    "createdAt": "2024-01-01T12:00:00Z",
+    "updatedAt": "2024-01-10T14:20:00Z",
+    "isPublic": true,
+    "isFeatured": true
+  },
+  {
+    "id": "engineering-project-plan-1",
+    "title": "Civil Engineering Project Planning Template",
+    "description": "Comprehensive project planning template for civil engineering projects including timeline, resources, and risk assessment",
+    "content": "Create a detailed project plan for [PROJECT_TYPE] project: [PROJECT_NAME]\n\nProject Overview:\n- Location: [LOCATION]\n- Budget: [BUDGET]\n- Timeline: [DURATION]\n- Client: [CLIENT_NAME]\n\nPlease include:\n1. Project phases breakdown with milestones\n2. Resource allocation (personnel, equipment, materials)\n3. Risk assessment and mitigation strategies\n4. Regulatory compliance requirements for [LOCATION]\n5. Quality control checkpoints\n6. Stakeholder communication plan\n7. Environmental impact considerations\n8. Safety protocols specific to [PROJECT_TYPE]\n\nFormat as a structured project charter with clear deliverables and success criteria.",
+    "category": "engineering",
+    "subcategory": "project-planning",
+    "industry": ["Civil Engineering", "Construction", "Infrastructure"],
+    "tags": ["project planning", "civil engineering", "construction", "project management", "infrastructure"],
+    "variables": [
+      {
+        "name": "project_type",
+        "placeholder": "[PROJECT_TYPE]",
+        "description": "Type of civil engineering project",
+        "example": "highway bridge construction"
+      },
+      {
+        "name": "project_name",
+        "placeholder": "[PROJECT_NAME]",
+        "description": "Specific name of the project",
+        "example": "Main Street Bridge Replacement"
+      },
+      {
+        "name": "location",
+        "placeholder": "[LOCATION]",
+        "description": "Project location",
+        "example": "Springfield, Ohio"
+      },
+      {
+        "name": "budget",
+        "placeholder": "[BUDGET]",
+        "description": "Project budget",
+        "example": "$2.5 million"
+      },
+      {
+        "name": "duration",
+        "placeholder": "[DURATION]",
+        "description": "Expected project duration",
+        "example": "18 months"
+      },
+      {
+        "name": "client_name",
+        "placeholder": "[CLIENT_NAME]",
+        "description": "Client or contracting organization",
+        "example": "Springfield Department of Transportation"
+      }
+    ],
+    "aiTools": ["Universal", "ChatGPT", "Claude"],
+    "difficulty": "Advanced",
+    "useCase": "Planning and structuring civil engineering projects",
+    "author": {
+      "name": "Engineering Solutions Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 34
+    },
+    "votes": {
+      "upvotes": 67,
+      "downvotes": 5,
+      "score": 62
+    },
+    "usage": {
+      "count": 278,
+      "lastUsed": "2024-01-14T16:45:00Z"
+    },
+    "createdAt": "2024-01-02T09:15:00Z",
+    "updatedAt": "2024-01-12T11:30:00Z",
+    "isPublic": true,
+    "isFeatured": true
+  },
+  {
+    "id": "software-code-review-1",
+    "title": "Comprehensive Code Review Assistant",
+    "description": "AI-powered code review prompt that analyzes code for bugs, performance issues, security vulnerabilities, and best practices",
+    "content": "Please perform a comprehensive code review for the following [LANGUAGE] code:\n\n```[LANGUAGE]\n[CODE_SNIPPET]\n```\n\nAnalyze and provide feedback on:\n\n1. **Bugs & Logic Issues**: Identify potential bugs, logical errors, or edge cases\n2. **Performance**: Suggest performance improvements and identify bottlenecks\n3. **Security**: Check for security vulnerabilities and recommend fixes\n4. **Code Quality**: Evaluate readability, maintainability, and adherence to best practices\n5. **Design Patterns**: Suggest appropriate design patterns if applicable\n6. **Testing**: Recommend test cases and testing strategies\n7. **Documentation**: Assess code documentation and suggest improvements\n\nProvide specific line-by-line feedback where applicable, and suggest refactored code examples for critical issues.\n\nContext: [CONTEXT]\nFramework/Library: [FRAMEWORK]\nTarget Environment: [ENVIRONMENT]",
+    "category": "software-dev",
+    "subcategory": "code-review",
+    "industry": ["Software Development", "Technology", "IT"],
+    "tags": ["code review", "debugging", "software quality", "best practices", "performance"],
+    "variables": [
+      {
+        "name": "language",
+        "placeholder": "[LANGUAGE]",
+        "description": "Programming language",
+        "example": "Python"
+      },
+      {
+        "name": "code_snippet",
+        "placeholder": "[CODE_SNIPPET]",
+        "description": "The actual code to be reviewed",
+        "example": "def calculate_average(numbers):\n    return sum(numbers) / len(numbers)"
+      },
+      {
+        "name": "context",
+        "placeholder": "[CONTEXT]",
+        "description": "Context about what the code does",
+        "example": "This function calculates user engagement metrics for a web application"
+      },
+      {
+        "name": "framework",
+        "placeholder": "[FRAMEWORK]",
+        "description": "Framework or library being used",
+        "example": "Django REST Framework"
+      },
+      {
+        "name": "environment",
+        "placeholder": "[ENVIRONMENT]",
+        "description": "Target deployment environment",
+        "example": "Production web server with high traffic"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude", "Copilot"],
+    "difficulty": "Intermediate",
+    "useCase": "Code quality assurance and improvement",
+    "author": {
+      "name": "Dev Tools Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 156
+    },
+    "votes": {
+      "upvotes": 203,
+      "downvotes": 12,
+      "score": 191
+    },
+    "usage": {
+      "count": 2341,
+      "lastUsed": "2024-01-15T14:22:00Z"
+    },
+    "createdAt": "2024-01-01T15:30:00Z",
+    "updatedAt": "2024-01-13T09:45:00Z",
+    "isPublic": true,
+    "isFeatured": true
+  },
+  {
+    "id": "content-blog-post-1",
+    "title": "SEO-Optimized Blog Post Generator",
+    "description": "Create engaging, SEO-friendly blog posts with proper structure, keywords, and call-to-actions",
+    "content": "Write a comprehensive, SEO-optimized blog post about [TOPIC] for [TARGET_AUDIENCE].\n\nBlog Post Requirements:\n- Title: Create an engaging, click-worthy title (60 characters or less)\n- Word count: [WORD_COUNT] words\n- Primary keyword: [PRIMARY_KEYWORD]\n- Secondary keywords: [SECONDARY_KEYWORDS]\n- Tone: [TONE]\n\nStructure the post with:\n1. **Hook**: Start with a compelling introduction that addresses [PAIN_POINT]\n2. **Problem**: Elaborate on the challenges your audience faces\n3. **Solution**: Present your insights/solutions with actionable advice\n4. **Examples**: Include 2-3 real-world examples or case studies\n5. **Conclusion**: Summarize key takeaways and include a strong CTA\n\nSEO Requirements:\n- Include the primary keyword in the title, first paragraph, and conclusion\n- Use secondary keywords naturally throughout\n- Add 3-5 relevant subheadings (H2/H3)\n- Include internal link suggestions: [INTERNAL_LINKS]\n- Meta description (155 characters max)\n\nCall-to-Action: [CTA_GOAL]",
+    "category": "content-creation",
+    "subcategory": "blog-writing",
+    "industry": ["Marketing", "Content Marketing", "Digital Marketing", "Blogging"],
+    "tags": ["blog writing", "SEO", "content marketing", "copywriting", "audience engagement"],
+    "variables": [
+      {
+        "name": "topic",
+        "placeholder": "[TOPIC]",
+        "description": "Main topic of the blog post",
+        "example": "Email Marketing Automation Best Practices"
+      },
+      {
+        "name": "target_audience",
+        "placeholder": "[TARGET_AUDIENCE]",
+        "description": "Intended audience for the content",
+        "example": "small business owners looking to improve customer retention"
+      },
+      {
+        "name": "word_count",
+        "placeholder": "[WORD_COUNT]",
+        "description": "Desired length of the post",
+        "example": "1500-2000"
+      },
+      {
+        "name": "primary_keyword",
+        "placeholder": "[PRIMARY_KEYWORD]",
+        "description": "Main SEO keyword to target",
+        "example": "email marketing automation"
+      },
+      {
+        "name": "secondary_keywords",
+        "placeholder": "[SECONDARY_KEYWORDS]",
+        "description": "Supporting keywords",
+        "example": "email sequences, marketing workflows, customer nurturing"
+      },
+      {
+        "name": "tone",
+        "placeholder": "[TONE]",
+        "description": "Desired writing tone",
+        "example": "professional yet approachable"
+      },
+      {
+        "name": "pain_point",
+        "placeholder": "[PAIN_POINT]",
+        "description": "Main problem the audience faces",
+        "example": "difficulty maintaining consistent customer communication"
+      },
+      {
+        "name": "internal_links",
+        "placeholder": "[INTERNAL_LINKS]",
+        "description": "Relevant internal pages to link to",
+        "example": "contact management guide, email templates, automation tools comparison"
+      },
+      {
+        "name": "cta_goal",
+        "placeholder": "[CTA_GOAL]",
+        "description": "What action you want readers to take",
+        "example": "download our free email automation template"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude", "Gemini"],
+    "difficulty": "Intermediate",
+    "useCase": "Creating high-quality, search-optimized blog content",
+    "author": {
+      "name": "Content Strategy Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 203
+    },
+    "votes": {
+      "upvotes": 287,
+      "downvotes": 21,
+      "score": 266
+    },
+    "usage": {
+      "count": 3456,
+      "lastUsed": "2024-01-15T13:15:00Z"
+    },
+    "createdAt": "2024-01-03T11:20:00Z",
+    "updatedAt": "2024-01-14T16:10:00Z",
+    "isPublic": true,
+    "isFeatured": true
+  },
+  {
+    "id": "business-requirements-1",
+    "title": "Business Requirements Documentation",
+    "description": "Generate comprehensive business requirements documentation for software projects",
+    "content": "Create detailed business requirements documentation for [PROJECT_NAME].\n\n**Project Overview:**\n- Project: [PROJECT_NAME]\n- Stakeholders: [STAKEHOLDERS]\n- Business Objective: [BUSINESS_OBJECTIVE]\n- Timeline: [TIMELINE]\n- Budget: [BUDGET_RANGE]\n\n**Documentation Structure:**\n\n1. **Executive Summary**\n   - Project purpose and scope\n   - Key stakeholders and their roles\n   - Success criteria and metrics\n\n2. **Business Requirements**\n   - Functional requirements: [FUNCTIONAL_REQUIREMENTS]\n   - Non-functional requirements (performance, security, usability)\n   - Integration requirements: [INTEGRATION_NEEDS]\n   - Compliance requirements: [COMPLIANCE_NEEDS]\n\n3. **User Stories & Acceptance Criteria**\n   - Primary user personas: [USER_PERSONAS]\n   - Core user journeys\n   - Detailed acceptance criteria for each feature\n\n4. **Technical Constraints**\n   - Platform requirements: [PLATFORM_CONSTRAINTS]\n   - Technology stack preferences: [TECH_STACK]\n   - Security requirements: [SECURITY_REQUIREMENTS]\n\n5. **Risk Assessment**\n   - Potential risks and mitigation strategies\n   - Dependencies and assumptions\n   - Change management process\n\nFormat as a professional document with clear sections, numbered requirements, and priority levels (Must Have, Should Have, Could Have).",
+    "category": "business-analysis",
+    "subcategory": "requirements-gathering",
+    "industry": ["Business Analysis", "Software Development", "Project Management", "IT"],
+    "tags": ["business requirements", "documentation", "project planning", "stakeholder management", "software development"],
+    "variables": [
+      {
+        "name": "project_name",
+        "placeholder": "[PROJECT_NAME]",
+        "description": "Name of the project",
+        "example": "Customer Portal Redesign"
+      },
+      {
+        "name": "stakeholders",
+        "placeholder": "[STAKEHOLDERS]",
+        "description": "Key project stakeholders",
+        "example": "Marketing team, IT department, Customer service, External customers"
+      },
+      {
+        "name": "business_objective",
+        "placeholder": "[BUSINESS_OBJECTIVE]",
+        "description": "Main business goal",
+        "example": "Improve customer self-service capabilities and reduce support ticket volume by 30%"
+      },
+      {
+        "name": "timeline",
+        "placeholder": "[TIMELINE]",
+        "description": "Project timeline",
+        "example": "6 months (Q1-Q2 2024)"
+      },
+      {
+        "name": "budget_range",
+        "placeholder": "[BUDGET_RANGE]",
+        "description": "Estimated project budget",
+        "example": "$150K - $200K"
+      },
+      {
+        "name": "functional_requirements",
+        "placeholder": "[FUNCTIONAL_REQUIREMENTS]",
+        "description": "Key functional requirements",
+        "example": "User authentication, account management, order tracking, support ticket creation"
+      },
+      {
+        "name": "integration_needs",
+        "placeholder": "[INTEGRATION_NEEDS]",
+        "description": "Required system integrations",
+        "example": "CRM system, payment gateway, inventory management system"
+      },
+      {
+        "name": "compliance_needs",
+        "placeholder": "[COMPLIANCE_NEEDS]",
+        "description": "Regulatory compliance requirements",
+        "example": "GDPR, PCI DSS, accessibility standards (WCAG 2.1)"
+      },
+      {
+        "name": "user_personas",
+        "placeholder": "[USER_PERSONAS]",
+        "description": "Primary user types",
+        "example": "Existing customers, new prospects, customer service representatives"
+      },
+      {
+        "name": "platform_constraints",
+        "placeholder": "[PLATFORM_CONSTRAINTS]",
+        "description": "Platform or infrastructure constraints",
+        "example": "Must work on existing AWS infrastructure, mobile-responsive"
+      },
+      {
+        "name": "tech_stack",
+        "placeholder": "[TECH_STACK]",
+        "description": "Preferred or required technologies",
+        "example": "React frontend, Node.js backend, PostgreSQL database"
+      },
+      {
+        "name": "security_requirements",
+        "placeholder": "[SECURITY_REQUIREMENTS]",
+        "description": "Security and data protection requirements",
+        "example": "Multi-factor authentication, data encryption at rest and in transit"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude", "Gemini"],
+    "difficulty": "Advanced",
+    "useCase": "Creating comprehensive business requirements for software projects",
+    "author": {
+      "name": "Business Analysis Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 67
+    },
+    "votes": {
+      "upvotes": 89,
+      "downvotes": 13,
+      "score": 76
+    },
+    "usage": {
+      "count": 892,
+      "lastUsed": "2024-01-15T11:30:00Z"
+    },
+    "createdAt": "2024-01-04T14:45:00Z",
+    "updatedAt": "2024-01-11T10:20:00Z",
+    "isPublic": true,
+    "isFeatured": false
+  },
+  {
+    "id": "education-lesson-plan-1",
+    "title": "Interactive Lesson Plan Creator",
+    "description": "Design engaging, standards-aligned lesson plans with activities, assessments, and differentiation strategies",
+    "content": "Create a detailed lesson plan for [SUBJECT] - [TOPIC] for [GRADE_LEVEL] students.\n\n**Lesson Overview:**\n- Subject: [SUBJECT]\n- Topic: [TOPIC]\n- Grade Level: [GRADE_LEVEL]\n- Duration: [DURATION]\n- Class Size: [CLASS_SIZE]\n\n**Standards Alignment:**\n- Learning Standards: [LEARNING_STANDARDS]\n- Learning Objectives: Students will be able to [LEARNING_OBJECTIVES]\n\n**Lesson Structure:**\n\n1. **Hook/Warm-Up (5-10 minutes)**\n   - Engaging opening activity related to [TOPIC]\n   - Prior knowledge activation\n\n2. **Direct Instruction (15-20 minutes)**\n   - Key concepts to cover: [KEY_CONCEPTS]\n   - Teaching strategies: [TEACHING_METHODS]\n   - Visual aids and resources needed\n\n3. **Guided Practice (15-20 minutes)**\n   - Interactive activities for concept reinforcement\n   - Student collaboration opportunities\n\n4. **Independent Practice (10-15 minutes)**\n   - Individual work or assessment\n   - Differentiation strategies for [DIFFERENTIATION_NEEDS]\n\n5. **Closure (5 minutes)**\n   - Summary and review\n   - Preview of next lesson\n\n**Assessment:**\n- Formative assessment strategies\n- Summative assessment (if applicable)\n- Success criteria and rubrics\n\n**Differentiation:**\n- Support for struggling learners\n- Extensions for advanced students\n- Accommodations for [SPECIAL_NEEDS]\n\n**Materials & Technology:**\n- Required materials: [MATERIALS]\n- Technology integration: [TECHNOLOGY]\n\n**Homework/Extension Activities:**\n[HOMEWORK_EXTENSION]",
+    "category": "education",
+    "subcategory": "lesson-planning",
+    "industry": ["Education", "Teaching", "Training", "Curriculum Development"],
+    "tags": ["lesson planning", "education", "curriculum", "teaching strategies", "student engagement"],
+    "variables": [
+      {
+        "name": "subject",
+        "placeholder": "[SUBJECT]",
+        "description": "Subject area",
+        "example": "Mathematics"
+      },
+      {
+        "name": "topic",
+        "placeholder": "[TOPIC]",
+        "description": "Specific topic or unit",
+        "example": "Fractions and Decimals"
+      },
+      {
+        "name": "grade_level",
+        "placeholder": "[GRADE_LEVEL]",
+        "description": "Student grade level",
+        "example": "5th grade"
+      },
+      {
+        "name": "duration",
+        "placeholder": "[DURATION]",
+        "description": "Length of the lesson",
+        "example": "60 minutes"
+      },
+      {
+        "name": "class_size",
+        "placeholder": "[CLASS_SIZE]",
+        "description": "Number of students",
+        "example": "25 students"
+      },
+      {
+        "name": "learning_standards",
+        "placeholder": "[LEARNING_STANDARDS]",
+        "description": "Relevant educational standards",
+        "example": "CCSS.MATH.5.NF.A.1, CCSS.MATH.5.NF.A.2"
+      },
+      {
+        "name": "learning_objectives",
+        "placeholder": "[LEARNING_OBJECTIVES]",
+        "description": "What students will learn",
+        "example": "convert fractions to decimals and compare their values"
+      },
+      {
+        "name": "key_concepts",
+        "placeholder": "[KEY_CONCEPTS]",
+        "description": "Main concepts to teach",
+        "example": "decimal place value, equivalent fractions, fraction-decimal conversion"
+      },
+      {
+        "name": "teaching_methods",
+        "placeholder": "[TEACHING_METHODS]",
+        "description": "Preferred teaching approaches",
+        "example": "visual modeling, hands-on manipulatives, peer discussion"
+      },
+      {
+        "name": "differentiation_needs",
+        "placeholder": "[DIFFERENTIATION_NEEDS]",
+        "description": "Student learning differences",
+        "example": "English language learners, students with learning disabilities"
+      },
+      {
+        "name": "special_needs",
+        "placeholder": "[SPECIAL_NEEDS]",
+        "description": "Specific accommodation needs",
+        "example": "students with visual impairments, ADHD accommodations"
+      },
+      {
+        "name": "materials",
+        "placeholder": "[MATERIALS]",
+        "description": "Required teaching materials",
+        "example": "fraction bars, decimal grids, calculators, worksheets"
+      },
+      {
+        "name": "technology",
+        "placeholder": "[TECHNOLOGY]",
+        "description": "Technology tools to use",
+        "example": "interactive whiteboard, math software, tablets"
+      },
+      {
+        "name": "homework_extension",
+        "placeholder": "[HOMEWORK_EXTENSION]",
+        "description": "Take-home activities",
+        "example": "practice worksheet with real-world fraction/decimal problems"
+      }
+    ],
+    "aiTools": ["ChatGPT", "Claude", "Gemini"],
+    "difficulty": "Intermediate",
+    "useCase": "Creating comprehensive, engaging lesson plans for educators",
+    "author": {
+      "name": "Education Team",
+      "company": "Prompt Library"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 124
+    },
+    "votes": {
+      "upvotes": 156,
+      "downvotes": 7,
+      "score": 149
+    },
+    "usage": {
+      "count": 1876,
+      "lastUsed": "2024-01-15T09:45:00Z"
+    },
+    "createdAt": "2024-01-05T08:30:00Z",
+    "updatedAt": "2024-01-12T13:15:00Z",
+    "isPublic": true,
+    "isFeatured": true
+  }
+]
