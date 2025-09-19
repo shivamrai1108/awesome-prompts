@@ -1,44 +1,15 @@
 {
   "version": 2,
-  "public": true,
-  "buildCommand": "echo 'No build needed - static files'",
-  "outputDirectory": "web-app/src",
-  "rewrites": [
+  "builds": [
     {
-      "source": "/src/(.*)",
-      "destination": "/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "src": "web-app/src/**/*",
+      "use": "@vercel/static"
     }
   ],
-  "headers": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        }
-      ]
-    },
-    {
-      "source": "/data/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, s-maxage=3600"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "/web-app/src/$1"
     }
   ]
 }
