@@ -1,74 +1,268 @@
 [
   {
-    "id": "executive",
-    "name": "C-Level & Executive",
-    "description": "Strategic prompts for executives, CEOs, and senior leadership",
-    "icon": "👔",
-    "color": "#1a365d",
+    "id": "medical",
+    "name": "Medical & Healthcare",
+    "description": "Clinical decision support, patient care, and medical research prompts",
+    "icon": "🏥",
+    "color": "#e53e3e",
     "subcategories": [
       {
-        "id": "strategic-planning",
-        "name": "Strategic Planning",
-        "description": "Vision, mission, and strategic roadmap development"
+        "id": "doctors",
+        "name": "Doctors",
+        "description": "Clinical diagnosis, treatment planning, and patient consultations"
       },
       {
-        "id": "board-communications",
-        "name": "Board Communications",
-        "description": "Board presentations and executive reporting"
+        "id": "nurses",
+        "name": "Nurses",
+        "description": "Patient care, nursing assessments, and care planning"
       },
       {
-        "id": "crisis-management",
-        "name": "Crisis Management",
-        "description": "Emergency response and crisis communication"
+        "id": "medical-students",
+        "name": "Medical Students",
+        "description": "Study aids, case analysis, and medical education"
       },
       {
-        "id": "merger-acquisition",
-        "name": "M&A Strategy",
-        "description": "Merger, acquisition, and partnership strategies"
+        "id": "researchers",
+        "name": "Medical Researchers",
+        "description": "Research methodology, literature review, and grant writing"
       },
       {
-        "id": "investor-relations",
-        "name": "Investor Relations",
-        "description": "Investor communications and fundraising"
+        "id": "hospital-administrators",
+        "name": "Hospital Administrators",
+        "description": "Healthcare operations, policy development, and management"
       }
     ]
   },
   {
-    "id": "sales",
-    "name": "Sales & Business Development",
-    "description": "Advanced sales strategies, lead generation, and revenue optimization",
-    "icon": "📈",
+    "id": "legal",
+    "name": "Legal",
+    "description": "Legal analysis, contract review, and regulatory compliance",
+    "icon": "⚖️",
+    "color": "#3F51B5",
+    "subcategories": [
+      {
+        "id": "lawyers",
+        "name": "Lawyers",
+        "description": "Legal briefs, case analysis, and client consultations"
+      },
+      {
+        "id": "paralegals",
+        "name": "Paralegals",
+        "description": "Legal research, document preparation, and case support"
+      },
+      {
+        "id": "compliance-officers",
+        "name": "Compliance Officers",
+        "description": "Regulatory compliance, risk assessment, and policy review"
+      },
+      {
+        "id": "legal-consultants",
+        "name": "Legal Consultants",
+        "description": "Legal advice, contract analysis, and business law"
+      },
+      {
+        "id": "law-students",
+        "name": "Law Students",
+        "description": "Legal study aids, case briefs, and exam preparation"
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "name": "Finance & Accounting",
+    "description": "Financial analysis, investment strategy, and accounting",
+    "icon": "💰",
+    "color": "#ff6b35",
+    "subcategories": [
+      {
+        "id": "accountants",
+        "name": "Accountants",
+        "description": "Financial reporting, tax preparation, and bookkeeping"
+      },
+      {
+        "id": "financial-advisors",
+        "name": "Financial Advisors",
+        "description": "Investment advice, financial planning, and wealth management"
+      },
+      {
+        "id": "investors",
+        "name": "Investors",
+        "description": "Investment analysis, due diligence, and portfolio management"
+      },
+      {
+        "id": "auditors",
+        "name": "Auditors",
+        "description": "Audit procedures, risk assessment, and compliance review"
+      },
+      {
+        "id": "banking-professionals",
+        "name": "Banking Professionals",
+        "description": "Credit analysis, loan processing, and banking operations"
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering & Architecture",
+    "description": "Technical engineering and architectural design",
+    "icon": "🏗️",
+    "color": "#2196F3",
+    "subcategories": [
+      {
+        "id": "civil-engineers",
+        "name": "Civil Engineers",
+        "description": "Infrastructure design, construction planning, and project management"
+      },
+      {
+        "id": "mechanical-engineers",
+        "name": "Mechanical Engineers",
+        "description": "Mechanical systems, product design, and manufacturing"
+      },
+      {
+        "id": "electrical-engineers",
+        "name": "Electrical Engineers",
+        "description": "Electrical systems, power engineering, and circuit design"
+      },
+      {
+        "id": "architects",
+        "name": "Architects",
+        "description": "Architectural design, building planning, and space optimization"
+      },
+      {
+        "id": "engineering-students",
+        "name": "Engineering Students",
+        "description": "Study aids, project guidance, and technical problem solving"
+      }
+    ]
+  },
+  {
+    "id": "executive",
+    "name": "Executives & Management",
+    "description": "Strategic leadership and management guidance",
+    "icon": "👔",
+    "color": "#1a365d",
+    "subcategories": [
+      {
+        "id": "ceos",
+        "name": "CEOs",
+        "description": "Strategic vision, board communications, and executive leadership"
+      },
+      {
+        "id": "coos",
+        "name": "COOs",
+        "description": "Operations management, process optimization, and execution"
+      },
+      {
+        "id": "project-managers",
+        "name": "Project Managers",
+        "description": "Project planning, team coordination, and delivery management"
+      },
+      {
+        "id": "business-consultants",
+        "name": "Business Consultants",
+        "description": "Business analysis, strategy development, and optimization"
+      },
+      {
+        "id": "operations-managers",
+        "name": "Operations Managers",
+        "description": "Operational efficiency, process improvement, and team management"
+      }
+    ]
+  },
+  {
+    "id": "sales-marketing",
+    "name": "Sales & Marketing",
+    "description": "Sales strategies, marketing campaigns, and business development",
+    "icon": "💼",
     "color": "#4CAF50",
     "subcategories": [
       {
-        "id": "enterprise-sales",
-        "name": "Enterprise Sales",
-        "description": "B2B enterprise sales strategies and processes"
+        "id": "sales-executives",
+        "name": "Sales Executives",
+        "description": "B2B sales strategies, deal closing, and client management"
       },
       {
-        "id": "lead-generation",
-        "name": "Lead Generation",
-        "description": "Advanced lead generation and qualification"
+        "id": "business-development-reps",
+        "name": "Business Development Reps",
+        "description": "Lead generation, prospecting, and pipeline development"
       },
       {
-        "id": "sales-automation",
-        "name": "Sales Automation",
-        "description": "CRM optimization and sales process automation"
+        "id": "digital-marketers",
+        "name": "Digital Marketers",
+        "description": "Digital campaigns, social media, and online marketing"
       },
       {
-        "id": "negotiation",
-        "name": "Negotiation",
-        "description": "Contract negotiation and deal closing"
+        "id": "growth-hackers",
+        "name": "Growth Hackers",
+        "description": "Growth strategies, conversion optimization, and scaling"
       },
       {
-        "id": "account-management",
-        "name": "Account Management",
-        "description": "Client retention and expansion strategies"
+        "id": "copywriters",
+        "name": "Copywriters",
+        "description": "Sales copy, marketing content, and persuasive writing"
+      }
+    ]
+  },
+  {
+    "id": "technology",
+    "name": "Technology & Software",
+    "description": "Software development, IT operations, and technical solutions",
+    "icon": "💻",
+    "color": "#9C27B0",
+    "subcategories": [
+      {
+        "id": "software-engineers",
+        "name": "Software Engineers",
+        "description": "Code development, architecture, and technical problem solving"
       },
       {
-        "id": "sales-analytics",
-        "name": "Sales Analytics",
-        "description": "Performance analysis and forecasting"
+        "id": "it-professionals",
+        "name": "IT Professionals",
+        "description": "System administration, network management, and IT support"
+      },
+      {
+        "id": "devops-engineers",
+        "name": "DevOps Engineers",
+        "description": "Deployment automation, infrastructure, and CI/CD pipelines"
+      },
+      {
+        "id": "product-managers",
+        "name": "Product Managers",
+        "description": "Product strategy, roadmap planning, and feature prioritization"
+      },
+      {
+        "id": "tech-students",
+        "name": "Tech Students",
+        "description": "Programming tutorials, project ideas, and learning resources"
+      }
+    ]
+  },
+  {
+    "id": "saas-startups",
+    "name": "SaaS & Startups",
+    "description": "Startup operations, SaaS growth, and entrepreneurial guidance",
+    "icon": "📊",
+    "color": "#FF5722",
+    "subcategories": [
+      {
+        "id": "saas-founders",
+        "name": "SaaS Founders",
+        "description": "SaaS business models, pricing strategies, and scaling"
+      },
+      {
+        "id": "startup-founders",
+        "name": "Startup Founders",
+        "description": "Business planning, fundraising, and startup operations"
+      },
+      {
+        "id": "growth-teams",
+        "name": "Growth Teams",
+        "description": "User acquisition, retention strategies, and growth metrics"
+      },
+      {
+        "id": "customer-success-managers",
+        "name": "Customer Success Managers",
+        "description": "Customer onboarding, retention, and satisfaction"
       }
     ]
   },
@@ -333,68 +527,398 @@
   {
     "id": "education",
     "name": "Education",
-    "description": "Lesson planning, assessment creation, and educational content",
+    "description": "Teaching, learning, and educational content development",
     "icon": "🎓",
     "color": "#795548",
     "subcategories": [
       {
-        "id": "lesson-planning",
-        "name": "Lesson Planning",
-        "description": "Creating structured lesson plans"
+        "id": "teachers",
+        "name": "Teachers",
+        "description": "Lesson planning, classroom management, and student engagement"
       },
       {
-        "id": "assessment-creation",
-        "name": "Assessment Creation",
-        "description": "Designing tests and assessments"
+        "id": "professors",
+        "name": "Professors",
+        "description": "Academic research, lecture development, and curriculum design"
       },
       {
-        "id": "curriculum-development",
-        "name": "Curriculum Development",
-        "description": "Building educational curricula"
+        "id": "students",
+        "name": "Students",
+        "description": "Study techniques, assignment help, and exam preparation"
       },
       {
-        "id": "student-feedback",
-        "name": "Student Feedback",
-        "description": "Providing constructive feedback to students"
+        "id": "tutors",
+        "name": "Tutors",
+        "description": "Personalized instruction, skill development, and learning support"
       },
       {
-        "id": "educational-content",
-        "name": "Educational Content",
-        "description": "Creating learning materials and resources"
+        "id": "edtech-professionals",
+        "name": "EdTech Professionals",
+        "description": "Educational technology, online learning, and digital tools"
       }
     ]
   },
   {
-    "id": "healthcare",
-    "name": "Healthcare",
-    "description": "Medical documentation, patient communication, and healthcare processes",
-    "icon": "🏥",
-    "color": "#F44336",
+    "id": "creative-media",
+    "name": "Creative & Media",
+    "description": "Creative content, media production, and artistic endeavors",
+    "icon": "✍️",
+    "color": "#FF9800",
     "subcategories": [
       {
-        "id": "patient-communication",
-        "name": "Patient Communication",
-        "description": "Communicating with patients and families"
+        "id": "writers",
+        "name": "Writers",
+        "description": "Creative writing, storytelling, and content creation"
       },
       {
-        "id": "medical-documentation",
-        "name": "Medical Documentation",
-        "description": "Creating medical reports and documentation"
+        "id": "filmmakers",
+        "name": "Filmmakers",
+        "description": "Script writing, video production, and visual storytelling"
       },
       {
-        "id": "treatment-planning",
-        "name": "Treatment Planning",
-        "description": "Planning patient treatment approaches"
+        "id": "designers",
+        "name": "Designers",
+        "description": "Visual design, branding, and creative concepts"
       },
       {
-        "id": "health-education",
-        "name": "Health Education",
-        "description": "Educating patients about health topics"
+        "id": "artists",
+        "name": "Artists",
+        "description": "Artistic inspiration, creative projects, and portfolio development"
       },
       {
-        "id": "research-assistance",
-        "name": "Research Assistance",
-        "description": "Supporting medical research activities"
+        "id": "content-creators",
+        "name": "Content Creators",
+        "description": "Social media content, influencer strategies, and audience engagement"
+      }
+    ]
+  },
+  {
+    "id": "health-fitness",
+    "name": "Health, Fitness & Wellness",
+    "description": "Physical health, fitness training, and wellness coaching",
+    "icon": "🏋️",
+    "color": "#4CAF50",
+    "subcategories": [
+      {
+        "id": "fitness-trainers",
+        "name": "Fitness Trainers",
+        "description": "Workout programs, training plans, and fitness coaching"
+      },
+      {
+        "id": "nutritionists",
+        "name": "Nutritionists",
+        "description": "Meal planning, dietary advice, and nutrition education"
+      },
+      {
+        "id": "wellness-coaches",
+        "name": "Wellness Coaches",
+        "description": "Holistic health, lifestyle changes, and wellness strategies"
+      },
+      {
+        "id": "physiotherapists",
+        "name": "Physiotherapists",
+        "description": "Rehabilitation programs, injury prevention, and physical therapy"
+      },
+      {
+        "id": "lifestyle-influencers",
+        "name": "Lifestyle Influencers",
+        "description": "Wellness content, healthy living, and lifestyle advice"
+      }
+    ]
+  },
+  {
+    "id": "career-hr",
+    "name": "Career & HR",
+    "description": "Human resources, career development, and professional growth",
+    "icon": "💼",
+    "color": "#607D8B",
+    "subcategories": [
+      {
+        "id": "recruiters",
+        "name": "Recruiters",
+        "description": "Talent acquisition, candidate screening, and hiring processes"
+      },
+      {
+        "id": "hr-managers",
+        "name": "HR Managers",
+        "description": "Employee relations, policy development, and HR operations"
+      },
+      {
+        "id": "job-seekers",
+        "name": "Job Seekers",
+        "description": "Resume writing, interview preparation, and job search strategies"
+      },
+      {
+        "id": "career-coaches",
+        "name": "Career Coaches",
+        "description": "Career guidance, professional development, and goal setting"
+      },
+      {
+        "id": "corporate-trainers",
+        "name": "Corporate Trainers",
+        "description": "Employee training, skill development, and corporate education"
+      }
+    ]
+  },
+  {
+    "id": "entrepreneurship",
+    "name": "Entrepreneurship",
+    "description": "Business building, freelancing, and entrepreneurial ventures",
+    "icon": "🚀",
+    "color": "#E91E63",
+    "subcategories": [
+      {
+        "id": "small-business-owners",
+        "name": "Small Business Owners",
+        "description": "Business operations, local marketing, and growth strategies"
+      },
+      {
+        "id": "freelancers",
+        "name": "Freelancers",
+        "description": "Client acquisition, project management, and freelance operations"
+      },
+      {
+        "id": "consultants",
+        "name": "Consultants",
+        "description": "Consulting frameworks, client delivery, and expertise positioning"
+      },
+      {
+        "id": "solopreneurs",
+        "name": "Solopreneurs",
+        "description": "Solo business building, automation, and one-person operations"
+      }
+    ]
+  },
+  {
+    "id": "customer-support",
+    "name": "Customer Support",
+    "description": "Customer service, support operations, and client relations",
+    "icon": "🤖",
+    "color": "#00BCD4",
+    "subcategories": [
+      {
+        "id": "customer-service-reps",
+        "name": "Customer Service Reps",
+        "description": "Customer inquiries, problem resolution, and support workflows"
+      },
+      {
+        "id": "chatbot-designers",
+        "name": "Chatbot Designers",
+        "description": "Conversational AI, chatbot flows, and automated support"
+      },
+      {
+        "id": "customer-success-teams",
+        "name": "Customer Success Teams",
+        "description": "Customer onboarding, retention, and success metrics"
+      },
+      {
+        "id": "call-center-agents",
+        "name": "Call Center Agents",
+        "description": "Phone support, call scripts, and customer interactions"
+      },
+      {
+        "id": "support-managers",
+        "name": "Support Managers",
+        "description": "Team management, support processes, and quality assurance"
+      }
+    ]
+  },
+  {
+    "id": "productivity-coaching",
+    "name": "Productivity & Coaching",
+    "description": "Life coaching, productivity systems, and personal development",
+    "icon": "📆",
+    "color": "#673AB7",
+    "subcategories": [
+      {
+        "id": "life-coaches",
+        "name": "Life Coaches",
+        "description": "Personal development, goal setting, and life transformation"
+      },
+      {
+        "id": "executive-coaches",
+        "name": "Executive Coaches",
+        "description": "Leadership development, executive mentoring, and performance coaching"
+      },
+      {
+        "id": "productivity-professionals",
+        "name": "Productivity Professionals",
+        "description": "Time management, workflow optimization, and efficiency systems"
+      },
+      {
+        "id": "general-consultants",
+        "name": "General Consultants",
+        "description": "Problem solving, strategy development, and advisory services"
+      }
+    ]
+  },
+  {
+    "id": "travel-hospitality",
+    "name": "Travel & Hospitality",
+    "description": "Travel planning, hospitality management, and tourism services",
+    "icon": "✈️",
+    "color": "#FF9800",
+    "subcategories": [
+      {
+        "id": "travel-agents",
+        "name": "Travel Agents",
+        "description": "Trip planning, itinerary creation, and travel recommendations"
+      },
+      {
+        "id": "tour-operators",
+        "name": "Tour Operators",
+        "description": "Tour design, group travel, and destination experiences"
+      },
+      {
+        "id": "hotel-managers",
+        "name": "Hotel Managers",
+        "description": "Guest services, hotel operations, and hospitality excellence"
+      },
+      {
+        "id": "event-planners",
+        "name": "Event Planners",
+        "description": "Event coordination, venue selection, and celebration planning"
+      },
+      {
+        "id": "travel-enthusiasts",
+        "name": "Travel Enthusiasts",
+        "description": "Travel inspiration, budget planning, and adventure ideas"
+      }
+    ]
+  },
+  {
+    "id": "ecommerce-retail",
+    "name": "E-commerce & Retail",
+    "description": "Online retail, marketplace management, and e-commerce operations",
+    "icon": "🛍️",
+    "color": "#FF5722",
+    "subcategories": [
+      {
+        "id": "amazon-sellers",
+        "name": "Amazon Sellers",
+        "description": "Product listings, Amazon optimization, and marketplace strategies"
+      },
+      {
+        "id": "shopify-store-owners",
+        "name": "Shopify Store Owners",
+        "description": "Store setup, product management, and e-commerce growth"
+      },
+      {
+        "id": "marketplace-managers",
+        "name": "Marketplace Managers",
+        "description": "Multi-platform selling, inventory management, and channel optimization"
+      },
+      {
+        "id": "d2c-brand-owners",
+        "name": "D2C Brand Owners",
+        "description": "Direct-to-consumer strategies, brand building, and customer acquisition"
+      },
+      {
+        "id": "retailers",
+        "name": "Retailers",
+        "description": "Retail operations, merchandising, and customer experience"
+      }
+    ]
+  },
+  {
+    "id": "data-analytics",
+    "name": "Data & Analytics",
+    "description": "Data analysis, business intelligence, and statistical research",
+    "icon": "📊",
+    "color": "#3F51B5",
+    "subcategories": [
+      {
+        "id": "data-analysts",
+        "name": "Data Analysts",
+        "description": "Data interpretation, trend analysis, and insights generation"
+      },
+      {
+        "id": "business-intelligence-teams",
+        "name": "Business Intelligence Teams",
+        "description": "BI dashboards, reporting systems, and data visualization"
+      },
+      {
+        "id": "data-scientists",
+        "name": "Data Scientists",
+        "description": "Machine learning, predictive modeling, and advanced analytics"
+      },
+      {
+        "id": "data-researchers",
+        "name": "Data Researchers",
+        "description": "Research methodology, statistical analysis, and data collection"
+      },
+      {
+        "id": "statisticians",
+        "name": "Statisticians",
+        "description": "Statistical modeling, hypothesis testing, and data interpretation"
+      }
+    ]
+  },
+  {
+    "id": "personal-growth",
+    "name": "Self-help & Personal Growth",
+    "description": "Personal development, mental wellness, and self-improvement",
+    "icon": "🧘",
+    "color": "#9C27B0",
+    "subcategories": [
+      {
+        "id": "personal-life-coaches",
+        "name": "Personal Life Coaches",
+        "description": "Self-improvement, habit formation, and personal transformation"
+      },
+      {
+        "id": "therapists",
+        "name": "Therapists",
+        "description": "Mental health support, therapeutic interventions, and wellness strategies"
+      },
+      {
+        "id": "spiritual-guides",
+        "name": "Spiritual Guides",
+        "description": "Spiritual development, meditation, and mindfulness practices"
+      },
+      {
+        "id": "motivational-speakers",
+        "name": "Motivational Speakers",
+        "description": "Inspirational content, motivational strategies, and personal empowerment"
+      },
+      {
+        "id": "general-users",
+        "name": "General Users",
+        "description": "Everyday personal growth, self-reflection, and life improvement"
+      }
+    ]
+  },
+  {
+    "id": "gaming-entertainment",
+    "name": "Gaming & Entertainment",
+    "description": "Gaming content, entertainment production, and interactive media",
+    "icon": "🎮",
+    "color": "#E91E63",
+    "subcategories": [
+      {
+        "id": "game-designers",
+        "name": "Game Designers",
+        "description": "Game mechanics, narrative design, and player experience"
+      },
+      {
+        "id": "streamers",
+        "name": "Streamers",
+        "description": "Content creation, audience engagement, and streaming strategies"
+      },
+      {
+        "id": "dungeon-masters",
+        "name": "Dungeon Masters (D&D)",
+        "description": "Campaign creation, storytelling, and tabletop game management"
+      },
+      {
+        "id": "esports-players",
+        "name": "Esports Players",
+        "description": "Competitive gaming, strategy development, and performance optimization"
+      },
+      {
+        "id": "storytellers",
+        "name": "Storytellers",
+        "description": "Narrative creation, character development, and interactive storytelling"
       }
     ]
   }
