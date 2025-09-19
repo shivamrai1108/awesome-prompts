@@ -1,15 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "web-app/src/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/web-app/src/$1"
-    }
-  ]
+  "public": true,
+  "trailingSlash": false,
+  "cleanUrls": true
 }
