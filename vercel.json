@@ -1,40 +1,16 @@
 {
   "version": 2,
-  "name": "ai-prompt-library-pro",
-  "builds": [
+  "public": true,
+  "buildCommand": "echo 'No build needed - static files'",
+  "outputDirectory": "web-app/src",
+  "rewrites": [
     {
-      "src": "web-app/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/src/(.*)",
-      "dest": "/web-app/src/$1"
+      "source": "/src/(.*)",
+      "destination": "/$1"
     },
     {
-      "src": "/data/(.*)",
-      "dest": "/web-app/src/data/$1"
-    },
-    {
-      "src": "/styles/(.*)",
-      "dest": "/web-app/src/styles/$1"
-    },
-    {
-      "src": "/components/(.*)",
-      "dest": "/web-app/src/components/$1"
-    },
-    {
-      "src": "/utils/(.*)",
-      "dest": "/web-app/src/utils/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/web-app/src/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/web-app/src/index.html"
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ],
   "headers": [
