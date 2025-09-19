@@ -194,12 +194,23 @@
                     </div>
                 </div>
 
-                <!-- Categories Overview -->
-                <div class="categories-section" id="categories-section">
-                    <h2>Professional Categories</h2>
-                    <p style="text-align: center; color: #666; margin-bottom: 2rem;">Expert-crafted prompts for every professional need</p>
-                    <div class="categories-grid" id="categories-grid">
-                        <!-- Categories will be loaded dynamically -->
+                <!-- Enhanced Category Selector -->
+                <div class="category-selector-section" id="category-selector-section">
+                    <div class="category-selector">
+                        <h2>🎯 Select Your Profession</h2>
+                        <p>Choose your category to see 100+ specialized prompts</p>
+                        <div class="enhanced-category-dropdown">
+                            <select id="main-category-selector" class="enhanced-select">
+                                <option value="">Choose your profession...</option>
+                            </select>
+                            <div class="category-info" id="category-info" style="display: none;">
+                                <div class="category-stats">
+                                    <span class="stat">📋 <span id="category-prompt-count">0</span> Prompts</span>
+                                    <span class="stat">👥 <span id="category-role-count">0</span> Roles</span>
+                                    <span class="stat">⭐ Professional Grade</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

@@ -22,9 +22,9 @@ class PromptLibraryApp {
         await this.loadData();
         this.initializeSearch();
         this.setupEventListeners();
-        this.renderCategories();
         this.renderPrompts();
         this.populateFilters();
+        this.updateStats();
     }
 
     async loadData() {
@@ -134,6 +134,14 @@ class PromptLibraryApp {
             this.filters.category = e.target.value;
             this.applyFilters();
         });
+        
+        // Enhanced category selector
+        const mainCategorySelector = document.getElementById('main-category-selector');
+        if (mainCategorySelector) {
+            mainCategorySelector.addEventListener('change', (e) => {
+                this.handleCategorySelection(e.target.value);
+            });
+        }
 
         document.getElementById('difficulty-filter').addEventListener('change', (e) => {
             this.filters.difficulty = e.target.value;
@@ -192,39 +200,89 @@ class PromptLibraryApp {
 
     populateFilters() {
         const categoryFilter = document.getElementById('category-filter');
+        const mainCategorySelector = document.getElementById('main-category-selector');
         
         // Clear existing options except first one
         categoryFilter.innerHTML = '<option value="">All Categories</option>';
+        if (mainCategorySelector) {
+            mainCategorySelector.innerHTML = '<option value="">Choose your profession...</option>';
+        }
         
-        // Add categories
+        // Add categories to both selectors
         this.categories.forEach(category => {
+            // Regular category filter
             const option = document.createElement('option');
             option.value = category.id;
             option.textContent = category.name;
             categoryFilter.appendChild(option);
+            
+            // Enhanced main category selector
+            if (mainCategorySelector) {
+                const mainOption = document.createElement('option');
+                mainOption.value = category.id;
+                mainOption.textContent = `${category.icon} ${category.name}`;
+                mainCategorySelector.appendChild(mainOption);
+            }
         });
     }
 
-    renderCategories() {
-        const grid = document.getElementById('categories-grid');
-        
-        if (!grid || this.categories.length === 0) return;
-
-        grid.innerHTML = this.categories.map(category => {
-            const promptCount = this.prompts.filter(p => p.category === category.id).length;
+    handleCategorySelection(categoryId) {
+        if (!categoryId) {
+            // Clear selection
+            this.filters.category = '';
+            document.getElementById('category-info').style.display = 'none';
+        } else {
+            // Set category filter
+            this.filters.category = categoryId;
             
-            return `
-                <div class="category-card" onclick="app.filterByCategory('${category.id}')" 
-                     style="--category-color: ${category.color}">
-                    <div class="category-header">
-                        <div class="category-icon">${category.icon}</div>
-                        <div class="category-name">${category.name}</div>
-                    </div>
-                    <div class="category-description">${category.description}</div>
-                    <div class="category-count">${promptCount} prompts available</div>
-                </div>
-            `;
-        }).join('');
+            // Update category info display
+            const category = this.categories.find(c => c.id === categoryId);
+            if (category) {
+                const promptCount = this.prompts.filter(p => p.category === categoryId).length;
+                const roleCount = category.subcategories ? category.subcategories.length : 0;
+                
+                document.getElementById('category-prompt-count').textContent = promptCount;
+                document.getElementById('category-role-count').textContent = roleCount;
+                document.getElementById('category-info').style.display = 'block';
+            }
+            
+            // Also update the regular category filter to stay in sync
+            const categoryFilter = document.getElementById('category-filter');
+            if (categoryFilter) {
+                categoryFilter.value = categoryId;
+            }
+        }
+        
+        // Apply the filters
+        this.applyFilters();
+    }
+
+    updateStats() {
+        // Update the statistics dashboard with actual data
+        const totalPromptsEl = document.getElementById('total-prompts');
+        const totalIndustriesEl = document.getElementById('total-industries');
+        const totalRolesEl = document.getElementById('total-roles');
+        const avgRatingEl = document.getElementById('avg-rating');
+        
+        if (totalPromptsEl) {
+            totalPromptsEl.textContent = this.prompts.length;
+        }
+        
+        if (totalIndustriesEl) {
+            const uniqueIndustries = new Set(this.prompts.flatMap(p => p.industry || []));
+            totalIndustriesEl.textContent = uniqueIndustries.size;
+        }
+        
+        if (totalRolesEl) {
+            const uniqueSubcategories = new Set(this.prompts.map(p => p.subcategory));
+            totalRolesEl.textContent = uniqueSubcategories.size;
+        }
+        
+        if (avgRatingEl) {
+            const ratingsSum = this.prompts.reduce((sum, p) => sum + (p.rating?.average || 0), 0);
+            const avgRating = this.prompts.length > 0 ? (ratingsSum / this.prompts.length).toFixed(1) : '0';
+            avgRatingEl.textContent = `${avgRating}/5`;
+        }
     }
 
     renderPrompts() {
@@ -342,9 +400,13 @@ class PromptLibraryApp {
         this.renderPrompts();
 
         // Update page sections visibility
-        const categoriesSection = document.getElementById('categories-section');
-        const hasActiveFilters = Object.values(this.filters).some(filter => filter !== '');
-        categoriesSection.style.display = hasActiveFilters ? 'none' : 'block';
+        const categorySection = document.getElementById('category-selector-section');
+        const hasActiveFilters = this.filters.search || this.filters.difficulty || this.filters.aiTool;
+        
+        // Hide category selector if other filters are active (but not category filter itself)
+        if (categorySection) {
+            categorySection.style.display = hasActiveFilters ? 'none' : 'block';
+        }
         
         // Update results title
         const resultsTitle = document.getElementById('results-title');
